@@ -1,0 +1,828 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://freegeoip.net/json/127.0.0.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freegeoip.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Origin
+      X-Database-Date:
+      - Thu, 08 Dec 2016 03:29:58 GMT
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9959'
+      X-Ratelimit-Reset:
+      - '1742'
+      Date:
+      - Thu, 15 Dec 2016 18:11:52 GMT
+      Content-Length:
+      - '170'
+    body:
+      encoding: UTF-8
+      string: |
+        {"ip":"127.0.0.1","country_code":"","country_name":"","region_code":"","region_name":"","city":"","zip_code":"","time_zone":"","latitude":0,"longitude":0,"metro_code":0}
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 18:09:32 GMT
+- request:
+    method: get
+    uri: https://api.darksky.net/forecast/aadd81c49df10be00a508f9864f72470/42.4611,-71.0589
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.darksky.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.0 (Ubuntu)
+      Date:
+      - Thu, 15 Dec 2016 18:09:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Forecast-Api-Calls:
+      - '24'
+      Cache-Control:
+      - max-age=60
+      Expires:
+      - Thu, 15 Dec 2016 18:10:32 +0000
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"6ab5-6qfRP984gKfNmYv/utOubQ"
+      X-Response-Time:
+      - 128.898ms
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsYXRpdHVkZSI6NDIuNDYxMSwibG9uZ2l0dWRlIjotNzEuMDU4OSwidGlt
+        ZXpvbmUiOiJBbWVyaWNhL05ld19Zb3JrIiwib2Zmc2V0IjotNSwiY3VycmVu
+        dGx5Ijp7InRpbWUiOjE0ODE4MjUzNzIsInN1bW1hcnkiOiJDbGVhciIsImlj
+        b24iOiJjbGVhci1kYXkiLCJuZWFyZXN0U3Rvcm1EaXN0YW5jZSI6MTcsIm5l
+        YXJlc3RTdG9ybUJlYXJpbmciOjMxMSwicHJlY2lwSW50ZW5zaXR5IjowLCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI1LjcsImFwcGFy
+        ZW50VGVtcGVyYXR1cmUiOjEyLjU1LCJkZXdQb2ludCI6Mi4wMywiaHVtaWRp
+        dHkiOjAuMzUsIndpbmRTcGVlZCI6MTcuNTUsIndpbmRCZWFyaW5nIjoyNzgs
+        InZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjE4LCJwcmVzc3VyZSI6
+        MTAwNS40Mywib3pvbmUiOjM3Ny4xNX0sIm1pbnV0ZWx5Ijp7InN1bW1hcnki
+        OiJDbGVhciBmb3IgdGhlIGhvdXIuIiwiaWNvbiI6ImNsZWFyLWRheSIsImRh
+        dGEiOlt7InRpbWUiOjE0ODE4MjUzNDAsInByZWNpcEludGVuc2l0eSI6MCwi
+        cHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNTQwMCwicHJl
+        Y2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1l
+        IjoxNDgxODI1NDYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2Jh
+        YmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjU1MjAsInByZWNpcEludGVuc2l0
+        eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNTU4
+        MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0s
+        eyJ0aW1lIjoxNDgxODI1NjQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNp
+        cFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjU3MDAsInByZWNpcElu
+        dGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4
+        MTgyNTc2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0
+        eSI6MH0seyJ0aW1lIjoxNDgxODI1ODIwLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjU4ODAsInBy
+        ZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGlt
+        ZSI6MTQ4MTgyNTk0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9i
+        YWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI2MDAwLCJwcmVjaXBJbnRlbnNp
+        dHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjYw
+        NjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9
+        LHsidGltZSI6MTQ4MTgyNjEyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVj
+        aXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI2MTgwLCJwcmVjaXBJ
+        bnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0
+        ODE4MjYyNDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjB9LHsidGltZSI6MTQ4MTgyNjMwMCwicHJlY2lwSW50ZW5zaXR5Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI2MzYwLCJw
+        cmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRp
+        bWUiOjE0ODE4MjY0MjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJv
+        YmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNjQ4MCwicHJlY2lwSW50ZW5z
+        aXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI2
+        NTQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5Ijow
+        fSx7InRpbWUiOjE0ODE4MjY2MDAsInByZWNpcEludGVuc2l0eSI6MCwicHJl
+        Y2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNjY2MCwicHJlY2lw
+        SW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjox
+        NDgxODI2NzIwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmls
+        aXR5IjowfSx7InRpbWUiOjE0ODE4MjY3ODAsInByZWNpcEludGVuc2l0eSI6
+        MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNjg0MCwi
+        cHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0
+        aW1lIjoxNDgxODI2OTAwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFBy
+        b2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjY5NjAsInByZWNpcEludGVu
+        c2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgy
+        NzAyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6
+        MH0seyJ0aW1lIjoxNDgxODI3MDgwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInBy
+        ZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjcxNDAsInByZWNp
+        cEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6
+        MTQ4MTgyNzIwMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJp
+        bGl0eSI6MH0seyJ0aW1lIjoxNDgxODI3MjYwLCJwcmVjaXBJbnRlbnNpdHki
+        OjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjczMjAs
+        InByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsi
+        dGltZSI6MTQ4MTgyNzM4MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQ
+        cm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI3NDQwLCJwcmVjaXBJbnRl
+        bnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4
+        Mjc1MDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHki
+        OjB9LHsidGltZSI6MTQ4MTgyNzU2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI3NjIwLCJwcmVj
+        aXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUi
+        OjE0ODE4Mjc2ODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFi
+        aWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNzc0MCwicHJlY2lwSW50ZW5zaXR5
+        IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI3ODAw
+        LCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7
+        InRpbWUiOjE0ODE4Mjc4NjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lw
+        UHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNzkyMCwicHJlY2lwSW50
+        ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgx
+        ODI3OTgwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5
+        IjowfSx7InRpbWUiOjE0ODE4MjgwNDAsInByZWNpcEludGVuc2l0eSI6MCwi
+        cHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyODEwMCwicHJl
+        Y2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1l
+        IjoxNDgxODI4MTYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2Jh
+        YmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjgyMjAsInByZWNpcEludGVuc2l0
+        eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyODI4
+        MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0s
+        eyJ0aW1lIjoxNDgxODI4MzQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNp
+        cFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4Mjg0MDAsInByZWNpcElu
+        dGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4
+        MTgyODQ2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0
+        eSI6MH0seyJ0aW1lIjoxNDgxODI4NTIwLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4Mjg1ODAsInBy
+        ZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGlt
+        ZSI6MTQ4MTgyODY0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9i
+        YWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI4NzAwLCJwcmVjaXBJbnRlbnNp
+        dHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4Mjg3
+        NjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9
+        LHsidGltZSI6MTQ4MTgyODgyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVj
+        aXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI4ODgwLCJwcmVjaXBJ
+        bnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0
+        ODE4Mjg5NDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjB9XX0sImhvdXJseSI6eyJzdW1tYXJ5IjoiUGFydGx5IGNsb3VkeSBz
+        dGFydGluZyBsYXRlciB0aGlzIGFmdGVybm9vbiwgY29udGludWluZyB1bnRp
+        bCB0aGlzIGV2ZW5pbmcsIGFuZCBicmVlenkgdG9uaWdodC4iLCJpY29uIjoi
+        d2luZCIsImRhdGEiOlt7InRpbWUiOjE0ODE4MjQ4MDAsInN1bW1hcnkiOiJD
+        bGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MjUuNzMsImFw
+        cGFyZW50VGVtcGVyYXR1cmUiOjEyLjc1LCJkZXdQb2ludCI6MC4yNSwiaHVt
+        aWRpdHkiOjAuMzIsIndpbmRTcGVlZCI6MTcuMSwid2luZEJlYXJpbmciOjI4
+        MCwidmlzaWJpbGl0eSI6MTAsImNsb3VkQ292ZXIiOjAuMTUsInByZXNzdXJl
+        IjoxMDA1LjE3LCJvem9uZSI6Mzc3LjI4fSx7InRpbWUiOjE0ODE4Mjg0MDAs
+        InN1bW1hcnkiOiJQYXJ0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91
+        ZHktZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0
+        eSI6MCwidGVtcGVyYXR1cmUiOjI1LjU1LCJhcHBhcmVudFRlbXBlcmF0dXJl
+        IjoxMS40OSwiZGV3UG9pbnQiOjkuNjksImh1bWlkaXR5IjowLjUsIndpbmRT
+        cGVlZCI6MjAuMTEsIndpbmRCZWFyaW5nIjoyNzIsInZpc2liaWxpdHkiOjEw
+        LCJjbG91ZENvdmVyIjowLjM0LCJwcmVzc3VyZSI6MTAwNi44Niwib3pvbmUi
+        OjM3Ni40Nn0seyJ0aW1lIjoxNDgxODMyMDAwLCJzdW1tYXJ5IjoiUGFydGx5
+        IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LWRheSIsInByZWNpcElu
+        dGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJl
+        IjoyNS4xMywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MTAuOTQsImRld1BvaW50
+        Ijo2LjY5LCJodW1pZGl0eSI6MC40NSwid2luZFNwZWVkIjoyMC4xLCJ3aW5k
+        QmVhcmluZyI6Mjc1LCJ2aXNpYmlsaXR5IjoxMCwiY2xvdWRDb3ZlciI6MC40
+        NCwicHJlc3N1cmUiOjEwMDguNTcsIm96b25lIjozNzUuNTd9LHsidGltZSI6
+        MTQ4MTgzNTYwMCwic3VtbWFyeSI6IlBhcnRseSBDbG91ZHkiLCJpY29uIjoi
+        cGFydGx5LWNsb3VkeS1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNp
+        cFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MjQuMjQsImFwcGFyZW50
+        VGVtcGVyYXR1cmUiOjEwLjU4LCJkZXdQb2ludCI6My4xNSwiaHVtaWRpdHki
+        OjAuMzksIndpbmRTcGVlZCI6MTcuNzQsIndpbmRCZWFyaW5nIjoyNzYsInZp
+        c2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjQ0LCJwcmVzc3VyZSI6MTAw
+        OS45NSwib3pvbmUiOjM3NS4xNH0seyJ0aW1lIjoxNDgxODM5MjAwLCJzdW1t
+        YXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5p
+        Z2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6
+        MCwidGVtcGVyYXR1cmUiOjIzLjM4LCJhcHBhcmVudFRlbXBlcmF0dXJlIjox
+        MC4yOCwiZGV3UG9pbnQiOjMuMTUsImh1bWlkaXR5IjowLjQxLCJ3aW5kU3Bl
+        ZWQiOjE1LjYzLCJ3aW5kQmVhcmluZyI6MjY2LCJ2aXNpYmlsaXR5IjoxMCwi
+        Y2xvdWRDb3ZlciI6MC40NCwicHJlc3N1cmUiOjEwMTAuNjQsIm96b25lIjoz
+        NzUuNTV9LHsidGltZSI6MTQ4MTg0MjgwMCwic3VtbWFyeSI6IkNsZWFyIiwi
+        aWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVj
+        aXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjIyLjUyLCJhcHBhcmVu
+        dFRlbXBlcmF0dXJlIjo5LjUyLCJkZXdQb2ludCI6NC4xMywiaHVtaWRpdHki
+        OjAuNDQsIndpbmRTcGVlZCI6MTQuODQsIndpbmRCZWFyaW5nIjoyNTEsInZp
+        c2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjIsInByZXNzdXJlIjoxMDEx
+        LjAzLCJvem9uZSI6Mzc2LjQyfSx7InRpbWUiOjE0ODE4NDY0MDAsInN1bW1h
+        cnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdodCIsInByZWNpcEludGVu
+        c2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjoy
+        MS4xLCJhcHBhcmVudFRlbXBlcmF0dXJlIjo2LjksImRld1BvaW50Ijo2LjUz
+        LCJodW1pZGl0eSI6MC41Mywid2luZFNwZWVkIjoxNi43NSwid2luZEJlYXJp
+        bmciOjIzMSwidmlzaWJpbGl0eSI6MTAsImNsb3VkQ292ZXIiOjAuMTksInBy
+        ZXNzdXJlIjoxMDExLjM3LCJvem9uZSI6Mzc3LjE1fSx7InRpbWUiOjE0ODE4
+        NTAwMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdodCIs
+        InByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRl
+        bXBlcmF0dXJlIjoxOS42MywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6My45OCwi
+        ZGV3UG9pbnQiOjcuNDUsImh1bWlkaXR5IjowLjU4LCJ3aW5kU3BlZWQiOjE5
+        LjM4LCJ3aW5kQmVhcmluZyI6MjM0LCJ2aXNpYmlsaXR5IjoxMCwiY2xvdWRD
+        b3ZlciI6MC4yLCJwcmVzc3VyZSI6MTAxMS44MSwib3pvbmUiOjM3Ny4zOX0s
+        eyJ0aW1lIjoxNDgxODUzNjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoi
+        Y2xlYXItbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2Jh
+        YmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTguNzQsImFwcGFyZW50VGVtcGVy
+        YXR1cmUiOjIuNDEsImRld1BvaW50Ijo3LjI5LCJodW1pZGl0eSI6MC42LCJ3
+        aW5kU3BlZWQiOjIwLjUxLCJ3aW5kQmVhcmluZyI6MjQzLCJ2aXNpYmlsaXR5
+        IjoxMCwiY2xvdWRDb3ZlciI6MC4yMiwicHJlc3N1cmUiOjEwMTIuMzMsIm96
+        b25lIjozNzcuNDh9LHsidGltZSI6MTQ4MTg1NzIwMCwic3VtbWFyeSI6IkJy
+        ZWV6eSBhbmQgUGFydGx5IENsb3VkeSIsImljb24iOiJ3aW5kIiwicHJlY2lw
+        SW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1
+        cmUiOjE3LjYxLCJhcHBhcmVudFRlbXBlcmF0dXJlIjowLjQ5LCJkZXdQb2lu
+        dCI6NC4yMywiaHVtaWRpdHkiOjAuNTUsIndpbmRTcGVlZCI6MjEuNzUsIndp
+        bmRCZWFyaW5nIjoyNTgsInZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjow
+        LjMyLCJwcmVzc3VyZSI6MTAxMy4xMywib3pvbmUiOjM3Ny44Mn0seyJ0aW1l
+        IjoxNDgxODYwODAwLCJzdW1tYXJ5IjoiQnJlZXp5IGFuZCBQYXJ0bHkgQ2xv
+        dWR5IiwiaWNvbiI6IndpbmQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNp
+        cFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTUuNTQsImFwcGFyZW50
+        VGVtcGVyYXR1cmUiOi0yLjMyLCJkZXdQb2ludCI6Mi4zNCwiaHVtaWRpdHki
+        OjAuNTUsIndpbmRTcGVlZCI6MjEuOTYsIndpbmRCZWFyaW5nIjoyNjksInZp
+        c2liaWxpdHkiOjkuNzcsImNsb3VkQ292ZXIiOjAuMjgsInByZXNzdXJlIjox
+        MDE0LjI4LCJvem9uZSI6Mzc5LjA4fSx7InRpbWUiOjE0ODE4NjQ0MDAsInN1
+        bW1hcnkiOiJCcmVlenkgYW5kIFBhcnRseSBDbG91ZHkiLCJpY29uIjoid2lu
+        ZCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAs
+        InRlbXBlcmF0dXJlIjoxMy45OSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6LTQu
+        MTQsImRld1BvaW50IjoxLjQxLCJodW1pZGl0eSI6MC41Nywid2luZFNwZWVk
+        IjoyMS4zNCwid2luZEJlYXJpbmciOjI3NSwidmlzaWJpbGl0eSI6OS43Miwi
+        Y2xvdWRDb3ZlciI6MC4zNSwicHJlc3N1cmUiOjEwMTUuNjcsIm96b25lIjoz
+        ODAuNTl9LHsidGltZSI6MTQ4MTg2ODAwMCwic3VtbWFyeSI6IlBhcnRseSBD
+        bG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1uaWdodCIsInByZWNpcElu
+        dGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJl
+        IjoxMy4xLCJhcHBhcmVudFRlbXBlcmF0dXJlIjotNC43NSwiZGV3UG9pbnQi
+        OjAuNCwiaHVtaWRpdHkiOjAuNTYsIndpbmRTcGVlZCI6MTkuODUsIndpbmRC
+        ZWFyaW5nIjoyODEsInZpc2liaWxpdHkiOjkuODMsImNsb3VkQ292ZXIiOjAu
+        NDEsInByZXNzdXJlIjoxMDE3LjA4LCJvem9uZSI6MzgwLjY5fSx7InRpbWUi
+        OjE0ODE4NzE2MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1u
+        aWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHki
+        OjAsInRlbXBlcmF0dXJlIjoxMi4xMSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6
+        LTUuODEsImRld1BvaW50IjotMC40NSwiaHVtaWRpdHkiOjAuNTYsIndpbmRT
+        cGVlZCI6MTkuMjYsIndpbmRCZWFyaW5nIjoyODMsInZpc2liaWxpdHkiOjku
+        OCwiY2xvdWRDb3ZlciI6MC4yMywicHJlc3N1cmUiOjEwMTguNTcsIm96b25l
+        IjozNzguMTd9LHsidGltZSI6MTQ4MTg3NTIwMCwic3VtbWFyeSI6IkNsZWFy
+        IiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjEwLjkxLCJhcHBh
+        cmVudFRlbXBlcmF0dXJlIjotNy4wMywiZGV3UG9pbnQiOi0xLjQ2LCJodW1p
+        ZGl0eSI6MC41Nywid2luZFNwZWVkIjoxOC40NSwid2luZEJlYXJpbmciOjI4
+        MSwidmlzaWJpbGl0eSI6OS44NSwiY2xvdWRDb3ZlciI6MC4xMSwicHJlc3N1
+        cmUiOjEwMTkuOTMsIm96b25lIjozNzQuMjR9LHsidGltZSI6MTQ4MTg3ODgw
+        MCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJl
+        Y2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVy
+        YXR1cmUiOjkuNzEsImFwcGFyZW50VGVtcGVyYXR1cmUiOi04LjE2LCJkZXdQ
+        b2ludCI6LTIuMzYsImh1bWlkaXR5IjowLjU3LCJ3aW5kU3BlZWQiOjE3LjQ2
+        LCJ3aW5kQmVhcmluZyI6MjgxLCJ2aXNpYmlsaXR5Ijo5LjkyLCJjbG91ZENv
+        dmVyIjowLjAzLCJwcmVzc3VyZSI6MTAyMS4zOCwib3pvbmUiOjM3MC45fSx7
+        InRpbWUiOjE0ODE4ODI0MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJj
+        bGVhci1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFi
+        aWxpdHkiOjAsInRlbXBlcmF0dXJlIjo4LjI3LCJhcHBhcmVudFRlbXBlcmF0
+        dXJlIjotOS40OCwiZGV3UG9pbnQiOi0zLjUxLCJodW1pZGl0eSI6MC41OCwi
+        d2luZFNwZWVkIjoxNi4zMywid2luZEJlYXJpbmciOjI4MiwidmlzaWJpbGl0
+        eSI6OS45NiwiY2xvdWRDb3ZlciI6MC4wMSwicHJlc3N1cmUiOjEwMjMsIm96
+        b25lIjozNjkuMTF9LHsidGltZSI6MTQ4MTg4NjAwMCwic3VtbWFyeSI6IkNs
+        ZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjYuODYsImFw
+        cGFyZW50VGVtcGVyYXR1cmUiOi0xMS4wMSwiZGV3UG9pbnQiOi01LjA5LCJo
+        dW1pZGl0eSI6MC41Nywid2luZFNwZWVkIjoxNS43NSwid2luZEJlYXJpbmci
+        OjI4NCwidmlzaWJpbGl0eSI6OS45NSwiY2xvdWRDb3ZlciI6MC4wMSwicHJl
+        c3N1cmUiOjEwMjQuNjQsIm96b25lIjozNjcuOX0seyJ0aW1lIjoxNDgxODg5
+        NjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItbmlnaHQiLCJw
+        cmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1w
+        ZXJhdHVyZSI6Ni4zMSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6LTExLjI1LCJk
+        ZXdQb2ludCI6LTUuOTMsImh1bWlkaXR5IjowLjU2LCJ3aW5kU3BlZWQiOjE0
+        Ljg5LCJ3aW5kQmVhcmluZyI6Mjg2LCJ2aXNpYmlsaXR5IjoxMCwiY2xvdWRD
+        b3ZlciI6MC4wMSwicHJlc3N1cmUiOjEwMjYuMDcsIm96b25lIjozNjYuMjh9
+        LHsidGltZSI6MTQ4MTg5MzIwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6
+        ImNsZWFyLWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFi
+        aWxpdHkiOjAsInRlbXBlcmF0dXJlIjo2Ljc4LCJhcHBhcmVudFRlbXBlcmF0
+        dXJlIjotOS45MywiZGV3UG9pbnQiOi02LjIxLCJodW1pZGl0eSI6MC41NCwi
+        d2luZFNwZWVkIjoxMy42MSwid2luZEJlYXJpbmciOjI4NSwidmlzaWJpbGl0
+        eSI6MTAsImNsb3VkQ292ZXIiOjAuMDEsInByZXNzdXJlIjoxMDI3LjI4LCJv
+        em9uZSI6MzYzLjg5fSx7InRpbWUiOjE0ODE4OTY4MDAsInN1bW1hcnkiOiJD
+        bGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6OC4yNCwiYXBw
+        YXJlbnRUZW1wZXJhdHVyZSI6LTcuMjUsImRld1BvaW50IjotNS44OSwiaHVt
+        aWRpdHkiOjAuNTIsIndpbmRTcGVlZCI6MTIuMjMsIndpbmRCZWFyaW5nIjoy
+        ODIsInZpc2liaWxpdHkiOjkuOTQsImNsb3VkQ292ZXIiOjAuMDQsInByZXNz
+        dXJlIjoxMDI4LjMyLCJvem9uZSI6MzYxLjA4fSx7InRpbWUiOjE0ODE5MDA0
+        MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVj
+        aXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJh
+        dHVyZSI6OC42NCwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6LTUuNTUsImRld1Bv
+        aW50IjotNi44MiwiaHVtaWRpdHkiOjAuNDgsIndpbmRTcGVlZCI6MTAuNDYs
+        IndpbmRCZWFyaW5nIjoyNzgsInZpc2liaWxpdHkiOjkuOTYsImNsb3VkQ292
+        ZXIiOjAuMDQsInByZXNzdXJlIjoxMDI5LjA5LCJvem9uZSI6MzU3Ljg4fSx7
+        InRpbWUiOjE0ODE5MDQwMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJj
+        bGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmls
+        aXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTAuODUsImFwcGFyZW50VGVtcGVyYXR1
+        cmUiOi0yLjE3LCJkZXdQb2ludCI6LTUuOTUsImh1bWlkaXR5IjowLjQ2LCJ3
+        aW5kU3BlZWQiOjkuNTcsIndpbmRCZWFyaW5nIjoyNjgsInZpc2liaWxpdHki
+        OjkuOTYsImNsb3VkQ292ZXIiOjAuMDQsInByZXNzdXJlIjoxMDI5LjQ5LCJv
+        em9uZSI6MzU0LjQ0fSx7InRpbWUiOjE0ODE5MDc2MDAsInN1bW1hcnkiOiJD
+        bGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTMuMDksImFw
+        cGFyZW50VGVtcGVyYXR1cmUiOjAuODMsImRld1BvaW50IjotNS4xNCwiaHVt
+        aWRpdHkiOjAuNDMsIndpbmRTcGVlZCI6OS4yNCwid2luZEJlYXJpbmciOjI1
+        NywidmlzaWJpbGl0eSI6OS45NiwiY2xvdWRDb3ZlciI6MC4wNCwicHJlc3N1
+        cmUiOjEwMjkuNjMsIm96b25lIjozNTAuNn0seyJ0aW1lIjoxNDgxOTExMjAw
+        LCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItZGF5IiwicHJlY2lw
+        SW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1
+        cmUiOjEzLjY1LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxLjYsImRld1BvaW50
+        IjotNS4yMSwiaHVtaWRpdHkiOjAuNDIsIndpbmRTcGVlZCI6OS4xNCwid2lu
+        ZEJlYXJpbmciOjI0OSwidmlzaWJpbGl0eSI6OS45NywiY2xvdWRDb3ZlciI6
+        MC4wMiwicHJlc3N1cmUiOjEwMjkuNzcsIm96b25lIjozNDYuMDJ9LHsidGlt
+        ZSI6MTQ4MTkxNDgwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFy
+        LWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHki
+        OjAsInRlbXBlcmF0dXJlIjoxNC44MywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6
+        My4zMiwiZGV3UG9pbnQiOi0zLjU5LCJodW1pZGl0eSI6MC40Mywid2luZFNw
+        ZWVkIjo4Ljc4LCJ3aW5kQmVhcmluZyI6MjQ3LCJ2aXNpYmlsaXR5Ijo5Ljk4
+        LCJjbG91ZENvdmVyIjowLjAzLCJwcmVzc3VyZSI6MTAyOS45OSwib3pvbmUi
+        OjM0MC4yMn0seyJ0aW1lIjoxNDgxOTE4NDAwLCJzdW1tYXJ5IjoiQ2xlYXIi
+        LCJpY29uIjoiY2xlYXItZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVj
+        aXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjE1LjU2LCJhcHBhcmVu
+        dFRlbXBlcmF0dXJlIjo0LjYyLCJkZXdQb2ludCI6LTEuNywiaHVtaWRpdHki
+        OjAuNDYsIndpbmRTcGVlZCI6OC4yNywid2luZEJlYXJpbmciOjI0Nywidmlz
+        aWJpbGl0eSI6OS45OSwiY2xvdWRDb3ZlciI6MC4wNSwicHJlc3N1cmUiOjEw
+        MzAuMTksIm96b25lIjozMzMuNjZ9LHsidGltZSI6MTQ4MTkyMjAwMCwic3Vt
+        bWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLWRheSIsInByZWNpcEludGVu
+        c2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjox
+        Ni4xNiwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6NS44MSwiZGV3UG9pbnQiOjAu
+        MTQsImh1bWlkaXR5IjowLjQ4LCJ3aW5kU3BlZWQiOjcuNjgsIndpbmRCZWFy
+        aW5nIjoyNDUsInZpc2liaWxpdHkiOjkuOTksImNsb3VkQ292ZXIiOjAuMDcs
+        InByZXNzdXJlIjoxMDMwLjQzLCJvem9uZSI6MzI3LjQ0fSx7InRpbWUiOjE0
+        ODE5MjU2MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdo
+        dCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAs
+        InRlbXBlcmF0dXJlIjoxNi42MywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6Nywi
+        ZGV3UG9pbnQiOjEuOSwiaHVtaWRpdHkiOjAuNTEsIndpbmRTcGVlZCI6Ni45
+        OCwid2luZEJlYXJpbmciOjIzNSwidmlzaWJpbGl0eSI6MTAsImNsb3VkQ292
+        ZXIiOjAuMDQsInByZXNzdXJlIjoxMDMwLjc3LCJvem9uZSI6MzIxLjkxfSx7
+        InRpbWUiOjE0ODE5MjkyMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJj
+        bGVhci1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFi
+        aWxpdHkiOjAsInRlbXBlcmF0dXJlIjoxNy4wNywiYXBwYXJlbnRUZW1wZXJh
+        dHVyZSI6Ny44MiwiZGV3UG9pbnQiOjMuNjUsImh1bWlkaXR5IjowLjU1LCJ3
+        aW5kU3BlZWQiOjYuNjUsIndpbmRCZWFyaW5nIjoyMjEsInZpc2liaWxpdHki
+        OjEwLCJjbG91ZENvdmVyIjowLCJwcmVzc3VyZSI6MTAzMS4xNSwib3pvbmUi
+        OjMxNi43Mn0seyJ0aW1lIjoxNDgxOTMyODAwLCJzdW1tYXJ5IjoiQ2xlYXIi
+        LCJpY29uIjoiY2xlYXItbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInBy
+        ZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTcuNzEsImFwcGFy
+        ZW50VGVtcGVyYXR1cmUiOjguNSwiZGV3UG9pbnQiOjUuMywiaHVtaWRpdHki
+        OjAuNTgsIndpbmRTcGVlZCI6Ni43NSwid2luZEJlYXJpbmciOjIxMCwidmlz
+        aWJpbGl0eSI6MTAsImNsb3VkQ292ZXIiOjAsInByZXNzdXJlIjoxMDMxLjQ0
+        LCJvem9uZSI6MzExLjg4fSx7InRpbWUiOjE0ODE5MzY0MDAsInN1bW1hcnki
+        OiJDbGVhciIsImljb24iOiJjbGVhci1uaWdodCIsInByZWNpcEludGVuc2l0
+        eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjoxOC41
+        OCwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6OS4zNywiZGV3UG9pbnQiOjYuNjgs
+        Imh1bWlkaXR5IjowLjU5LCJ3aW5kU3BlZWQiOjYuOTQsIndpbmRCZWFyaW5n
+        IjoyMDQsInZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjA4LCJwcmVz
+        c3VyZSI6MTAzMS42Mywib3pvbmUiOjMwNy4yNn0seyJ0aW1lIjoxNDgxOTQw
+        MDAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItbmlnaHQiLCJw
+        cmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1w
+        ZXJhdHVyZSI6MTkuNDksImFwcGFyZW50VGVtcGVyYXR1cmUiOjEwLjM0LCJk
+        ZXdQb2ludCI6Ny44OCwiaHVtaWRpdHkiOjAuNiwid2luZFNwZWVkIjo3LjA5
+        LCJ3aW5kQmVhcmluZyI6MjAxLCJ2aXNpYmlsaXR5IjoxMCwiY2xvdWRDb3Zl
+        ciI6MC4yLCJwcmVzc3VyZSI6MTAzMS43MSwib3pvbmUiOjMwMi45OX0seyJ0
+        aW1lIjoxNDgxOTQzNjAwLCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImlj
+        b24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjIwLjM4LCJh
+        cHBhcmVudFRlbXBlcmF0dXJlIjoxMS4zNSwiZGV3UG9pbnQiOjkuMTksImh1
+        bWlkaXR5IjowLjYxLCJ3aW5kU3BlZWQiOjcuMTgsIndpbmRCZWFyaW5nIjox
+        OTgsInZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjM0LCJwcmVzc3Vy
+        ZSI6MTAzMS42MSwib3pvbmUiOjI5OS41N30seyJ0aW1lIjoxNDgxOTQ3MjAw
+        LCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xv
+        dWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJp
+        bGl0eSI6MCwidGVtcGVyYXR1cmUiOjIxLjE4LCJhcHBhcmVudFRlbXBlcmF0
+        dXJlIjoxMi4yNCwiZGV3UG9pbnQiOjEwLjQ2LCJodW1pZGl0eSI6MC42Mywi
+        d2luZFNwZWVkIjo3LjI3LCJ3aW5kQmVhcmluZyI6MTkyLCJ2aXNpYmlsaXR5
+        Ijo5LjQ5LCJjbG91ZENvdmVyIjowLjUyLCJwcmVzc3VyZSI6MTAzMS4yNCwi
+        b3pvbmUiOjI5Ny4zN30seyJ0aW1lIjoxNDgxOTUwODAwLCJzdW1tYXJ5Ijoi
+        TW9zdGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0Iiwi
+        cHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVt
+        cGVyYXR1cmUiOjE3LjE1LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo3LjMxLCJk
+        ZXdQb2ludCI6Ny4yNiwiaHVtaWRpdHkiOjAuNjQsIndpbmRTcGVlZCI6Ny4z
+        NCwid2luZEJlYXJpbmciOjE4NSwidmlzaWJpbGl0eSI6OC43LCJjbG91ZENv
+        dmVyIjowLjczLCJwcmVzc3VyZSI6MTAzMC42Nywib3pvbmUiOjI5Ni4wMn0s
+        eyJ0aW1lIjoxNDgxOTU0NDAwLCJzdW1tYXJ5IjoiTW9zdGx5IENsb3VkeSIs
+        Imljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5
+        IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjE3Ljgx
+        LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo4LjEyLCJkZXdQb2ludCI6OS4xLCJo
+        dW1pZGl0eSI6MC42OCwid2luZFNwZWVkIjo3LjMxLCJ3aW5kQmVhcmluZyI6
+        MTc4LCJ2aXNpYmlsaXR5Ijo3LjQ4LCJjbG91ZENvdmVyIjowLjg5LCJwcmVz
+        c3VyZSI6MTAzMCwib3pvbmUiOjI5NC44MX0seyJ0aW1lIjoxNDgxOTU4MDAw
+        LCJzdW1tYXJ5IjoiTGlnaHQgU25vdyIsImljb24iOiJzbm93IiwicHJlY2lw
+        SW50ZW5zaXR5IjowLjAwMjUsInByZWNpcFByb2JhYmlsaXR5IjowLjA3LCJw
+        cmVjaXBUeXBlIjoic25vdyIsInByZWNpcEFjY3VtdWxhdGlvbiI6MC4wNDIs
+        InRlbXBlcmF0dXJlIjoxOC40NSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6OS4x
+        NCwiZGV3UG9pbnQiOjExLjk2LCJodW1pZGl0eSI6MC43NSwid2luZFNwZWVk
+        Ijo3LjAzLCJ3aW5kQmVhcmluZyI6MTY5LCJ2aXNpYmlsaXR5Ijo1LjI1LCJj
+        bG91ZENvdmVyIjowLjk2LCJwcmVzc3VyZSI6MTAyOS4yNiwib3pvbmUiOjI5
+        My42fSx7InRpbWUiOjE0ODE5NjE2MDAsInN1bW1hcnkiOiJMaWdodCBTbm93
+        IiwiaWNvbiI6InNub3ciLCJwcmVjaXBJbnRlbnNpdHkiOjAuMDA2MSwicHJl
+        Y2lwUHJvYmFiaWxpdHkiOjAuMjgsInByZWNpcFR5cGUiOiJzbm93IiwicHJl
+        Y2lwQWNjdW11bGF0aW9uIjowLjA5OCwidGVtcGVyYXR1cmUiOjE5LjM3LCJh
+        cHBhcmVudFRlbXBlcmF0dXJlIjoxMC42NywiZGV3UG9pbnQiOjE1LjQxLCJo
+        dW1pZGl0eSI6MC44NCwid2luZFNwZWVkIjo2LjU1LCJ3aW5kQmVhcmluZyI6
+        MTYyLCJ2aXNpYmlsaXR5IjoyLjYsImNsb3VkQ292ZXIiOjAuOTgsInByZXNz
+        dXJlIjoxMDI4LjM4LCJvem9uZSI6MjkyLjUzfSx7InRpbWUiOjE0ODE5NjUy
+        MDAsInN1bW1hcnkiOiJTbm93IiwiaWNvbiI6InNub3ciLCJwcmVjaXBJbnRl
+        bnNpdHkiOjAuMDEwNCwicHJlY2lwUHJvYmFiaWxpdHkiOjAuNTEsInByZWNp
+        cFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11bGF0aW9uIjowLjE1OSwidGVt
+        cGVyYXR1cmUiOjIwLjU5LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxMi4zMiwi
+        ZGV3UG9pbnQiOjE4LjQyLCJodW1pZGl0eSI6MC45MSwid2luZFNwZWVkIjo2
+        LjM0LCJ3aW5kQmVhcmluZyI6MTU2LCJ2aXNpYmlsaXR5IjoxLjE2LCJjbG91
+        ZENvdmVyIjowLjk4LCJwcmVzc3VyZSI6MTAyNy40Mywib3pvbmUiOjI5MS4z
+        NH0seyJ0aW1lIjoxNDgxOTY4ODAwLCJzdW1tYXJ5IjoiU25vdyIsImljb24i
+        OiJzbm93IiwicHJlY2lwSW50ZW5zaXR5IjowLjAxNTEsInByZWNpcFByb2Jh
+        YmlsaXR5IjowLjU2LCJwcmVjaXBUeXBlIjoic25vdyIsInByZWNpcEFjY3Vt
+        dWxhdGlvbiI6MC4yMTUsInRlbXBlcmF0dXJlIjoyMi4wMywiYXBwYXJlbnRU
+        ZW1wZXJhdHVyZSI6MTMuNTcsImRld1BvaW50IjoyMC41MywiaHVtaWRpdHki
+        OjAuOTQsIndpbmRTcGVlZCI6Ni44OCwid2luZEJlYXJpbmciOjE0OSwidmlz
+        aWJpbGl0eSI6Mi4yMSwiY2xvdWRDb3ZlciI6MC45OSwicHJlc3N1cmUiOjEw
+        MjYuMzgsIm96b25lIjoyODkuOTF9LHsidGltZSI6MTQ4MTk3MjQwMCwic3Vt
+        bWFyeSI6IlNub3ciLCJpY29uIjoic25vdyIsInByZWNpcEludGVuc2l0eSI6
+        MC4wMjA2LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC42MSwicHJlY2lwVHlwZSI6
+        InNub3ciLCJwcmVjaXBBY2N1bXVsYXRpb24iOjAuMjY5LCJ0ZW1wZXJhdHVy
+        ZSI6MjMuNjQsImFwcGFyZW50VGVtcGVyYXR1cmUiOjE0Ljc1LCJkZXdQb2lu
+        dCI6MjIuMjYsImh1bWlkaXR5IjowLjk0LCJ3aW5kU3BlZWQiOjcuODgsIndp
+        bmRCZWFyaW5nIjoxNDIsInZpc2liaWxpdHkiOjQuNDgsImNsb3VkQ292ZXIi
+        OjAuOTksInByZXNzdXJlIjoxMDI1LjI1LCJvem9uZSI6Mjg4LjM2fSx7InRp
+        bWUiOjE0ODE5NzYwMDAsInN1bW1hcnkiOiJTbm93IiwiaWNvbiI6InNub3ci
+        LCJwcmVjaXBJbnRlbnNpdHkiOjAuMDI3NywicHJlY2lwUHJvYmFiaWxpdHki
+        OjAuNjUsInByZWNpcFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11bGF0aW9u
+        IjowLjMyOCwidGVtcGVyYXR1cmUiOjI1LjM3LCJhcHBhcmVudFRlbXBlcmF0
+        dXJlIjoxNi4zLCJkZXdQb2ludCI6MjQuMDUsImh1bWlkaXR5IjowLjk1LCJ3
+        aW5kU3BlZWQiOjguNywid2luZEJlYXJpbmciOjE0MCwidmlzaWJpbGl0eSI6
+        NS43NSwiY2xvdWRDb3ZlciI6MC45OSwicHJlc3N1cmUiOjEwMjQuMDcsIm96
+        b25lIjoyODYuNzF9LHsidGltZSI6MTQ4MTk3OTYwMCwic3VtbWFyeSI6IlNu
+        b3ciLCJpY29uIjoic25vdyIsInByZWNpcEludGVuc2l0eSI6MC4wMzc5LCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MC42OSwicHJlY2lwVHlwZSI6InNub3ciLCJw
+        cmVjaXBBY2N1bXVsYXRpb24iOjAuNDA4LCJ0ZW1wZXJhdHVyZSI6MjcuMDMs
+        ImFwcGFyZW50VGVtcGVyYXR1cmUiOjE4LjE0LCJkZXdQb2ludCI6MjUuODgs
+        Imh1bWlkaXR5IjowLjk1LCJ3aW5kU3BlZWQiOjkuMDIsIndpbmRCZWFyaW5n
+        IjoxNDAsInZpc2liaWxpdHkiOjQuNzIsImNsb3VkQ292ZXIiOjAuOTksInBy
+        ZXNzdXJlIjoxMDIzLjAxLCJvem9uZSI6Mjg0LjkyfSx7InRpbWUiOjE0ODE5
+        ODMyMDAsInN1bW1hcnkiOiJTbm93IiwiaWNvbiI6InNub3ciLCJwcmVjaXBJ
+        bnRlbnNpdHkiOjAuMDQ5OSwicHJlY2lwUHJvYmFiaWxpdHkiOjAuNzIsInBy
+        ZWNpcFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11bGF0aW9uIjowLjQ3NSwi
+        dGVtcGVyYXR1cmUiOjI4LjkzLCJhcHBhcmVudFRlbXBlcmF0dXJlIjoyMC41
+        NywiZGV3UG9pbnQiOjI3LjksImh1bWlkaXR5IjowLjk2LCJ3aW5kU3BlZWQi
+        OjguODYsIndpbmRCZWFyaW5nIjoxNDEsInZpc2liaWxpdHkiOjIuNywiY2xv
+        dWRDb3ZlciI6MSwicHJlc3N1cmUiOjEwMjEuOTgsIm96b25lIjoyODMuMDV9
+        LHsidGltZSI6MTQ4MTk4NjgwMCwic3VtbWFyeSI6IlNub3ciLCJpY29uIjoi
+        c25vdyIsInByZWNpcEludGVuc2l0eSI6MC4wNjAxLCJwcmVjaXBQcm9iYWJp
+        bGl0eSI6MC43NCwicHJlY2lwVHlwZSI6InNub3ciLCJwcmVjaXBBY2N1bXVs
+        YXRpb24iOjAuNDkzLCJ0ZW1wZXJhdHVyZSI6MzEuMDUsImFwcGFyZW50VGVt
+        cGVyYXR1cmUiOjIzLjMzLCJkZXdQb2ludCI6MzAuMTMsImh1bWlkaXR5Ijow
+        Ljk2LCJ3aW5kU3BlZWQiOjguNTgsIndpbmRCZWFyaW5nIjoxNDMsInZpc2li
+        aWxpdHkiOjEuMzgsImNsb3VkQ292ZXIiOjEsInByZXNzdXJlIjoxMDIwLjI2
+        LCJvem9uZSI6MjgxLjI5fSx7InRpbWUiOjE0ODE5OTA0MDAsInN1bW1hcnki
+        OiJTbm93IiwiaWNvbiI6InNub3ciLCJwcmVjaXBJbnRlbnNpdHkiOjAuMDY5
+        OCwicHJlY2lwUHJvYmFiaWxpdHkiOjAuNzYsInByZWNpcFR5cGUiOiJzbm93
+        IiwicHJlY2lwQWNjdW11bGF0aW9uIjowLjUzMSwidGVtcGVyYXR1cmUiOjMz
+        LjUsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI2LjcyLCJkZXdQb2ludCI6MzIu
+        NjgsImh1bWlkaXR5IjowLjk3LCJ3aW5kU3BlZWQiOjcuOTEsIndpbmRCZWFy
+        aW5nIjoxNTAsInZpc2liaWxpdHkiOjEuNTIsImNsb3VkQ292ZXIiOjEsInBy
+        ZXNzdXJlIjoxMDE3LjYzLCJvem9uZSI6Mjc5LjcxfSx7InRpbWUiOjE0ODE5
+        OTQwMDAsInN1bW1hcnkiOiJTbGVldCIsImljb24iOiJzbGVldCIsInByZWNp
+        cEludGVuc2l0eSI6MC4wNzc2LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC43Nywi
+        cHJlY2lwVHlwZSI6InNsZWV0IiwidGVtcGVyYXR1cmUiOjM2LjU0LCJhcHBh
+        cmVudFRlbXBlcmF0dXJlIjozMC45LCJkZXdQb2ludCI6MzUuODEsImh1bWlk
+        aXR5IjowLjk3LCJ3aW5kU3BlZWQiOjcuMTIsIndpbmRCZWFyaW5nIjoxNjIs
+        InZpc2liaWxpdHkiOjIuMzUsImNsb3VkQ292ZXIiOjEsInByZXNzdXJlIjox
+        MDE0LjkyLCJvem9uZSI6Mjc4LjI1fSx7InRpbWUiOjE0ODE5OTc2MDAsInN1
+        bW1hcnkiOiJTbGVldCIsImljb24iOiJzbGVldCIsInByZWNpcEludGVuc2l0
+        eSI6MC4wNzU3LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC43NywicHJlY2lwVHlw
+        ZSI6InNsZWV0IiwidGVtcGVyYXR1cmUiOjM4LjcxLCJhcHBhcmVudFRlbXBl
+        cmF0dXJlIjozMy42MSwiZGV3UG9pbnQiOjM4LjA1LCJodW1pZGl0eSI6MC45
+        Nywid2luZFNwZWVkIjo2Ljk2LCJ3aW5kQmVhcmluZyI6MTcyLCJ2aXNpYmls
+        aXR5IjozLjI3LCJjbG91ZENvdmVyIjoxLCJwcmVzc3VyZSI6MTAxMi44MSwi
+        b3pvbmUiOjI3Ni44NX1dfSwiZGFpbHkiOnsic3VtbWFyeSI6Ik1peGVkIHBy
+        ZWNpcGl0YXRpb24gb24gU2F0dXJkYXkgdGhyb3VnaCBUaHVyc2RheSwgd2l0
+        aCB0ZW1wZXJhdHVyZXMgcmlzaW5nIHRvIDU1wrBGIG9uIFN1bmRheS4iLCJp
+        Y29uIjoic25vdyIsImRhdGEiOlt7InRpbWUiOjE0ODE3NzgwMDAsInN1bW1h
+        cnkiOiJQYXJ0bHkgY2xvdWR5IGluIHRoZSBtb3JuaW5nIGFuZCBicmVlenkg
+        b3Zlcm5pZ2h0LiIsImljb24iOiJ3aW5kIiwic3VucmlzZVRpbWUiOjE0ODE4
+        MDM3MTAsInN1bnNldFRpbWUiOjE0ODE4MzY0MTAsIm1vb25QaGFzZSI6MC41
+        NywicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBJbnRlbnNpdHlNYXgiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZU1pbiI6MTUuNTQs
+        InRlbXBlcmF0dXJlTWluVGltZSI6MTQ4MTg2MDgwMCwidGVtcGVyYXR1cmVN
+        YXgiOjMwLjEsInRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MTc5MjQwMCwiYXBw
+        YXJlbnRUZW1wZXJhdHVyZU1pbiI6LTIuMzIsImFwcGFyZW50VGVtcGVyYXR1
+        cmVNaW5UaW1lIjoxNDgxODYwODAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4
+        IjoyMi45LCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MTc5MjQw
+        MCwiZGV3UG9pbnQiOjcuNzIsImh1bWlkaXR5IjowLjQ4LCJ3aW5kU3BlZWQi
+        OjEyLjM3LCJ3aW5kQmVhcmluZyI6MjYwLCJ2aXNpYmlsaXR5Ijo5Ljk5LCJj
+        bG91ZENvdmVyIjowLjM1LCJwcmVzc3VyZSI6MTAwOC4xMywib3pvbmUiOjM2
+        Ny4wOH0seyJ0aW1lIjoxNDgxODY0NDAwLCJzdW1tYXJ5IjoiTGlnaHQgc25v
+        dyBvdmVybmlnaHQuIiwiaWNvbiI6InNub3ciLCJzdW5yaXNlVGltZSI6MTQ4
+        MTg5MDE1MCwic3Vuc2V0VGltZSI6MTQ4MTkyMjgyNiwibW9vblBoYXNlIjow
+        LjYsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwSW50ZW5zaXR5TWF4Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmVNaW4iOjYuMzEs
+        InRlbXBlcmF0dXJlTWluVGltZSI6MTQ4MTg4OTYwMCwidGVtcGVyYXR1cmVN
+        YXgiOjIxLjE4LCJ0ZW1wZXJhdHVyZU1heFRpbWUiOjE0ODE5NDcyMDAsImFw
+        cGFyZW50VGVtcGVyYXR1cmVNaW4iOi0xMS4yNSwiYXBwYXJlbnRUZW1wZXJh
+        dHVyZU1pblRpbWUiOjE0ODE4ODk2MDAsImFwcGFyZW50VGVtcGVyYXR1cmVN
+        YXgiOjEyLjI0LCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MTk0
+        NzIwMCwiZGV3UG9pbnQiOi0wLjUxLCJodW1pZGl0eSI6MC41Mywid2luZFNw
+        ZWVkIjoxMC4zOSwid2luZEJlYXJpbmciOjI2NSwidmlzaWJpbGl0eSI6OS45
+        NCwiY2xvdWRDb3ZlciI6MC4xMSwicHJlc3N1cmUiOjEwMjcuMDksIm96b25l
+        IjozNDUuMDN9LHsidGltZSI6MTQ4MTk1MDgwMCwic3VtbWFyeSI6Ik1peGVk
+        IHByZWNpcGl0YXRpb24gKDLigJM0IGluLiBvZiBzbm93KSB1bnRpbCBhZnRl
+        cm5vb24sIHN0YXJ0aW5nIGFnYWluIGluIHRoZSBldmVuaW5nLiIsImljb24i
+        OiJzbm93Iiwic3VucmlzZVRpbWUiOjE0ODE5NzY1ODksInN1bnNldFRpbWUi
+        OjE0ODIwMDkyNDQsIm1vb25QaGFzZSI6MC42NCwicHJlY2lwSW50ZW5zaXR5
+        IjowLjAyNDIsInByZWNpcEludGVuc2l0eU1heCI6MC4wNzc2LCJwcmVjaXBJ
+        bnRlbnNpdHlNYXhUaW1lIjoxNDgxOTk0MDAwLCJwcmVjaXBQcm9iYWJpbGl0
+        eSI6MC43NywicHJlY2lwVHlwZSI6InNub3ciLCJwcmVjaXBBY2N1bXVsYXRp
+        b24iOjUuMTUsInRlbXBlcmF0dXJlTWluIjoxNy4xNSwidGVtcGVyYXR1cmVN
+        aW5UaW1lIjoxNDgxOTUwODAwLCJ0ZW1wZXJhdHVyZU1heCI6NDIuODgsInRl
+        bXBlcmF0dXJlTWF4VGltZSI6MTQ4MjAzMzYwMCwiYXBwYXJlbnRUZW1wZXJh
+        dHVyZU1pbiI6Ny4zMSwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRpbWUiOjE0
+        ODE5NTA4MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjM2LjksImFwcGFy
+        ZW50VGVtcGVyYXR1cmVNYXhUaW1lIjoxNDgyMDMzNjAwLCJkZXdQb2ludCI6
+        MzAuMTMsImh1bWlkaXR5IjowLjkzLCJ3aW5kU3BlZWQiOjcuNywid2luZEJl
+        YXJpbmciOjE3NiwidmlzaWJpbGl0eSI6My4xNiwiY2xvdWRDb3ZlciI6MC45
+        NywicHJlc3N1cmUiOjEwMTguMiwib3pvbmUiOjI4Mi41NH0seyJ0aW1lIjox
+        NDgyMDM3MjAwLCJzdW1tYXJ5IjoiTWl4ZWQgcHJlY2lwaXRhdGlvbiB0aHJv
+        dWdob3V0IHRoZSBkYXkuIiwiaWNvbiI6InJhaW4iLCJzdW5yaXNlVGltZSI6
+        MTQ4MjA2MzAyNSwic3Vuc2V0VGltZSI6MTQ4MjA5NTY2NSwibW9vblBoYXNl
+        IjowLjY3LCJwcmVjaXBJbnRlbnNpdHkiOjAuMDE0NSwicHJlY2lwSW50ZW5z
+        aXR5TWF4IjowLjAzMzEsInByZWNpcEludGVuc2l0eU1heFRpbWUiOjE0ODIw
+        NzMyMDAsInByZWNpcFByb2JhYmlsaXR5IjowLjY3LCJwcmVjaXBUeXBlIjoi
+        cmFpbiIsInRlbXBlcmF0dXJlTWluIjoyOCwidGVtcGVyYXR1cmVNaW5UaW1l
+        IjoxNDgyMTIwMDAwLCJ0ZW1wZXJhdHVyZU1heCI6NTUuMzIsInRlbXBlcmF0
+        dXJlTWF4VGltZSI6MTQ4MjA3MzIwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1p
+        biI6MTguNCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRpbWUiOjE0ODIxMjAw
+        MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjU1LjMyLCJhcHBhcmVudFRl
+        bXBlcmF0dXJlTWF4VGltZSI6MTQ4MjA3MzIwMCwiZGV3UG9pbnQiOjQyLjU5
+        LCJodW1pZGl0eSI6MC45LCJ3aW5kU3BlZWQiOjkuMjEsIndpbmRCZWFyaW5n
+        IjoyMjIsInZpc2liaWxpdHkiOjIuNjQsImNsb3VkQ292ZXIiOjAuOTksInBy
+        ZXNzdXJlIjoxMDExLjY4LCJvem9uZSI6Mjg2LjQ1fSx7InRpbWUiOjE0ODIx
+        MjM2MDAsInN1bW1hcnkiOiJMaWdodCBzbm93IGluIHRoZSBtb3JuaW5nLiIs
+        Imljb24iOiJzbm93Iiwic3VucmlzZVRpbWUiOjE0ODIxNDk0NTksInN1bnNl
+        dFRpbWUiOjE0ODIxODIwODgsIm1vb25QaGFzZSI6MC43LCJwcmVjaXBJbnRl
+        bnNpdHkiOjAuMDAxNSwicHJlY2lwSW50ZW5zaXR5TWF4IjowLjAwNjIsInBy
+        ZWNpcEludGVuc2l0eU1heFRpbWUiOjE0ODIxMjM2MDAsInByZWNpcFByb2Jh
+        YmlsaXR5IjowLjI4LCJwcmVjaXBUeXBlIjoic25vdyIsInByZWNpcEFjY3Vt
+        dWxhdGlvbiI6MC40NjcsInRlbXBlcmF0dXJlTWluIjoyMC43LCJ0ZW1wZXJh
+        dHVyZU1pblRpbWUiOjE0ODIxNDUyMDAsInRlbXBlcmF0dXJlTWF4IjozMC41
+        OCwidGVtcGVyYXR1cmVNYXhUaW1lIjoxNDgyMTc0MDAwLCJhcHBhcmVudFRl
+        bXBlcmF0dXJlTWluIjoxMC4wMywiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRp
+        bWUiOjE0ODIxNDUyMDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjI0LjEx
+        LCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MjE3NDAwMCwiZGV3
+        UG9pbnQiOjcuNiwiaHVtaWRpdHkiOjAuNDcsIndpbmRTcGVlZCI6Ny4xMSwi
+        d2luZEJlYXJpbmciOjMzNSwiY2xvdWRDb3ZlciI6MC40OSwicHJlc3N1cmUi
+        OjEwMzUuNjksIm96b25lIjozMTQuMzl9LHsidGltZSI6MTQ4MjIxMDAwMCwi
+        c3VtbWFyeSI6IlBhcnRseSBjbG91ZHkgb3Zlcm5pZ2h0LiIsImljb24iOiJw
+        YXJ0bHktY2xvdWR5LW5pZ2h0Iiwic3VucmlzZVRpbWUiOjE0ODIyMzU4OTEs
+        InN1bnNldFRpbWUiOjE0ODIyNjg1MTQsIm1vb25QaGFzZSI6MC43NCwicHJl
+        Y2lwSW50ZW5zaXR5IjowLCJwcmVjaXBJbnRlbnNpdHlNYXgiOjAsInByZWNp
+        cFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZU1pbiI6MTguOTMsInRlbXBl
+        cmF0dXJlTWluVGltZSI6MTQ4MjIzMTYwMCwidGVtcGVyYXR1cmVNYXgiOjM2
+        Ljg0LCJ0ZW1wZXJhdHVyZU1heFRpbWUiOjE0ODIyNTY4MDAsImFwcGFyZW50
+        VGVtcGVyYXR1cmVNaW4iOjE1LjE1LCJhcHBhcmVudFRlbXBlcmF0dXJlTWlu
+        VGltZSI6MTQ4MjIzNTIwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1heCI6MzEu
+        OTQsImFwcGFyZW50VGVtcGVyYXR1cmVNYXhUaW1lIjoxNDgyMjU2ODAwLCJk
+        ZXdQb2ludCI6MTIuMTcsImh1bWlkaXR5IjowLjUxLCJ3aW5kU3BlZWQiOjQu
+        MjUsIndpbmRCZWFyaW5nIjoyMzUsImNsb3VkQ292ZXIiOjAuMTEsInByZXNz
+        dXJlIjoxMDMzLjAyLCJvem9uZSI6MzI5LjI5fSx7InRpbWUiOjE0ODIyOTY0
+        MDAsInN1bW1hcnkiOiJGbHVycmllcyBpbiB0aGUgbW9ybmluZy4iLCJpY29u
+        Ijoic25vdyIsInN1bnJpc2VUaW1lIjoxNDgyMzIyMzIxLCJzdW5zZXRUaW1l
+        IjoxNDgyMzU0OTQyLCJtb29uUGhhc2UiOjAuNzcsInByZWNpcEludGVuc2l0
+        eSI6MC4wMDExLCJwcmVjaXBJbnRlbnNpdHlNYXgiOjAuMDAxOCwicHJlY2lw
+        SW50ZW5zaXR5TWF4VGltZSI6MTQ4MjMzMjQwMCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjAuMDQsInByZWNpcFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11bGF0
+        aW9uIjowLjIyLCJ0ZW1wZXJhdHVyZU1pbiI6MjcuNzIsInRlbXBlcmF0dXJl
+        TWluVGltZSI6MTQ4MjMxODAwMCwidGVtcGVyYXR1cmVNYXgiOjQwLjEsInRl
+        bXBlcmF0dXJlTWF4VGltZSI6MTQ4MjM0MzIwMCwiYXBwYXJlbnRUZW1wZXJh
+        dHVyZU1pbiI6MTkuMjIsImFwcGFyZW50VGVtcGVyYXR1cmVNaW5UaW1lIjox
+        NDgyMzE0NDAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4IjozNC4zNCwiYXBw
+        YXJlbnRUZW1wZXJhdHVyZU1heFRpbWUiOjE0ODIzNDMyMDAsImRld1BvaW50
+        IjoyMy4wNSwiaHVtaWRpdHkiOjAuNjYsIndpbmRTcGVlZCI6Ny41Miwid2lu
+        ZEJlYXJpbmciOjI0OSwiY2xvdWRDb3ZlciI6MC42OCwicHJlc3N1cmUiOjEw
+        MjIuNTEsIm96b25lIjozMTUuOTR9LHsidGltZSI6MTQ4MjM4MjgwMCwic3Vt
+        bWFyeSI6IkxpZ2h0IHJhaW4gb3Zlcm5pZ2h0LiIsImljb24iOiJyYWluIiwi
+        c3VucmlzZVRpbWUiOjE0ODI0MDg3NDksInN1bnNldFRpbWUiOjE0ODI0NDEz
+        NzIsIm1vb25QaGFzZSI6MC44LCJwcmVjaXBJbnRlbnNpdHkiOjAuMDAxNywi
+        cHJlY2lwSW50ZW5zaXR5TWF4IjowLjAwNzYsInByZWNpcEludGVuc2l0eU1h
+        eFRpbWUiOjE0ODI0NjU2MDAsInByZWNpcFByb2JhYmlsaXR5IjowLjM4LCJw
+        cmVjaXBUeXBlIjoicmFpbiIsInRlbXBlcmF0dXJlTWluIjoyNy4zNiwidGVt
+        cGVyYXR1cmVNaW5UaW1lIjoxNDgyNDA0NDAwLCJ0ZW1wZXJhdHVyZU1heCI6
+        NDAuNDgsInRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MjQ1NDgwMCwiYXBwYXJl
+        bnRUZW1wZXJhdHVyZU1pbiI6MjIuNTksImFwcGFyZW50VGVtcGVyYXR1cmVN
+        aW5UaW1lIjoxNDgyNDAwODAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4Ijoz
+        NS4yNSwiYXBwYXJlbnRUZW1wZXJhdHVyZU1heFRpbWUiOjE0ODI0NTQ4MDAs
+        ImRld1BvaW50IjozMC42NCwiaHVtaWRpdHkiOjAuODQsIndpbmRTcGVlZCI6
+        NS4wNSwid2luZEJlYXJpbmciOjIxNywiY2xvdWRDb3ZlciI6MC44MSwicHJl
+        c3N1cmUiOjEwMjMuNjMsIm96b25lIjoyODQuMDR9XX0sImFsZXJ0cyI6W3si
+        dGl0bGUiOiJXaW5kIENoaWxsIEFkdmlzb3J5IGZvciBFc3NleCwgTUEiLCJ0
+        aW1lIjoxNDgxODE1MTQwLCJleHBpcmVzIjoxNDgxODk2ODAwLCJkZXNjcmlw
+        dGlvbiI6Ii4uLldJTkQgQ0hJTEwgQURWSVNPUlkgUkVNQUlOUyBJTiBFRkZF
+        Q1QgRlJPTSBNSUROSUdIVCBUT05JR0hUIFRPXG45IEFNIEVTVCBGUklEQVku
+        Li5cbiogTE9DQVRJT05TLi4uTk9SVEggQ0VOVFJBTCBBTkQgTk9SVEhFQVNU
+        IENPTk5FQ1RJQ1VULi4uTk9SVEhFUk5cblJIT0RFIElTTEFORC4uLklOVEVS
+        SU9SIFNPVVRIRUFTVCBNQVNTQUNIVVNFVFRTLi4uTUVUUk8gQk9TVE9OXG5B
+        TkQgVEhFIE5PUlRIIFNIT1JFLlxuKiBIQVpBUkQgVFlQRVMuLi5EQU5HRVJP
+        VVNMWSBDT0xEIFdJTkQgQ0hJTExTLlxuKiBXSU5EIENISUxMIFJFQURJTkdT
+        Li4uQVMgTE9XIEFTIDE3IEJFTE9XLlxuKiBUSU1JTkcuLi5MQVRFIFRPTklH
+        SFQgQU5EIEVBUkxZIEZSSURBWSBNT1JOSU5HLlxuKiBJTVBBQ1RTLi4uRlJP
+        U1RCSVRFIENBTiBPQ0NVUiBJTiBBUyBMSVRUTEUgQVMgMzAgTUlOVVRFUyBJ
+        RlxuWU9VIEFSRSBOT1QgUFJPVEVDVEVEIEZST00gVEhFIENPTEQuXG4qIFdJ
+        TkRTLi4uTk9SVEhXRVNUIDE1IFRPIDI1IE1QSCBXSVRIIEdVU1RTIEJFVFdF
+        RU4gNTAgQU5EIDYwIE1QSC5cbiIsInVyaSI6Imh0dHBzOi8vYWxlcnRzLndl
+        YXRoZXIuZ292L2NhcC93d2FjYXBnZXQucGhwP3g9TUExMjU2MjYxMTNGMUMu
+        V2luZENoaWxsQWR2aXNvcnkuMTI1NjI2MjA1MkUwTUEuQk9YV1NXQk9YLjkx
+        YmM3YWYxNjkyMWU0ZWVkY2VkMzJkYmU0YzM3MjRiIn0seyJ0aXRsZSI6Ildp
+        bmQgQ2hpbGwgQWR2aXNvcnkgZm9yIE1pZGRsZXNleCwgTUEiLCJ0aW1lIjox
+        NDgxODE1MTQwLCJleHBpcmVzIjoxNDgxOTA0MDAwLCJkZXNjcmlwdGlvbiI6
+        Ii4uLldJTkQgQ0hJTEwgQURWSVNPUlkgUkVNQUlOUyBJTiBFRkZFQ1QgRlJP
+        TSAxMCBQTSBUSElTIEVWRU5JTkdcblRPIDExIEFNIEVTVCBGUklEQVkuLi5c
+        biogTE9DQVRJT05TLi4uV0VTVEVSTi4uLkNFTlRSQUwgQU5EIElOVEVSSU9S
+        IE5PUlRIRUFTVFxuTUFTU0FDSFVTRVRUUy5cbiogSEFaQVJEIFRZUEVTLi4u
+        REFOR0VST1VTTFkgQ09MRCBXSU5EIENISUxMUy5cbiogV0lORCBDSElMTCBS
+        RUFESU5HUy4uLkFTIExPVyBBUyAyNCBCRUxPVy5cbiogVElNSU5HLi4uTEFU
+        RSBUT05JR0hUIElOVE8gRUFSTFkgRlJJREFZIE1PUk5JTkcuXG4qIElNUEFD
+        VFMuLi5GUk9TVEJJVEUgQ0FOIE9DQ1VSIElOIEFTIExJVFRMRSBBUyAzMCBN
+        SU5VVEVTIElGXG5ZT1UgQVJFIE5PVCBQUk9URUNURUQgRlJPTSBUSEUgQ09M
+        RC5cbiogV0lORFMuLi5OT1JUSFdFU1QgMTUgVE8gMjUgTVBIIFdJVEggR1VT
+        VFMgQkVUV0VFTiA1MCBBTkQgNjAgTVBILlxuIiwidXJpIjoiaHR0cHM6Ly9h
+        bGVydHMud2VhdGhlci5nb3YvY2FwL3d3YWNhcGdldC5waHA/eD1NQTEyNTYy
+        NjExM0YxQy5XaW5kQ2hpbGxBZHZpc29yeS4xMjU2MjYyMEExMDBNQS5CT1hX
+        U1dCT1guNGM0MWI4N2EzNTNlNGU5NTM2ZWIzYzhiYzVmYjdlZjIifSx7InRp
+        dGxlIjoiSGlnaCBXaW5kIFdhcm5pbmcgZm9yIEVzc2V4LCBNQSIsInRpbWUi
+        OjE0ODE4MTQ5MDAsImV4cGlyZXMiOjE0ODE4Nzg4MDAsImRlc2NyaXB0aW9u
+        IjoiLi4uSElHSCBXSU5EIFdBUk5JTkcgUkVNQUlOUyBJTiBFRkZFQ1QgRlJP
+        TSA1IFBNIFRISVMgQUZURVJOT09OXG5UTyA0IEFNIEVTVCBGUklEQVkuLi5c
+        biogTE9DQVRJT04uLi5DT05ORUNUSUNVVC4uLk1BU1NBQ0hVU0VUVFMgQU5E
+        IFJIT0RFIElTTEFORC5cbiogV0lORFMuLi5XRVNUIDE1IFRPIDI1IE1QSCBX
+        SVRIIEEgRkVXIEhPVVJTIE9GIEdVU1RTIEJFVFdFRU4gNTBcbkFORCA2MCBN
+        UEguIElTT0xBVEVEIDY1IE1QSCBHVVNUUyBBUkUgUE9TU0lCTEUgQUNST1NT
+        IFRIRSBISUdIRVJcblRFUlJBSU4uXG4qIFRJTUlORy4uLlNUUk9OR0VTVCBX
+        SU5EUyBBUkUgRVhQRUNURUQgQkVUV0VFTiA4IFBNIFRISVMgRVZFTklORyBB
+        TkRcbjQgQU0gRlJJREFZLlxuKiBJTVBBQ1RTLi4uV0lORFMgVEhJUyBTVFJP
+        TkcgV0lMTCBSRVNVTFQgSU4gVFJFRSBEQU1BR0UgSU5DTFVESU5HXG5TT01F
+        IFdFQUtFTkVEIFRSRUVTIEJFSU5HIEtOT0NLRUQgRE9XTi4gU0NBVFRFUkVE
+        IFBPV0VSIE9VVEFHRVNcbkFSRSBQT1NTSUJMRSBBTkQgVEhJUyBJUyBQQVJU
+        SUNVTEFSTFkgQ09OQ0VSTklORyBHSVZFTiBUSEVcbkJJVFRFUkxZIENPTEQg
+        V0lORCBDSElMTFMgRVhQRUNURUQgT1ZFUk5JR0hULiBEUklWSU5HIFdJTEwg
+        QkVcbkRJRkZJQ1VMVCBJTiBPUEVOIEFSRUFTIEFORCBPTiBCUklER0VTLlxu
+        IiwidXJpIjoiaHR0cHM6Ly9hbGVydHMud2VhdGhlci5nb3YvY2FwL3d3YWNh
+        cGdldC5waHA/eD1NQTEyNTYyNjExM0Q4Qy5IaWdoV2luZFdhcm5pbmcuMTI1
+        NjI2MUY4RjkwTUEuQk9YTlBXQk9YLjFlMzhiYTEyNzljMjE4NzVmN2MzM2M2
+        ZjEwZmEwZmYxIn1dLCJmbGFncyI6eyJzb3VyY2VzIjpbImRhcmtza3kiLCJs
+        YW1wIiwiZ2ZzIiwiY21jIiwibmFtIiwicmFwIiwicnRtYSIsInNyZWYiLCJm
+        bm1vYyIsImlzZCIsIm53c3BhIiwibWFkaXMiLCJuZWFyZXN0LXByZWNpcCJd
+        LCJkYXJrc2t5LXN0YXRpb25zIjpbIktCT1giXSwibGFtcC1zdGF0aW9ucyI6
+        WyJLQVNIIiwiS0JFRCIsIktCT1MiLCJLQlZZIiwiS0ZJVCIsIktMV00iLCJL
+        TUhUIiwiS01RRSIsIktPV0QiXSwiaXNkLXN0YXRpb25zIjpbIjcyNTA4OC01
+        NDczMyIsIjcyNTA4OC05OTk5OSIsIjcyNTA5MC0xNDczOSIsIjk5NDk3MS05
+        OTk5OSIsIjk5OTk5OS05NDcwMSJdLCJtYWRpcy1zdGF0aW9ucyI6WyJBTjI3
+        OCIsIkFQNTY0IiwiQVIxMDAiLCJBUjU3MiIsIkFWMTU0IiwiQzAyMTAiLCJD
+        OTY4MyIsIkU0MzMxIiwiRTQ5NjAiLCJFNTM1MSIsIkU1NjUwIiwiRTY0ODAi
+        LCJFODUyOCIsIkU5NTc4IiwiRTk5OTEiLCJLQk9TIl0sInVuaXRzIjoidXMi
+        fX0=
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 18:09:32 GMT
+- request:
+    method: get
+    uri: https://api.seatgeek.com/2/events?client_id=NjQyNzE0M3wxNDgxNzUyNjQx&venue.city=Boston
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.seatgeek.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 15 Dec 2016 18:34:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Etag:
+      - '"3688a1ea7b1e3f98c711a94fee03bd5d80e34c7a"'
+      Cache-Control:
+      - max-age=1800
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Varnish:
+      - '1973125122'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"per_page":10,"total":1191,"page":1,"took":2,"geolocation":null},"in_hand":{},"events":[{"links":[],"id":3623154,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Coco
+        Jones","announce_date":"2016-11-20T00:00:00","score":0.520313,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T03:30:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":true,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":null,"primary":true,"colors":null,"images":{},"has_upcoming_events":true,"id":36008,"genres":[{"id":452,"slug":"pop","name":"Pop","primary":false},{"id":456,"slug":"rock","name":"Rock","primary":true}],"stats":{"event_count":5},"image_license":null,"score":0.439819,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Coco
+        Jones","home_venue_id":null,"slug":"coco-jones","divisions":null,"name":"Coco
+        Jones","url":"https:\/\/seatgeek.com\/coco-jones-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/coco-jones-tickets\/boston-massachusetts-house-of-blues-boston-2016-12-15-3-30-am\/concert\/3623154","created_at":"2016-11-20T00:00:00","venue":{"city":"Boston","name":"House
+        of Blues Boston","extended_address":"Boston, MA 02215","url":"https:\/\/seatgeek.com\/venues\/house-of-blues-boston\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"house-of-blues-boston","state":"MA","score":0.636447,"postal_code":"02215","location":{"lat":42.2913,"lon":-71.0889},"address":"15
+        Lansdowne St.","timezone":"America\/New_York","id":517},"short_title":"Coco
+        Jones","datetime_utc":"2016-12-15T08:30:00","datetime_tbd":false},{"links":[],"id":3517154,"stats":{"listing_count":1,"average_price":39.0,"lowest_price_good_deals":null,"lowest_price":39.0,"highest_price":39.0},"title":"Street
+        Dogs with Darkbuster","announce_date":"2016-09-13T00:00:00","score":0.411762,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T18:00:00","visible_until_utc":"2016-12-16T03:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/street-dogs-9e4b46\/1707\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/street-dogs-9e4b46\/1707\/huge.jpg"},"has_upcoming_events":true,"id":1707,"genres":[{"id":452,"slug":"pop","name":"Pop","primary":false},{"id":456,"slug":"rock","name":"Rock","primary":true},{"id":461,"slug":"punk","name":"Punk","primary":false}],"stats":{"event_count":4},"image_license":null,"score":0.348906,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Street
+        Dogs","home_venue_id":null,"slug":"street-dogs","divisions":null,"name":"Street
+        Dogs","url":"https:\/\/seatgeek.com\/street-dogs-tickets","image_attribution":null},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":192101,"genres":[{"id":456,"slug":"rock","name":"Rock","primary":false},{"id":457,"slug":"alternative","name":"Alternative","primary":true},{"id":461,"slug":"punk","name":"Punk","primary":false}],"stats":{"event_count":3},"image_license":null,"score":0.48973,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Darkbuster","home_venue_id":null,"slug":"darkbuster","divisions":null,"name":"Darkbuster","url":"https:\/\/seatgeek.com\/darkbuster-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/street-dogs-with-darkbuster-tickets\/boston-massachusetts-brighton-music-hall-2016-12-15-6-pm\/concert\/3517154","created_at":"2016-09-13T00:00:00","venue":{"city":"Boston","name":"Brighton
+        Music Hall","extended_address":"Boston, MA 02134","url":"https:\/\/seatgeek.com\/venues\/brighton-music-hall\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"brighton-music-hall","state":"MA","score":0.481129,"postal_code":"02134","location":{"lat":42.3529,"lon":-71.1326},"address":"158
+        Brighton Avenue","timezone":"America\/New_York","id":1446},"short_title":"Street
+        Dogs with Darkbuster","datetime_utc":"2016-12-15T23:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3375115,"stats":{"listing_count":494,"average_price":102.5,"lowest_price_good_deals":45.0,"lowest_price":45.0,"highest_price":425.0},"title":"Anaheim
+        Ducks at Boston Bruins","announce_date":"2016-06-23T00:00:00","score":0.766178,"date_tbd":false,"type":"nhl","datetime_local":"2016-12-15T19:00:00","visible_until_utc":"2016-12-16T04:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1040000,"name":"hockey"},{"parent_id":1040000,"id":1040100,"name":"nhl"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/boston-bruins-2519e9\/2123\/huge.jpg","primary":true,"colors":{"all":["#000000","#FFC422"],"iconic":"#FFC422","primary":["#000000","#FFC422"]},"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/boston-bruins-2519e9\/2123\/huge.jpg"},"has_upcoming_events":true,"id":2123,"stats":{"event_count":51},"image_license":null,"score":0.77019,"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1040000,"name":"hockey"},{"parent_id":1040000,"id":1040100,"name":"nhl"}],"type":"nhl","short_name":"Bruins","home_venue_id":1544,"slug":"boston-bruins","divisions":[{"display_name":"Eastern
+        Conference","short_name":null,"division_level":1,"display_type":"Conference","taxonomy_id":1040100,"slug":null},{"display_name":"Eastern
+        - Atlantic","short_name":"Atlantic","division_level":2,"display_type":"Division","taxonomy_id":1040100,"slug":"eastern-atlantic"}],"home_team":true,"name":"Boston
+        Bruins","url":"https:\/\/seatgeek.com\/boston-bruins-tickets","image_attribution":"https:\/\/www.flickr.com\/photos\/77297539@N06\/14177423467\/in\/photolist-nAP14D-7jh1hR-nRh6yY-nAQLaH-nTeTdL-9UQ2PU-nT2tZT-nAQJNz-nAQKaB-pRMa9-nAPV48-9UMc8t-pRMaC-nAQART-9UMeJM-9UQ78S-9UMbBZ-9UPPDJ-5w63XD-9UMfvt-9ULZna-9UQ4LL-9UPZwS-4CPWJH-4vhjiR-9UQmw5-9UMuW6-"},{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/anaheim-ducks-4b2988\/2143\/huge.jpg","colors":{"all":["#000000","#91764B","#EF5225"],"iconic":"#91764B","primary":["#000000","#91764B"]},"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/anaheim-ducks-4b2988\/2143\/huge.jpg"},"has_upcoming_events":true,"id":2143,"away_team":true,"stats":{"event_count":52},"image_license":null,"score":0.681326,"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1040000,"name":"hockey"},{"parent_id":1040000,"id":1040100,"name":"nhl"}],"type":"nhl","short_name":"Ducks","home_venue_id":133,"slug":"anaheim-ducks","divisions":[{"display_name":"Western
+        Conference","short_name":null,"division_level":1,"display_type":"Conference","taxonomy_id":1040100,"slug":null},{"display_name":"Western
+        - Pacific","short_name":"Pacific","division_level":2,"display_type":"Division","taxonomy_id":1040100,"slug":"western-pacific"}],"name":"Anaheim
+        Ducks","url":"https:\/\/seatgeek.com\/anaheim-ducks-tickets","image_attribution":"https:\/\/en.wikipedia.org\/wiki\/Honda_Center#\/media\/File:Honda-pano.jpg"}],"url":"https:\/\/seatgeek.com\/ducks-at-bruins-tickets\/12-15-2016-boston-massachusetts-td-garden\/nhl\/3375115","created_at":"2016-06-23T00:00:00","venue":{"city":"Boston","name":"TD
+        Garden","extended_address":"Boston, MA 02114","url":"https:\/\/seatgeek.com\/venues\/td-garden\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"td-garden","state":"MA","score":0.853082,"postal_code":"02114","location":{"lat":42.3653,"lon":-71.0618},"address":"100
+        Legends Way","timezone":"America\/New_York","id":1544},"short_title":"Ducks
+        at Bruins","datetime_utc":"2016-12-16T00:00:00","datetime_tbd":false},{"links":[],"id":3424888,"stats":{"listing_count":62,"average_price":88.0,"lowest_price_good_deals":83.0,"lowest_price":83.0,"highest_price":867.0},"title":"The
+        Nutcracker - Boston","announce_date":"2016-07-16T00:00:00","score":0.560085,"date_tbd":false,"type":"dance_performance_tour","datetime_local":"2016-12-15T19:30:00","visible_until_utc":"2016-12-16T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/the-nutcracker-87d3ec\/7746\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/the-nutcracker-87d3ec\/7746\/huge.jpg"},"has_upcoming_events":true,"id":7746,"stats":{"event_count":844},"image_license":null,"score":0.465655,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"type":"theater_dance_performance_tour","short_name":"The
+        Nutcracker","home_venue_id":null,"slug":"the-nutcracker","divisions":null,"name":"The
+        Nutcracker","url":"https:\/\/seatgeek.com\/the-nutcracker-tickets","image_attribution":null},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":337886,"stats":{"event_count":261},"image_license":null,"score":0.504446,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"type":"theater_family","short_name":"Nutcracker","home_venue_id":null,"slug":"nutcracker-1","divisions":null,"name":"Nutcracker","url":"https:\/\/seatgeek.com\/nutcracker-1-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/the-nutcracker-boston-tickets\/dance\/2016-12-15-7-30-pm\/3424888","created_at":"2016-07-16T00:00:00","venue":{"city":"Boston","name":"Boston
+        Opera House","extended_address":"Boston, MA 02111","url":"https:\/\/seatgeek.com\/venues\/boston-opera-house\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-opera-house","state":"MA","score":0.620406,"postal_code":"02111","location":{"lat":42.3586,"lon":-71.0567},"address":"539
+        Washington Street","timezone":"America\/New_York","id":2501},"short_title":"The
+        Nutcracker - Boston","datetime_utc":"2016-12-16T00:30:00","datetime_tbd":false},{"links":[],"id":3424667,"stats":{"listing_count":24,"average_price":105.0,"lowest_price_good_deals":84.0,"lowest_price":84.0,"highest_price":144.0},"title":"Blue
+        Man Group - Boston","announce_date":"2016-07-16T00:00:00","score":0.499393,"date_tbd":false,"type":"broadway_tickets_national","datetime_local":"2016-12-15T19:30:00","visible_until_utc":"2016-12-16T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/blue-man-group-fee240\/5194\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/blue-man-group-fee240\/5194\/huge.jpg"},"has_upcoming_events":true,"id":5194,"stats":{"event_count":835},"image_license":null,"score":0.395813,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"type":"theater_broadway_national_tours","short_name":"Blue
+        Man Group","home_venue_id":null,"slug":"blue-man-group","divisions":null,"name":"Blue
+        Man Group","url":"https:\/\/seatgeek.com\/blue-man-group-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/blue-man-group-boston-tickets\/charles-playhouse-2016-12-15-7-30-pm\/broadway\/3424667","created_at":"2016-07-16T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse","extended_address":"Boston, MA 02116","url":"https:\/\/seatgeek.com\/venues\/charles-playhouse\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse","state":"MA","score":0.424178,"postal_code":"02116","location":{"lat":42.3503,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America\/New_York","id":3188},"short_title":"Blue
+        Man Group - Boston","datetime_utc":"2016-12-16T00:30:00","datetime_tbd":false},{"links":[],"id":3320361,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Nate
+        Bargatze","announce_date":"2016-05-23T00:00:00","score":0.449825,"date_tbd":false,"type":"comedy","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3040000,"name":"comedy"}],"performers":[{"image":null,"primary":true,"colors":null,"images":{},"has_upcoming_events":true,"id":20947,"stats":{"event_count":12},"image_license":null,"score":0.461686,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Nate
+        Bargatze","home_venue_id":null,"slug":"nate-bargatze","divisions":null,"name":"Nate
+        Bargatze","url":"https:\/\/seatgeek.com\/nate-bargatze-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/nate-bargatze-tickets\/comedy\/2016-12-15-8-pm\/3320361","created_at":"2016-05-23T00:00:00","venue":{"city":"Boston","name":"Laugh
+        Boston","extended_address":"Boston, MA 02210","url":"https:\/\/seatgeek.com\/venues\/laugh-boston\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"laugh-boston","state":"MA","score":0.329042,"postal_code":"02210","location":{"lat":42.35,"lon":-71.04},"address":"425
+        Summer St","timezone":"America\/New_York","id":57227},"short_title":"Nate
+        Bargatze","datetime_utc":"2016-12-16T01:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3630493,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Shear
+        Madness - Boston","announce_date":"2016-11-24T00:00:00","score":0.321793,"date_tbd":false,"type":"broadway_tickets_national","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/shear-madness-2612d9\/11748\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/shear-madness-2612d9\/11748\/huge.jpg"},"has_upcoming_events":true,"id":11748,"stats":{"event_count":247},"image_license":null,"score":0.343276,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"type":"theater_broadway_national_tours","short_name":"Shear
+        Madness","home_venue_id":null,"slug":"shear-madness","divisions":null,"name":"Shear
+        Madness","url":"https:\/\/seatgeek.com\/shear-madness-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/shear-madness-boston-tickets\/charles-playhouse-second-stage-2016-12-15-8-pm\/broadway\/3630493","created_at":"2016-11-24T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse Second Stage","extended_address":"Boston, MA 02116","url":"https:\/\/seatgeek.com\/venues\/charles-playhouse-second-stage\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse-second-stage","state":"MA","score":0.0,"postal_code":"02116","location":{"lat":42.35,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America\/New_York","id":51387},"short_title":"Shear
+        Madness - Boston","datetime_utc":"2016-12-16T01:00:00","datetime_tbd":false},{"links":[],"id":3610021,"stats":{"listing_count":0,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Wallace
+        Roney","announce_date":"2016-11-17T00:00:00","score":0.288037,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":null,"primary":true,"colors":null,"images":{},"has_upcoming_events":true,"id":106751,"genres":[{"id":465,"slug":"blues","name":"Blues","primary":false},{"id":468,"slug":"jazz","name":"Jazz","primary":true},{"id":473,"slug":"hard-rock","name":"Hard
+        Rock","primary":false}],"stats":{"event_count":1},"image_license":null,"score":0.0,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Wallace
+        Roney","home_venue_id":null,"slug":"wallace-roney","divisions":null,"name":"Wallace
+        Roney","url":"https:\/\/seatgeek.com\/wallace-roney-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/wallace-roney-tickets\/boston-massachusetts-scullers-jazz-club-1-2016-12-15-8-pm\/concert\/3610021","created_at":"2016-11-17T00:00:00","venue":{"city":"Boston","name":"Scullers
+        Jazz Club","extended_address":"Boston, MA 02134","url":"https:\/\/seatgeek.com\/venues\/scullers-jazz-club-1\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"scullers-jazz-club-1","state":"MA","score":0.356909,"postal_code":"02134","location":{"lat":42.3602,"lon":-71.1181},"address":"400
+        Soldiers Field Road","timezone":"America\/New_York","id":1826},"short_title":"Wallace
+        Roney","datetime_utc":"2016-12-16T01:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3610037,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Barrington
+        Levy with Mighty Mystic (18+)","announce_date":"2016-11-17T00:00:00","score":0.515292,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/barrington-levy-b11470\/7649\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/barrington-levy-b11470\/7649\/huge.jpg"},"has_upcoming_events":true,"id":7649,"genres":[{"id":457,"slug":"alternative","name":"Alternative","primary":false},{"id":469,"slug":"reggae","name":"Reggae","primary":true}],"stats":{"event_count":3},"image_license":null,"score":0.537733,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Barrington
+        Levy","home_venue_id":null,"slug":"barrington-levy","divisions":null,"name":"Barrington
+        Levy","url":"https:\/\/seatgeek.com\/barrington-levy-tickets","image_attribution":null},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":28107,"genres":[{"id":469,"slug":"reggae","name":"Reggae","primary":true}],"stats":{"event_count":1},"image_license":null,"score":0.272001,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Mighty
+        Mystic","home_venue_id":null,"slug":"mighty-mystic","divisions":null,"name":"Mighty
+        Mystic","url":"https:\/\/seatgeek.com\/mighty-mystic-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/barrington-levy-with-mighty-mystic-18-tickets\/boston-massachusetts-paradise-rock-club-2016-12-15-8-pm\/concert\/3610037","created_at":"2016-11-17T00:00:00","venue":{"city":"Boston","name":"Paradise
+        Rock Club","extended_address":"Boston, MA 02215","url":"https:\/\/seatgeek.com\/venues\/paradise-rock-club\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"paradise-rock-club","state":"MA","score":0.5253,"postal_code":"02215","location":{"lat":42.352,"lon":-71.1195},"address":"967
+        Commonwealth Avenue","timezone":"America\/New_York","id":540},"short_title":"Barrington
+        Levy with Mighty Mystic (18+)","datetime_utc":"2016-12-16T01:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3585811,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Break
+        Science with Exmag","announce_date":"2016-11-01T00:00:00","score":0.498771,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T21:00:00","visible_until_utc":"2016-12-16T06:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/break-science-95a6d6\/9472\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/break-science-95a6d6\/9472\/huge.jpg"},"has_upcoming_events":true,"id":9472,"genres":[{"id":452,"slug":"pop","name":"Pop","primary":false},{"id":491,"slug":"hip-hop","name":"Hip-Hop","primary":true},{"id":493,"slug":"rap","name":"Rap","primary":false}],"stats":{"event_count":5},"image_license":null,"score":0.484373,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Break
+        Science","home_venue_id":null,"slug":"break-science","divisions":null,"name":"Break
+        Science","url":"https:\/\/seatgeek.com\/break-science-tickets","image_attribution":"http:\/\/www.okayfuture.com\/wp-content\/uploads\/2013\/09\/magnumpr_BreakScience2013.jpeg"},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":254117,"genres":[{"id":477,"slug":"electronic","name":"Electronic","primary":true},{"id":976,"slug":"techno","name":"Techno","primary":false}],"stats":{"event_count":2},"image_license":null,"score":0.528563,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Exmag","home_venue_id":null,"slug":"exmag","divisions":null,"name":"Exmag","url":"https:\/\/seatgeek.com\/exmag-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/break-science-with-exmag-tickets\/boston-massachusetts-royale-1-2016-12-15-9-pm\/concert\/3585811","created_at":"2016-11-01T00:00:00","venue":{"city":"Boston","name":"Royale","extended_address":"Boston,
+        MA 02116","url":"https:\/\/seatgeek.com\/venues\/royale-1\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"royale-1","state":"MA","score":0.471746,"postal_code":"02116","location":{"lat":42.3581,"lon":-71.1303},"address":"279
+        Tremont Street","timezone":"America\/New_York","id":75931},"short_title":"Break
+        Science with Exmag","datetime_utc":"2016-12-16T02:00:00","general_admission":true,"datetime_tbd":false}]}'
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 18:34:06 GMT
+recorded_with: VCR 2.5.0

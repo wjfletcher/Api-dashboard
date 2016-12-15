@@ -1,0 +1,1319 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://freegeoip.net/json/127.0.0.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freegeoip.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Origin
+      X-Database-Date:
+      - Thu, 08 Dec 2016 03:29:58 GMT
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9960'
+      X-Ratelimit-Reset:
+      - '1742'
+      Date:
+      - Thu, 15 Dec 2016 18:11:52 GMT
+      Content-Length:
+      - '170'
+    body:
+      encoding: UTF-8
+      string: |
+        {"ip":"127.0.0.1","country_code":"","country_name":"","region_code":"","region_name":"","city":"","zip_code":"","time_zone":"","latitude":0,"longitude":0,"metro_code":0}
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 18:09:31 GMT
+- request:
+    method: get
+    uri: https://api.darksky.net/forecast/aadd81c49df10be00a508f9864f72470/42.4611,-71.0589
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.darksky.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.0 (Ubuntu)
+      Date:
+      - Thu, 15 Dec 2016 18:09:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Forecast-Api-Calls:
+      - '23'
+      Cache-Control:
+      - max-age=60
+      Expires:
+      - Thu, 15 Dec 2016 18:10:32 +0000
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"6ab8-Bgy4/PhZ3DF7h1a+n3qIPQ"
+      X-Response-Time:
+      - 82.632ms
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsYXRpdHVkZSI6NDIuNDYxMSwibG9uZ2l0dWRlIjotNzEuMDU4OSwidGlt
+        ZXpvbmUiOiJBbWVyaWNhL05ld19Zb3JrIiwib2Zmc2V0IjotNSwiY3VycmVu
+        dGx5Ijp7InRpbWUiOjE0ODE4MjUzNzIsInN1bW1hcnkiOiJDbGVhciIsImlj
+        b24iOiJjbGVhci1kYXkiLCJuZWFyZXN0U3Rvcm1EaXN0YW5jZSI6MTcsIm5l
+        YXJlc3RTdG9ybUJlYXJpbmciOjMxMSwicHJlY2lwSW50ZW5zaXR5IjowLCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI1LjY5LCJhcHBh
+        cmVudFRlbXBlcmF0dXJlIjoxMy4wMiwiZGV3UG9pbnQiOjIuMDIsImh1bWlk
+        aXR5IjowLjM1LCJ3aW5kU3BlZWQiOjE2LjI0LCJ3aW5kQmVhcmluZyI6Mjg1
+        LCJ2aXNpYmlsaXR5IjoxMCwiY2xvdWRDb3ZlciI6MC4xOCwicHJlc3N1cmUi
+        OjEwMDUuNDMsIm96b25lIjozNzcuMTV9LCJtaW51dGVseSI6eyJzdW1tYXJ5
+        IjoiQ2xlYXIgZm9yIHRoZSBob3VyLiIsImljb24iOiJjbGVhci1kYXkiLCJk
+        YXRhIjpbeyJ0aW1lIjoxNDgxODI1MzQwLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjU0MDAsInBy
+        ZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGlt
+        ZSI6MTQ4MTgyNTQ2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9i
+        YWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI1NTIwLCJwcmVjaXBJbnRlbnNp
+        dHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjU1
+        ODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9
+        LHsidGltZSI6MTQ4MTgyNTY0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVj
+        aXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI1NzAwLCJwcmVjaXBJ
+        bnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0
+        ODE4MjU3NjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjB9LHsidGltZSI6MTQ4MTgyNTgyMCwicHJlY2lwSW50ZW5zaXR5Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI1ODgwLCJw
+        cmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRp
+        bWUiOjE0ODE4MjU5NDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJv
+        YmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNjAwMCwicHJlY2lwSW50ZW5z
+        aXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI2
+        MDYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5Ijow
+        fSx7InRpbWUiOjE0ODE4MjYxMjAsInByZWNpcEludGVuc2l0eSI6MCwicHJl
+        Y2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNjE4MCwicHJlY2lw
+        SW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjox
+        NDgxODI2MjQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmls
+        aXR5IjowfSx7InRpbWUiOjE0ODE4MjYzMDAsInByZWNpcEludGVuc2l0eSI6
+        MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNjM2MCwi
+        cHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0
+        aW1lIjoxNDgxODI2NDIwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFBy
+        b2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjY0ODAsInByZWNpcEludGVu
+        c2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgy
+        NjU0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6
+        MH0seyJ0aW1lIjoxNDgxODI2NjAwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInBy
+        ZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjY2NjAsInByZWNp
+        cEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6
+        MTQ4MTgyNjcyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJp
+        bGl0eSI6MH0seyJ0aW1lIjoxNDgxODI2NzgwLCJwcmVjaXBJbnRlbnNpdHki
+        OjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjY4NDAs
+        InByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsi
+        dGltZSI6MTQ4MTgyNjkwMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQ
+        cm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI2OTYwLCJwcmVjaXBJbnRl
+        bnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4
+        MjcwMjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHki
+        OjB9LHsidGltZSI6MTQ4MTgyNzA4MCwicHJlY2lwSW50ZW5zaXR5IjowLCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI3MTQwLCJwcmVj
+        aXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUi
+        OjE0ODE4MjcyMDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFi
+        aWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNzI2MCwicHJlY2lwSW50ZW5zaXR5
+        IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI3MzIw
+        LCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7
+        InRpbWUiOjE0ODE4MjczODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lw
+        UHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNzQ0MCwicHJlY2lwSW50
+        ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgx
+        ODI3NTAwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5
+        IjowfSx7InRpbWUiOjE0ODE4Mjc1NjAsInByZWNpcEludGVuc2l0eSI6MCwi
+        cHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNzYyMCwicHJl
+        Y2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1l
+        IjoxNDgxODI3NjgwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2Jh
+        YmlsaXR5IjowfSx7InRpbWUiOjE0ODE4Mjc3NDAsInByZWNpcEludGVuc2l0
+        eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyNzgw
+        MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0s
+        eyJ0aW1lIjoxNDgxODI3ODYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNp
+        cFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4Mjc5MjAsInByZWNpcElu
+        dGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4
+        MTgyNzk4MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0
+        eSI6MH0seyJ0aW1lIjoxNDgxODI4MDQwLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4MjgxMDAsInBy
+        ZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGlt
+        ZSI6MTQ4MTgyODE2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9i
+        YWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI4MjIwLCJwcmVjaXBJbnRlbnNp
+        dHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0ODE4Mjgy
+        ODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9
+        LHsidGltZSI6MTQ4MTgyODM0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVj
+        aXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI4NDAwLCJwcmVjaXBJ
+        bnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE0
+        ODE4Mjg0NjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjB9LHsidGltZSI6MTQ4MTgyODUyMCwicHJlY2lwSW50ZW5zaXR5Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI4NTgwLCJw
+        cmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRp
+        bWUiOjE0ODE4Mjg2NDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJv
+        YmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyODcwMCwicHJlY2lwSW50ZW5z
+        aXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNDgxODI4
+        NzYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5Ijow
+        fSx7InRpbWUiOjE0ODE4Mjg4MjAsInByZWNpcEludGVuc2l0eSI6MCwicHJl
+        Y2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTQ4MTgyODg4MCwicHJlY2lw
+        SW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjox
+        NDgxODI4OTQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmls
+        aXR5IjowfV19LCJob3VybHkiOnsic3VtbWFyeSI6IlBhcnRseSBjbG91ZHkg
+        c3RhcnRpbmcgbGF0ZXIgdGhpcyBhZnRlcm5vb24sIGNvbnRpbnVpbmcgdW50
+        aWwgdGhpcyBldmVuaW5nLCBhbmQgYnJlZXp5IHRvbmlnaHQuIiwiaWNvbiI6
+        IndpbmQiLCJkYXRhIjpbeyJ0aW1lIjoxNDgxODI0ODAwLCJzdW1tYXJ5Ijoi
+        Q2xlYXIiLCJpY29uIjoiY2xlYXItZGF5IiwicHJlY2lwSW50ZW5zaXR5Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI1LjY0LCJh
+        cHBhcmVudFRlbXBlcmF0dXJlIjoxMy4xLCJkZXdQb2ludCI6MC4xOCwiaHVt
+        aWRpdHkiOjAuMzIsIndpbmRTcGVlZCI6MTUuODcsIndpbmRCZWFyaW5nIjoy
+        ODcsInZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjE1LCJwcmVzc3Vy
+        ZSI6MTAwNS4xNywib3pvbmUiOjM3Ny4yOH0seyJ0aW1lIjoxNDgxODI4NDAw
+        LCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xv
+        dWR5LWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjAsInRlbXBlcmF0dXJlIjoyNS45NywiYXBwYXJlbnRUZW1wZXJhdHVy
+        ZSI6MTIuNjEsImRld1BvaW50IjoxMC4wNywiaHVtaWRpdHkiOjAuNSwid2lu
+        ZFNwZWVkIjoxOC4zNywid2luZEJlYXJpbmciOjI3OCwidmlzaWJpbGl0eSI6
+        MTAsImNsb3VkQ292ZXIiOjAuMzQsInByZXNzdXJlIjoxMDA2Ljg2LCJvem9u
+        ZSI6Mzc2LjQ2fSx7InRpbWUiOjE0ODE4MzIwMDAsInN1bW1hcnkiOiJQYXJ0
+        bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5IiwicHJlY2lw
+        SW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1
+        cmUiOjI1LjQ1LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxMS43NSwiZGV3UG9p
+        bnQiOjYuOTksImh1bWlkaXR5IjowLjQ1LCJ3aW5kU3BlZWQiOjE4LjkxLCJ3
+        aW5kQmVhcmluZyI6Mjc4LCJ2aXNpYmlsaXR5IjoxMCwiY2xvdWRDb3ZlciI6
+        MC40NCwicHJlc3N1cmUiOjEwMDguNTcsIm96b25lIjozNzUuNTd9LHsidGlt
+        ZSI6MTQ4MTgzNTYwMCwic3VtbWFyeSI6IlBhcnRseSBDbG91ZHkiLCJpY29u
+        IjoicGFydGx5LWNsb3VkeS1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInBy
+        ZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MjQuMzYsImFwcGFy
+        ZW50VGVtcGVyYXR1cmUiOjEwLjg3LCJkZXdQb2ludCI6My4yNiwiaHVtaWRp
+        dHkiOjAuMzksIndpbmRTcGVlZCI6MTcuMzksIndpbmRCZWFyaW5nIjoyNzgs
+        InZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjQ0LCJwcmVzc3VyZSI6
+        MTAwOS45NSwib3pvbmUiOjM3NS4xNH0seyJ0aW1lIjoxNDgxODM5MjAwLCJz
+        dW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5
+        LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0
+        eSI6MCwidGVtcGVyYXR1cmUiOjIzLjM3LCJhcHBhcmVudFRlbXBlcmF0dXJl
+        IjoxMC40NSwiZGV3UG9pbnQiOjMuMTUsImh1bWlkaXR5IjowLjQxLCJ3aW5k
+        U3BlZWQiOjE1LjIxLCJ3aW5kQmVhcmluZyI6MjY2LCJ2aXNpYmlsaXR5Ijox
+        MCwiY2xvdWRDb3ZlciI6MC40NCwicHJlc3N1cmUiOjEwMTAuNjQsIm96b25l
+        IjozNzUuNTV9LHsidGltZSI6MTQ4MTg0MjgwMCwic3VtbWFyeSI6IkNsZWFy
+        IiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjIyLjQ1LCJhcHBh
+        cmVudFRlbXBlcmF0dXJlIjo5LjU2LCJkZXdQb2ludCI6NC4wNiwiaHVtaWRp
+        dHkiOjAuNDQsIndpbmRTcGVlZCI6MTQuNTEsIndpbmRCZWFyaW5nIjoyNDgs
+        InZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjIsInByZXNzdXJlIjox
+        MDExLjAzLCJvem9uZSI6Mzc2LjQyfSx7InRpbWUiOjE0ODE4NDY0MDAsInN1
+        bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdodCIsInByZWNpcElu
+        dGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJl
+        IjoyMS4xLCJhcHBhcmVudFRlbXBlcmF0dXJlIjo2LjksImRld1BvaW50Ijo2
+        LjUzLCJodW1pZGl0eSI6MC41Mywid2luZFNwZWVkIjoxNi43NSwid2luZEJl
+        YXJpbmciOjIzMSwidmlzaWJpbGl0eSI6MTAsImNsb3VkQ292ZXIiOjAuMTks
+        InByZXNzdXJlIjoxMDExLjM3LCJvem9uZSI6Mzc3LjE1fSx7InRpbWUiOjE0
+        ODE4NTAwMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdo
+        dCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAs
+        InRlbXBlcmF0dXJlIjoxOS42MywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6My45
+        OCwiZGV3UG9pbnQiOjcuNDUsImh1bWlkaXR5IjowLjU4LCJ3aW5kU3BlZWQi
+        OjE5LjM4LCJ3aW5kQmVhcmluZyI6MjM0LCJ2aXNpYmlsaXR5IjoxMCwiY2xv
+        dWRDb3ZlciI6MC4yLCJwcmVzc3VyZSI6MTAxMS44MSwib3pvbmUiOjM3Ny4z
+        OX0seyJ0aW1lIjoxNDgxODUzNjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29u
+        IjoiY2xlYXItbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFBy
+        b2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTguNzQsImFwcGFyZW50VGVt
+        cGVyYXR1cmUiOjIuNDEsImRld1BvaW50Ijo3LjI5LCJodW1pZGl0eSI6MC42
+        LCJ3aW5kU3BlZWQiOjIwLjUxLCJ3aW5kQmVhcmluZyI6MjQzLCJ2aXNpYmls
+        aXR5IjoxMCwiY2xvdWRDb3ZlciI6MC4yMiwicHJlc3N1cmUiOjEwMTIuMzMs
+        Im96b25lIjozNzcuNDh9LHsidGltZSI6MTQ4MTg1NzIwMCwic3VtbWFyeSI6
+        IkJyZWV6eSBhbmQgUGFydGx5IENsb3VkeSIsImljb24iOiJ3aW5kIiwicHJl
+        Y2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVy
+        YXR1cmUiOjE3LjYxLCJhcHBhcmVudFRlbXBlcmF0dXJlIjowLjQ5LCJkZXdQ
+        b2ludCI6NC4yMywiaHVtaWRpdHkiOjAuNTUsIndpbmRTcGVlZCI6MjEuNzUs
+        IndpbmRCZWFyaW5nIjoyNTgsInZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVy
+        IjowLjMyLCJwcmVzc3VyZSI6MTAxMy4xMywib3pvbmUiOjM3Ny44Mn0seyJ0
+        aW1lIjoxNDgxODYwODAwLCJzdW1tYXJ5IjoiQnJlZXp5IGFuZCBQYXJ0bHkg
+        Q2xvdWR5IiwiaWNvbiI6IndpbmQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInBy
+        ZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTUuNTQsImFwcGFy
+        ZW50VGVtcGVyYXR1cmUiOi0yLjMyLCJkZXdQb2ludCI6Mi4zNCwiaHVtaWRp
+        dHkiOjAuNTUsIndpbmRTcGVlZCI6MjEuOTYsIndpbmRCZWFyaW5nIjoyNjks
+        InZpc2liaWxpdHkiOjkuNzcsImNsb3VkQ292ZXIiOjAuMjgsInByZXNzdXJl
+        IjoxMDE0LjI4LCJvem9uZSI6Mzc5LjA4fSx7InRpbWUiOjE0ODE4NjQ0MDAs
+        InN1bW1hcnkiOiJCcmVlenkgYW5kIFBhcnRseSBDbG91ZHkiLCJpY29uIjoi
+        d2luZCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHki
+        OjAsInRlbXBlcmF0dXJlIjoxMy45OSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6
+        LTQuMTQsImRld1BvaW50IjoxLjQxLCJodW1pZGl0eSI6MC41Nywid2luZFNw
+        ZWVkIjoyMS4zNCwid2luZEJlYXJpbmciOjI3NSwidmlzaWJpbGl0eSI6OS43
+        MiwiY2xvdWRDb3ZlciI6MC4zNSwicHJlc3N1cmUiOjEwMTUuNjcsIm96b25l
+        IjozODAuNTl9LHsidGltZSI6MTQ4MTg2ODAwMCwic3VtbWFyeSI6IlBhcnRs
+        eSBDbG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1uaWdodCIsInByZWNp
+        cEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0
+        dXJlIjoxMy4xLCJhcHBhcmVudFRlbXBlcmF0dXJlIjotNC43NSwiZGV3UG9p
+        bnQiOjAuNCwiaHVtaWRpdHkiOjAuNTYsIndpbmRTcGVlZCI6MTkuODUsIndp
+        bmRCZWFyaW5nIjoyODEsInZpc2liaWxpdHkiOjkuODMsImNsb3VkQ292ZXIi
+        OjAuNDEsInByZXNzdXJlIjoxMDE3LjA4LCJvem9uZSI6MzgwLjY5fSx7InRp
+        bWUiOjE0ODE4NzE2MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVh
+        ci1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjAsInRlbXBlcmF0dXJlIjoxMi4xMSwiYXBwYXJlbnRUZW1wZXJhdHVy
+        ZSI6LTUuODEsImRld1BvaW50IjotMC40NSwiaHVtaWRpdHkiOjAuNTYsIndp
+        bmRTcGVlZCI6MTkuMjYsIndpbmRCZWFyaW5nIjoyODMsInZpc2liaWxpdHki
+        OjkuOCwiY2xvdWRDb3ZlciI6MC4yMywicHJlc3N1cmUiOjEwMTguNTcsIm96
+        b25lIjozNzguMTd9LHsidGltZSI6MTQ4MTg3NTIwMCwic3VtbWFyeSI6IkNs
+        ZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5Ijow
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjEwLjkxLCJh
+        cHBhcmVudFRlbXBlcmF0dXJlIjotNy4wMywiZGV3UG9pbnQiOi0xLjQ2LCJo
+        dW1pZGl0eSI6MC41Nywid2luZFNwZWVkIjoxOC40NSwid2luZEJlYXJpbmci
+        OjI4MSwidmlzaWJpbGl0eSI6OS44NSwiY2xvdWRDb3ZlciI6MC4xMSwicHJl
+        c3N1cmUiOjEwMTkuOTMsIm96b25lIjozNzQuMjR9LHsidGltZSI6MTQ4MTg3
+        ODgwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0Iiwi
+        cHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVt
+        cGVyYXR1cmUiOjkuNzEsImFwcGFyZW50VGVtcGVyYXR1cmUiOi04LjE2LCJk
+        ZXdQb2ludCI6LTIuMzYsImh1bWlkaXR5IjowLjU3LCJ3aW5kU3BlZWQiOjE3
+        LjQ2LCJ3aW5kQmVhcmluZyI6MjgxLCJ2aXNpYmlsaXR5Ijo5LjkyLCJjbG91
+        ZENvdmVyIjowLjAzLCJwcmVzc3VyZSI6MTAyMS4zOCwib3pvbmUiOjM3MC45
+        fSx7InRpbWUiOjE0ODE4ODI0MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24i
+        OiJjbGVhci1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJv
+        YmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjo4LjI3LCJhcHBhcmVudFRlbXBl
+        cmF0dXJlIjotOS40OCwiZGV3UG9pbnQiOi0zLjUxLCJodW1pZGl0eSI6MC41
+        OCwid2luZFNwZWVkIjoxNi4zMywid2luZEJlYXJpbmciOjI4MiwidmlzaWJp
+        bGl0eSI6OS45NiwiY2xvdWRDb3ZlciI6MC4wMSwicHJlc3N1cmUiOjEwMjMs
+        Im96b25lIjozNjkuMTF9LHsidGltZSI6MTQ4MTg4NjAwMCwic3VtbWFyeSI6
+        IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5
+        IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjYuODYs
+        ImFwcGFyZW50VGVtcGVyYXR1cmUiOi0xMS4wMSwiZGV3UG9pbnQiOi01LjA5
+        LCJodW1pZGl0eSI6MC41Nywid2luZFNwZWVkIjoxNS43NSwid2luZEJlYXJp
+        bmciOjI4NCwidmlzaWJpbGl0eSI6OS45NSwiY2xvdWRDb3ZlciI6MC4wMSwi
+        cHJlc3N1cmUiOjEwMjQuNjQsIm96b25lIjozNjcuOX0seyJ0aW1lIjoxNDgx
+        ODg5NjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItbmlnaHQi
+        LCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0
+        ZW1wZXJhdHVyZSI6Ni4zMSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6LTExLjI1
+        LCJkZXdQb2ludCI6LTUuOTMsImh1bWlkaXR5IjowLjU2LCJ3aW5kU3BlZWQi
+        OjE0Ljg5LCJ3aW5kQmVhcmluZyI6Mjg2LCJ2aXNpYmlsaXR5IjoxMCwiY2xv
+        dWRDb3ZlciI6MC4wMSwicHJlc3N1cmUiOjEwMjYuMDcsIm96b25lIjozNjYu
+        Mjh9LHsidGltZSI6MTQ4MTg5MzIwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNv
+        biI6ImNsZWFyLWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJv
+        YmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjo2Ljc4LCJhcHBhcmVudFRlbXBl
+        cmF0dXJlIjotOS45MywiZGV3UG9pbnQiOi02LjIxLCJodW1pZGl0eSI6MC41
+        NCwid2luZFNwZWVkIjoxMy42MSwid2luZEJlYXJpbmciOjI4NSwidmlzaWJp
+        bGl0eSI6MTAsImNsb3VkQ292ZXIiOjAuMDEsInByZXNzdXJlIjoxMDI3LjI4
+        LCJvem9uZSI6MzYzLjg5fSx7InRpbWUiOjE0ODE4OTY4MDAsInN1bW1hcnki
+        OiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHki
+        OjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6OC4yNCwi
+        YXBwYXJlbnRUZW1wZXJhdHVyZSI6LTcuMjUsImRld1BvaW50IjotNS44OSwi
+        aHVtaWRpdHkiOjAuNTIsIndpbmRTcGVlZCI6MTIuMjMsIndpbmRCZWFyaW5n
+        IjoyODIsInZpc2liaWxpdHkiOjkuOTQsImNsb3VkQ292ZXIiOjAuMDQsInBy
+        ZXNzdXJlIjoxMDI4LjMyLCJvem9uZSI6MzYxLjA4fSx7InRpbWUiOjE0ODE5
+        MDA0MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJw
+        cmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1w
+        ZXJhdHVyZSI6OC42NCwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6LTUuNTUsImRl
+        d1BvaW50IjotNi44MiwiaHVtaWRpdHkiOjAuNDgsIndpbmRTcGVlZCI6MTAu
+        NDYsIndpbmRCZWFyaW5nIjoyNzgsInZpc2liaWxpdHkiOjkuOTYsImNsb3Vk
+        Q292ZXIiOjAuMDQsInByZXNzdXJlIjoxMDI5LjA5LCJvem9uZSI6MzU3Ljg4
+        fSx7InRpbWUiOjE0ODE5MDQwMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24i
+        OiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2Jh
+        YmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTAuODUsImFwcGFyZW50VGVtcGVy
+        YXR1cmUiOi0yLjE3LCJkZXdQb2ludCI6LTUuOTUsImh1bWlkaXR5IjowLjQ2
+        LCJ3aW5kU3BlZWQiOjkuNTcsIndpbmRCZWFyaW5nIjoyNjgsInZpc2liaWxp
+        dHkiOjkuOTYsImNsb3VkQ292ZXIiOjAuMDQsInByZXNzdXJlIjoxMDI5LjQ5
+        LCJvem9uZSI6MzU0LjQ0fSx7InRpbWUiOjE0ODE5MDc2MDAsInN1bW1hcnki
+        OiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHki
+        OjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTMuMDks
+        ImFwcGFyZW50VGVtcGVyYXR1cmUiOjAuODMsImRld1BvaW50IjotNS4xNCwi
+        aHVtaWRpdHkiOjAuNDMsIndpbmRTcGVlZCI6OS4yNCwid2luZEJlYXJpbmci
+        OjI1NywidmlzaWJpbGl0eSI6OS45NiwiY2xvdWRDb3ZlciI6MC4wNCwicHJl
+        c3N1cmUiOjEwMjkuNjMsIm96b25lIjozNTAuNn0seyJ0aW1lIjoxNDgxOTEx
+        MjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItZGF5IiwicHJl
+        Y2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVy
+        YXR1cmUiOjEzLjY1LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxLjYsImRld1Bv
+        aW50IjotNS4yMSwiaHVtaWRpdHkiOjAuNDIsIndpbmRTcGVlZCI6OS4xNCwi
+        d2luZEJlYXJpbmciOjI0OSwidmlzaWJpbGl0eSI6OS45NywiY2xvdWRDb3Zl
+        ciI6MC4wMiwicHJlc3N1cmUiOjEwMjkuNzcsIm96b25lIjozNDYuMDJ9LHsi
+        dGltZSI6MTQ4MTkxNDgwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNs
+        ZWFyLWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxp
+        dHkiOjAsInRlbXBlcmF0dXJlIjoxNC44MywiYXBwYXJlbnRUZW1wZXJhdHVy
+        ZSI6My4zMiwiZGV3UG9pbnQiOi0zLjU5LCJodW1pZGl0eSI6MC40Mywid2lu
+        ZFNwZWVkIjo4Ljc4LCJ3aW5kQmVhcmluZyI6MjQ3LCJ2aXNpYmlsaXR5Ijo5
+        Ljk4LCJjbG91ZENvdmVyIjowLjAzLCJwcmVzc3VyZSI6MTAyOS45OSwib3pv
+        bmUiOjM0MC4yMn0seyJ0aW1lIjoxNDgxOTE4NDAwLCJzdW1tYXJ5IjoiQ2xl
+        YXIiLCJpY29uIjoiY2xlYXItZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJw
+        cmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjE1LjU2LCJhcHBh
+        cmVudFRlbXBlcmF0dXJlIjo0LjYyLCJkZXdQb2ludCI6LTEuNywiaHVtaWRp
+        dHkiOjAuNDYsIndpbmRTcGVlZCI6OC4yNywid2luZEJlYXJpbmciOjI0Nywi
+        dmlzaWJpbGl0eSI6OS45OSwiY2xvdWRDb3ZlciI6MC4wNSwicHJlc3N1cmUi
+        OjEwMzAuMTksIm96b25lIjozMzMuNjZ9LHsidGltZSI6MTQ4MTkyMjAwMCwi
+        c3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLWRheSIsInByZWNpcElu
+        dGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJl
+        IjoxNi4xNiwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6NS44MSwiZGV3UG9pbnQi
+        OjAuMTQsImh1bWlkaXR5IjowLjQ4LCJ3aW5kU3BlZWQiOjcuNjgsIndpbmRC
+        ZWFyaW5nIjoyNDUsInZpc2liaWxpdHkiOjkuOTksImNsb3VkQ292ZXIiOjAu
+        MDcsInByZXNzdXJlIjoxMDMwLjQzLCJvem9uZSI6MzI3LjQ0fSx7InRpbWUi
+        OjE0ODE5MjU2MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1u
+        aWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHki
+        OjAsInRlbXBlcmF0dXJlIjoxNi42MywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6
+        NywiZGV3UG9pbnQiOjEuOSwiaHVtaWRpdHkiOjAuNTEsIndpbmRTcGVlZCI6
+        Ni45OCwid2luZEJlYXJpbmciOjIzNSwidmlzaWJpbGl0eSI6MTAsImNsb3Vk
+        Q292ZXIiOjAuMDQsInByZXNzdXJlIjoxMDMwLjc3LCJvem9uZSI6MzIxLjkx
+        fSx7InRpbWUiOjE0ODE5MjkyMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24i
+        OiJjbGVhci1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJv
+        YmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjoxNy4wNywiYXBwYXJlbnRUZW1w
+        ZXJhdHVyZSI6Ny44MiwiZGV3UG9pbnQiOjMuNjUsImh1bWlkaXR5IjowLjU1
+        LCJ3aW5kU3BlZWQiOjYuNjUsIndpbmRCZWFyaW5nIjoyMjEsInZpc2liaWxp
+        dHkiOjEwLCJjbG91ZENvdmVyIjowLCJwcmVzc3VyZSI6MTAzMS4xNSwib3pv
+        bmUiOjMxNi43Mn0seyJ0aW1lIjoxNDgxOTMyODAwLCJzdW1tYXJ5IjoiQ2xl
+        YXIiLCJpY29uIjoiY2xlYXItbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAs
+        InByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MTcuNzEsImFw
+        cGFyZW50VGVtcGVyYXR1cmUiOjguNSwiZGV3UG9pbnQiOjUuMywiaHVtaWRp
+        dHkiOjAuNTgsIndpbmRTcGVlZCI6Ni43NSwid2luZEJlYXJpbmciOjIxMCwi
+        dmlzaWJpbGl0eSI6MTAsImNsb3VkQ292ZXIiOjAsInByZXNzdXJlIjoxMDMx
+        LjQ0LCJvem9uZSI6MzExLjg4fSx7InRpbWUiOjE0ODE5MzY0MDAsInN1bW1h
+        cnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdodCIsInByZWNpcEludGVu
+        c2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjox
+        OC41OCwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6OS4zNywiZGV3UG9pbnQiOjYu
+        NjgsImh1bWlkaXR5IjowLjU5LCJ3aW5kU3BlZWQiOjYuOTQsIndpbmRCZWFy
+        aW5nIjoyMDQsInZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjA4LCJw
+        cmVzc3VyZSI6MTAzMS42Mywib3pvbmUiOjMwNy4yNn0seyJ0aW1lIjoxNDgx
+        OTQwMDAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItbmlnaHQi
+        LCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0
+        ZW1wZXJhdHVyZSI6MTkuNDksImFwcGFyZW50VGVtcGVyYXR1cmUiOjEwLjM0
+        LCJkZXdQb2ludCI6Ny44OCwiaHVtaWRpdHkiOjAuNiwid2luZFNwZWVkIjo3
+        LjA5LCJ3aW5kQmVhcmluZyI6MjAxLCJ2aXNpYmlsaXR5IjoxMCwiY2xvdWRD
+        b3ZlciI6MC4yLCJwcmVzc3VyZSI6MTAzMS43MSwib3pvbmUiOjMwMi45OX0s
+        eyJ0aW1lIjoxNDgxOTQzNjAwLCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIs
+        Imljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5
+        IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjIwLjM4
+        LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxMS4zNSwiZGV3UG9pbnQiOjkuMTks
+        Imh1bWlkaXR5IjowLjYxLCJ3aW5kU3BlZWQiOjcuMTgsIndpbmRCZWFyaW5n
+        IjoxOTgsInZpc2liaWxpdHkiOjEwLCJjbG91ZENvdmVyIjowLjM0LCJwcmVz
+        c3VyZSI6MTAzMS42MSwib3pvbmUiOjI5OS41N30seyJ0aW1lIjoxNDgxOTQ3
+        MjAwLCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHkt
+        Y2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9i
+        YWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjIxLjE4LCJhcHBhcmVudFRlbXBl
+        cmF0dXJlIjoxMi4yNCwiZGV3UG9pbnQiOjEwLjQ2LCJodW1pZGl0eSI6MC42
+        Mywid2luZFNwZWVkIjo3LjI3LCJ3aW5kQmVhcmluZyI6MTkyLCJ2aXNpYmls
+        aXR5Ijo5LjQ5LCJjbG91ZENvdmVyIjowLjUyLCJwcmVzc3VyZSI6MTAzMS4y
+        NCwib3pvbmUiOjI5Ny4zN30seyJ0aW1lIjoxNDgxOTUwODAwLCJzdW1tYXJ5
+        IjoiTW9zdGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0
+        IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwi
+        dGVtcGVyYXR1cmUiOjE3LjE1LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo3LjMx
+        LCJkZXdQb2ludCI6Ny4yNiwiaHVtaWRpdHkiOjAuNjQsIndpbmRTcGVlZCI6
+        Ny4zNCwid2luZEJlYXJpbmciOjE4NSwidmlzaWJpbGl0eSI6OC43LCJjbG91
+        ZENvdmVyIjowLjczLCJwcmVzc3VyZSI6MTAzMC42Nywib3pvbmUiOjI5Ni4w
+        Mn0seyJ0aW1lIjoxNDgxOTU0NDAwLCJzdW1tYXJ5IjoiTW9zdGx5IENsb3Vk
+        eSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5z
+        aXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjE3
+        LjgxLCJhcHBhcmVudFRlbXBlcmF0dXJlIjo4LjEyLCJkZXdQb2ludCI6OS4x
+        LCJodW1pZGl0eSI6MC42OCwid2luZFNwZWVkIjo3LjMxLCJ3aW5kQmVhcmlu
+        ZyI6MTc4LCJ2aXNpYmlsaXR5Ijo3LjQ4LCJjbG91ZENvdmVyIjowLjg5LCJw
+        cmVzc3VyZSI6MTAzMCwib3pvbmUiOjI5NC44MX0seyJ0aW1lIjoxNDgxOTU4
+        MDAwLCJzdW1tYXJ5IjoiTGlnaHQgU25vdyIsImljb24iOiJzbm93IiwicHJl
+        Y2lwSW50ZW5zaXR5IjowLjAwMjUsInByZWNpcFByb2JhYmlsaXR5IjowLjA3
+        LCJwcmVjaXBUeXBlIjoic25vdyIsInByZWNpcEFjY3VtdWxhdGlvbiI6MC4w
+        NDIsInRlbXBlcmF0dXJlIjoxOC40NSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6
+        OS4xNCwiZGV3UG9pbnQiOjExLjk2LCJodW1pZGl0eSI6MC43NSwid2luZFNw
+        ZWVkIjo3LjAzLCJ3aW5kQmVhcmluZyI6MTY5LCJ2aXNpYmlsaXR5Ijo1LjI1
+        LCJjbG91ZENvdmVyIjowLjk2LCJwcmVzc3VyZSI6MTAyOS4yNiwib3pvbmUi
+        OjI5My42fSx7InRpbWUiOjE0ODE5NjE2MDAsInN1bW1hcnkiOiJMaWdodCBT
+        bm93IiwiaWNvbiI6InNub3ciLCJwcmVjaXBJbnRlbnNpdHkiOjAuMDA2MSwi
+        cHJlY2lwUHJvYmFiaWxpdHkiOjAuMjgsInByZWNpcFR5cGUiOiJzbm93Iiwi
+        cHJlY2lwQWNjdW11bGF0aW9uIjowLjA5OCwidGVtcGVyYXR1cmUiOjE5LjM3
+        LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxMC42NywiZGV3UG9pbnQiOjE1LjQx
+        LCJodW1pZGl0eSI6MC44NCwid2luZFNwZWVkIjo2LjU1LCJ3aW5kQmVhcmlu
+        ZyI6MTYyLCJ2aXNpYmlsaXR5IjoyLjYsImNsb3VkQ292ZXIiOjAuOTgsInBy
+        ZXNzdXJlIjoxMDI4LjM4LCJvem9uZSI6MjkyLjUzfSx7InRpbWUiOjE0ODE5
+        NjUyMDAsInN1bW1hcnkiOiJTbm93IiwiaWNvbiI6InNub3ciLCJwcmVjaXBJ
+        bnRlbnNpdHkiOjAuMDEwNCwicHJlY2lwUHJvYmFiaWxpdHkiOjAuNTEsInBy
+        ZWNpcFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11bGF0aW9uIjowLjE1OSwi
+        dGVtcGVyYXR1cmUiOjIwLjU5LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxMi4z
+        MiwiZGV3UG9pbnQiOjE4LjQyLCJodW1pZGl0eSI6MC45MSwid2luZFNwZWVk
+        Ijo2LjM0LCJ3aW5kQmVhcmluZyI6MTU2LCJ2aXNpYmlsaXR5IjoxLjE2LCJj
+        bG91ZENvdmVyIjowLjk4LCJwcmVzc3VyZSI6MTAyNy40Mywib3pvbmUiOjI5
+        MS4zNH0seyJ0aW1lIjoxNDgxOTY4ODAwLCJzdW1tYXJ5IjoiU25vdyIsImlj
+        b24iOiJzbm93IiwicHJlY2lwSW50ZW5zaXR5IjowLjAxNTEsInByZWNpcFBy
+        b2JhYmlsaXR5IjowLjU2LCJwcmVjaXBUeXBlIjoic25vdyIsInByZWNpcEFj
+        Y3VtdWxhdGlvbiI6MC4yMTUsInRlbXBlcmF0dXJlIjoyMi4wMywiYXBwYXJl
+        bnRUZW1wZXJhdHVyZSI6MTMuNTcsImRld1BvaW50IjoyMC41MywiaHVtaWRp
+        dHkiOjAuOTQsIndpbmRTcGVlZCI6Ni44OCwid2luZEJlYXJpbmciOjE0OSwi
+        dmlzaWJpbGl0eSI6Mi4yMSwiY2xvdWRDb3ZlciI6MC45OSwicHJlc3N1cmUi
+        OjEwMjYuMzgsIm96b25lIjoyODkuOTF9LHsidGltZSI6MTQ4MTk3MjQwMCwi
+        c3VtbWFyeSI6IlNub3ciLCJpY29uIjoic25vdyIsInByZWNpcEludGVuc2l0
+        eSI6MC4wMjA2LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC42MSwicHJlY2lwVHlw
+        ZSI6InNub3ciLCJwcmVjaXBBY2N1bXVsYXRpb24iOjAuMjY5LCJ0ZW1wZXJh
+        dHVyZSI6MjMuNjQsImFwcGFyZW50VGVtcGVyYXR1cmUiOjE0Ljc1LCJkZXdQ
+        b2ludCI6MjIuMjYsImh1bWlkaXR5IjowLjk0LCJ3aW5kU3BlZWQiOjcuODgs
+        IndpbmRCZWFyaW5nIjoxNDIsInZpc2liaWxpdHkiOjQuNDgsImNsb3VkQ292
+        ZXIiOjAuOTksInByZXNzdXJlIjoxMDI1LjI1LCJvem9uZSI6Mjg4LjM2fSx7
+        InRpbWUiOjE0ODE5NzYwMDAsInN1bW1hcnkiOiJTbm93IiwiaWNvbiI6InNu
+        b3ciLCJwcmVjaXBJbnRlbnNpdHkiOjAuMDI3NywicHJlY2lwUHJvYmFiaWxp
+        dHkiOjAuNjUsInByZWNpcFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11bGF0
+        aW9uIjowLjMyOCwidGVtcGVyYXR1cmUiOjI1LjM3LCJhcHBhcmVudFRlbXBl
+        cmF0dXJlIjoxNi4zLCJkZXdQb2ludCI6MjQuMDUsImh1bWlkaXR5IjowLjk1
+        LCJ3aW5kU3BlZWQiOjguNywid2luZEJlYXJpbmciOjE0MCwidmlzaWJpbGl0
+        eSI6NS43NSwiY2xvdWRDb3ZlciI6MC45OSwicHJlc3N1cmUiOjEwMjQuMDcs
+        Im96b25lIjoyODYuNzF9LHsidGltZSI6MTQ4MTk3OTYwMCwic3VtbWFyeSI6
+        IlNub3ciLCJpY29uIjoic25vdyIsInByZWNpcEludGVuc2l0eSI6MC4wMzc5
+        LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC42OSwicHJlY2lwVHlwZSI6InNub3ci
+        LCJwcmVjaXBBY2N1bXVsYXRpb24iOjAuNDA4LCJ0ZW1wZXJhdHVyZSI6Mjcu
+        MDMsImFwcGFyZW50VGVtcGVyYXR1cmUiOjE4LjE0LCJkZXdQb2ludCI6MjUu
+        ODgsImh1bWlkaXR5IjowLjk1LCJ3aW5kU3BlZWQiOjkuMDIsIndpbmRCZWFy
+        aW5nIjoxNDAsInZpc2liaWxpdHkiOjQuNzIsImNsb3VkQ292ZXIiOjAuOTks
+        InByZXNzdXJlIjoxMDIzLjAxLCJvem9uZSI6Mjg0LjkyfSx7InRpbWUiOjE0
+        ODE5ODMyMDAsInN1bW1hcnkiOiJTbm93IiwiaWNvbiI6InNub3ciLCJwcmVj
+        aXBJbnRlbnNpdHkiOjAuMDQ5OSwicHJlY2lwUHJvYmFiaWxpdHkiOjAuNzIs
+        InByZWNpcFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11bGF0aW9uIjowLjQ3
+        NSwidGVtcGVyYXR1cmUiOjI4LjkzLCJhcHBhcmVudFRlbXBlcmF0dXJlIjoy
+        MC41NywiZGV3UG9pbnQiOjI3LjksImh1bWlkaXR5IjowLjk2LCJ3aW5kU3Bl
+        ZWQiOjguODYsIndpbmRCZWFyaW5nIjoxNDEsInZpc2liaWxpdHkiOjIuNywi
+        Y2xvdWRDb3ZlciI6MSwicHJlc3N1cmUiOjEwMjEuOTgsIm96b25lIjoyODMu
+        MDV9LHsidGltZSI6MTQ4MTk4NjgwMCwic3VtbWFyeSI6IlNub3ciLCJpY29u
+        Ijoic25vdyIsInByZWNpcEludGVuc2l0eSI6MC4wNjAxLCJwcmVjaXBQcm9i
+        YWJpbGl0eSI6MC43NCwicHJlY2lwVHlwZSI6InNub3ciLCJwcmVjaXBBY2N1
+        bXVsYXRpb24iOjAuNDkzLCJ0ZW1wZXJhdHVyZSI6MzEuMDUsImFwcGFyZW50
+        VGVtcGVyYXR1cmUiOjIzLjMzLCJkZXdQb2ludCI6MzAuMTMsImh1bWlkaXR5
+        IjowLjk2LCJ3aW5kU3BlZWQiOjguNTgsIndpbmRCZWFyaW5nIjoxNDMsInZp
+        c2liaWxpdHkiOjEuMzgsImNsb3VkQ292ZXIiOjEsInByZXNzdXJlIjoxMDIw
+        LjI2LCJvem9uZSI6MjgxLjI5fSx7InRpbWUiOjE0ODE5OTA0MDAsInN1bW1h
+        cnkiOiJTbm93IiwiaWNvbiI6InNub3ciLCJwcmVjaXBJbnRlbnNpdHkiOjAu
+        MDY5OCwicHJlY2lwUHJvYmFiaWxpdHkiOjAuNzYsInByZWNpcFR5cGUiOiJz
+        bm93IiwicHJlY2lwQWNjdW11bGF0aW9uIjowLjUzMSwidGVtcGVyYXR1cmUi
+        OjMzLjUsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI2LjcyLCJkZXdQb2ludCI6
+        MzIuNjgsImh1bWlkaXR5IjowLjk3LCJ3aW5kU3BlZWQiOjcuOTEsIndpbmRC
+        ZWFyaW5nIjoxNTAsInZpc2liaWxpdHkiOjEuNTIsImNsb3VkQ292ZXIiOjEs
+        InByZXNzdXJlIjoxMDE3LjYzLCJvem9uZSI6Mjc5LjcxfSx7InRpbWUiOjE0
+        ODE5OTQwMDAsInN1bW1hcnkiOiJTbGVldCIsImljb24iOiJzbGVldCIsInBy
+        ZWNpcEludGVuc2l0eSI6MC4wNzc2LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC43
+        NywicHJlY2lwVHlwZSI6InNsZWV0IiwidGVtcGVyYXR1cmUiOjM2LjU0LCJh
+        cHBhcmVudFRlbXBlcmF0dXJlIjozMC45LCJkZXdQb2ludCI6MzUuODEsImh1
+        bWlkaXR5IjowLjk3LCJ3aW5kU3BlZWQiOjcuMTIsIndpbmRCZWFyaW5nIjox
+        NjIsInZpc2liaWxpdHkiOjIuMzUsImNsb3VkQ292ZXIiOjEsInByZXNzdXJl
+        IjoxMDE0LjkyLCJvem9uZSI6Mjc4LjI1fSx7InRpbWUiOjE0ODE5OTc2MDAs
+        InN1bW1hcnkiOiJTbGVldCIsImljb24iOiJzbGVldCIsInByZWNpcEludGVu
+        c2l0eSI6MC4wNzU3LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC43NywicHJlY2lw
+        VHlwZSI6InNsZWV0IiwidGVtcGVyYXR1cmUiOjM4LjcxLCJhcHBhcmVudFRl
+        bXBlcmF0dXJlIjozMy42MSwiZGV3UG9pbnQiOjM4LjA1LCJodW1pZGl0eSI6
+        MC45Nywid2luZFNwZWVkIjo2Ljk2LCJ3aW5kQmVhcmluZyI6MTcyLCJ2aXNp
+        YmlsaXR5IjozLjI3LCJjbG91ZENvdmVyIjoxLCJwcmVzc3VyZSI6MTAxMi44
+        MSwib3pvbmUiOjI3Ni44NX1dfSwiZGFpbHkiOnsic3VtbWFyeSI6Ik1peGVk
+        IHByZWNpcGl0YXRpb24gb24gU2F0dXJkYXkgdGhyb3VnaCBUaHVyc2RheSwg
+        d2l0aCB0ZW1wZXJhdHVyZXMgcmlzaW5nIHRvIDU1wrBGIG9uIFN1bmRheS4i
+        LCJpY29uIjoic25vdyIsImRhdGEiOlt7InRpbWUiOjE0ODE3NzgwMDAsInN1
+        bW1hcnkiOiJQYXJ0bHkgY2xvdWR5IGluIHRoZSBtb3JuaW5nIGFuZCBicmVl
+        enkgb3Zlcm5pZ2h0LiIsImljb24iOiJ3aW5kIiwic3VucmlzZVRpbWUiOjE0
+        ODE4MDM3MTAsInN1bnNldFRpbWUiOjE0ODE4MzY0MTAsIm1vb25QaGFzZSI6
+        MC41NywicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBJbnRlbnNpdHlNYXgi
+        OjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZU1pbiI6MTUu
+        NTQsInRlbXBlcmF0dXJlTWluVGltZSI6MTQ4MTg2MDgwMCwidGVtcGVyYXR1
+        cmVNYXgiOjMwLjEsInRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MTc5MjQwMCwi
+        YXBwYXJlbnRUZW1wZXJhdHVyZU1pbiI6LTIuMzIsImFwcGFyZW50VGVtcGVy
+        YXR1cmVNaW5UaW1lIjoxNDgxODYwODAwLCJhcHBhcmVudFRlbXBlcmF0dXJl
+        TWF4IjoyMi45LCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MTc5
+        MjQwMCwiZGV3UG9pbnQiOjcuNzUsImh1bWlkaXR5IjowLjQ4LCJ3aW5kU3Bl
+        ZWQiOjEyLjA2LCJ3aW5kQmVhcmluZyI6MjYxLCJ2aXNpYmlsaXR5Ijo5Ljk5
+        LCJjbG91ZENvdmVyIjowLjM1LCJwcmVzc3VyZSI6MTAwOC4xMywib3pvbmUi
+        OjM2Ny4wOH0seyJ0aW1lIjoxNDgxODY0NDAwLCJzdW1tYXJ5IjoiTGlnaHQg
+        c25vdyBvdmVybmlnaHQuIiwiaWNvbiI6InNub3ciLCJzdW5yaXNlVGltZSI6
+        MTQ4MTg5MDE1MCwic3Vuc2V0VGltZSI6MTQ4MTkyMjgyNiwibW9vblBoYXNl
+        IjowLjYsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwSW50ZW5zaXR5TWF4
+        IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmVNaW4iOjYu
+        MzEsInRlbXBlcmF0dXJlTWluVGltZSI6MTQ4MTg4OTYwMCwidGVtcGVyYXR1
+        cmVNYXgiOjIxLjE4LCJ0ZW1wZXJhdHVyZU1heFRpbWUiOjE0ODE5NDcyMDAs
+        ImFwcGFyZW50VGVtcGVyYXR1cmVNaW4iOi0xMS4yNSwiYXBwYXJlbnRUZW1w
+        ZXJhdHVyZU1pblRpbWUiOjE0ODE4ODk2MDAsImFwcGFyZW50VGVtcGVyYXR1
+        cmVNYXgiOjEyLjI0LCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4
+        MTk0NzIwMCwiZGV3UG9pbnQiOi0wLjUxLCJodW1pZGl0eSI6MC41Mywid2lu
+        ZFNwZWVkIjoxMC4zOSwid2luZEJlYXJpbmciOjI2NSwidmlzaWJpbGl0eSI6
+        OS45NCwiY2xvdWRDb3ZlciI6MC4xMSwicHJlc3N1cmUiOjEwMjcuMDksIm96
+        b25lIjozNDUuMDN9LHsidGltZSI6MTQ4MTk1MDgwMCwic3VtbWFyeSI6Ik1p
+        eGVkIHByZWNpcGl0YXRpb24gKDLigJM0IGluLiBvZiBzbm93KSB1bnRpbCBh
+        ZnRlcm5vb24sIHN0YXJ0aW5nIGFnYWluIGluIHRoZSBldmVuaW5nLiIsImlj
+        b24iOiJzbm93Iiwic3VucmlzZVRpbWUiOjE0ODE5NzY1ODksInN1bnNldFRp
+        bWUiOjE0ODIwMDkyNDQsIm1vb25QaGFzZSI6MC42NCwicHJlY2lwSW50ZW5z
+        aXR5IjowLjAyNDIsInByZWNpcEludGVuc2l0eU1heCI6MC4wNzc2LCJwcmVj
+        aXBJbnRlbnNpdHlNYXhUaW1lIjoxNDgxOTk0MDAwLCJwcmVjaXBQcm9iYWJp
+        bGl0eSI6MC43NywicHJlY2lwVHlwZSI6InNub3ciLCJwcmVjaXBBY2N1bXVs
+        YXRpb24iOjUuMTUsInRlbXBlcmF0dXJlTWluIjoxNy4xNSwidGVtcGVyYXR1
+        cmVNaW5UaW1lIjoxNDgxOTUwODAwLCJ0ZW1wZXJhdHVyZU1heCI6NDIuODgs
+        InRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MjAzMzYwMCwiYXBwYXJlbnRUZW1w
+        ZXJhdHVyZU1pbiI6Ny4zMSwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRpbWUi
+        OjE0ODE5NTA4MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjM2LjksImFw
+        cGFyZW50VGVtcGVyYXR1cmVNYXhUaW1lIjoxNDgyMDMzNjAwLCJkZXdQb2lu
+        dCI6MzAuMTMsImh1bWlkaXR5IjowLjkzLCJ3aW5kU3BlZWQiOjcuNywid2lu
+        ZEJlYXJpbmciOjE3NiwidmlzaWJpbGl0eSI6My4xNiwiY2xvdWRDb3ZlciI6
+        MC45NywicHJlc3N1cmUiOjEwMTguMiwib3pvbmUiOjI4Mi41NH0seyJ0aW1l
+        IjoxNDgyMDM3MjAwLCJzdW1tYXJ5IjoiTWl4ZWQgcHJlY2lwaXRhdGlvbiB0
+        aHJvdWdob3V0IHRoZSBkYXkuIiwiaWNvbiI6InJhaW4iLCJzdW5yaXNlVGlt
+        ZSI6MTQ4MjA2MzAyNSwic3Vuc2V0VGltZSI6MTQ4MjA5NTY2NSwibW9vblBo
+        YXNlIjowLjY3LCJwcmVjaXBJbnRlbnNpdHkiOjAuMDE0NSwicHJlY2lwSW50
+        ZW5zaXR5TWF4IjowLjAzMzEsInByZWNpcEludGVuc2l0eU1heFRpbWUiOjE0
+        ODIwNzMyMDAsInByZWNpcFByb2JhYmlsaXR5IjowLjY3LCJwcmVjaXBUeXBl
+        IjoicmFpbiIsInRlbXBlcmF0dXJlTWluIjoyOCwidGVtcGVyYXR1cmVNaW5U
+        aW1lIjoxNDgyMTIwMDAwLCJ0ZW1wZXJhdHVyZU1heCI6NTUuMzIsInRlbXBl
+        cmF0dXJlTWF4VGltZSI6MTQ4MjA3MzIwMCwiYXBwYXJlbnRUZW1wZXJhdHVy
+        ZU1pbiI6MTguNCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRpbWUiOjE0ODIx
+        MjAwMDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjU1LjMyLCJhcHBhcmVu
+        dFRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MjA3MzIwMCwiZGV3UG9pbnQiOjQy
+        LjU5LCJodW1pZGl0eSI6MC45LCJ3aW5kU3BlZWQiOjkuMjEsIndpbmRCZWFy
+        aW5nIjoyMjIsInZpc2liaWxpdHkiOjIuNjQsImNsb3VkQ292ZXIiOjAuOTks
+        InByZXNzdXJlIjoxMDExLjY4LCJvem9uZSI6Mjg2LjQ1fSx7InRpbWUiOjE0
+        ODIxMjM2MDAsInN1bW1hcnkiOiJMaWdodCBzbm93IGluIHRoZSBtb3JuaW5n
+        LiIsImljb24iOiJzbm93Iiwic3VucmlzZVRpbWUiOjE0ODIxNDk0NTksInN1
+        bnNldFRpbWUiOjE0ODIxODIwODgsIm1vb25QaGFzZSI6MC43LCJwcmVjaXBJ
+        bnRlbnNpdHkiOjAuMDAxNSwicHJlY2lwSW50ZW5zaXR5TWF4IjowLjAwNjIs
+        InByZWNpcEludGVuc2l0eU1heFRpbWUiOjE0ODIxMjM2MDAsInByZWNpcFBy
+        b2JhYmlsaXR5IjowLjI4LCJwcmVjaXBUeXBlIjoic25vdyIsInByZWNpcEFj
+        Y3VtdWxhdGlvbiI6MC40NjcsInRlbXBlcmF0dXJlTWluIjoyMC43LCJ0ZW1w
+        ZXJhdHVyZU1pblRpbWUiOjE0ODIxNDUyMDAsInRlbXBlcmF0dXJlTWF4Ijoz
+        MC41OCwidGVtcGVyYXR1cmVNYXhUaW1lIjoxNDgyMTc0MDAwLCJhcHBhcmVu
+        dFRlbXBlcmF0dXJlTWluIjoxMC4wMywiYXBwYXJlbnRUZW1wZXJhdHVyZU1p
+        blRpbWUiOjE0ODIxNDUyMDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjI0
+        LjExLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MjE3NDAwMCwi
+        ZGV3UG9pbnQiOjcuNiwiaHVtaWRpdHkiOjAuNDcsIndpbmRTcGVlZCI6Ny4x
+        MSwid2luZEJlYXJpbmciOjMzNSwiY2xvdWRDb3ZlciI6MC40OSwicHJlc3N1
+        cmUiOjEwMzUuNjksIm96b25lIjozMTQuMzl9LHsidGltZSI6MTQ4MjIxMDAw
+        MCwic3VtbWFyeSI6IlBhcnRseSBjbG91ZHkgb3Zlcm5pZ2h0LiIsImljb24i
+        OiJwYXJ0bHktY2xvdWR5LW5pZ2h0Iiwic3VucmlzZVRpbWUiOjE0ODIyMzU4
+        OTEsInN1bnNldFRpbWUiOjE0ODIyNjg1MTQsIm1vb25QaGFzZSI6MC43NCwi
+        cHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBJbnRlbnNpdHlNYXgiOjAsInBy
+        ZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZU1pbiI6MTguOTMsInRl
+        bXBlcmF0dXJlTWluVGltZSI6MTQ4MjIzMTYwMCwidGVtcGVyYXR1cmVNYXgi
+        OjM2Ljg0LCJ0ZW1wZXJhdHVyZU1heFRpbWUiOjE0ODIyNTY4MDAsImFwcGFy
+        ZW50VGVtcGVyYXR1cmVNaW4iOjE1LjE1LCJhcHBhcmVudFRlbXBlcmF0dXJl
+        TWluVGltZSI6MTQ4MjIzNTIwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1heCI6
+        MzEuOTQsImFwcGFyZW50VGVtcGVyYXR1cmVNYXhUaW1lIjoxNDgyMjU2ODAw
+        LCJkZXdQb2ludCI6MTIuMTcsImh1bWlkaXR5IjowLjUxLCJ3aW5kU3BlZWQi
+        OjQuMjUsIndpbmRCZWFyaW5nIjoyMzUsImNsb3VkQ292ZXIiOjAuMTEsInBy
+        ZXNzdXJlIjoxMDMzLjAyLCJvem9uZSI6MzI5LjI5fSx7InRpbWUiOjE0ODIy
+        OTY0MDAsInN1bW1hcnkiOiJGbHVycmllcyBpbiB0aGUgbW9ybmluZy4iLCJp
+        Y29uIjoic25vdyIsInN1bnJpc2VUaW1lIjoxNDgyMzIyMzIxLCJzdW5zZXRU
+        aW1lIjoxNDgyMzU0OTQyLCJtb29uUGhhc2UiOjAuNzcsInByZWNpcEludGVu
+        c2l0eSI6MC4wMDExLCJwcmVjaXBJbnRlbnNpdHlNYXgiOjAuMDAxOCwicHJl
+        Y2lwSW50ZW5zaXR5TWF4VGltZSI6MTQ4MjMzMjQwMCwicHJlY2lwUHJvYmFi
+        aWxpdHkiOjAuMDQsInByZWNpcFR5cGUiOiJzbm93IiwicHJlY2lwQWNjdW11
+        bGF0aW9uIjowLjIyLCJ0ZW1wZXJhdHVyZU1pbiI6MjcuNzIsInRlbXBlcmF0
+        dXJlTWluVGltZSI6MTQ4MjMxODAwMCwidGVtcGVyYXR1cmVNYXgiOjQwLjEs
+        InRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MjM0MzIwMCwiYXBwYXJlbnRUZW1w
+        ZXJhdHVyZU1pbiI6MTkuMjIsImFwcGFyZW50VGVtcGVyYXR1cmVNaW5UaW1l
+        IjoxNDgyMzE0NDAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4IjozNC4zNCwi
+        YXBwYXJlbnRUZW1wZXJhdHVyZU1heFRpbWUiOjE0ODIzNDMyMDAsImRld1Bv
+        aW50IjoyMy4wNSwiaHVtaWRpdHkiOjAuNjYsIndpbmRTcGVlZCI6Ny41Miwi
+        d2luZEJlYXJpbmciOjI0OSwiY2xvdWRDb3ZlciI6MC42OCwicHJlc3N1cmUi
+        OjEwMjIuNTEsIm96b25lIjozMTUuOTR9LHsidGltZSI6MTQ4MjM4MjgwMCwi
+        c3VtbWFyeSI6IkxpZ2h0IHJhaW4gb3Zlcm5pZ2h0LiIsImljb24iOiJyYWlu
+        Iiwic3VucmlzZVRpbWUiOjE0ODI0MDg3NDksInN1bnNldFRpbWUiOjE0ODI0
+        NDEzNzIsIm1vb25QaGFzZSI6MC44LCJwcmVjaXBJbnRlbnNpdHkiOjAuMDAx
+        NywicHJlY2lwSW50ZW5zaXR5TWF4IjowLjAwNzYsInByZWNpcEludGVuc2l0
+        eU1heFRpbWUiOjE0ODI0NjU2MDAsInByZWNpcFByb2JhYmlsaXR5IjowLjM4
+        LCJwcmVjaXBUeXBlIjoicmFpbiIsInRlbXBlcmF0dXJlTWluIjoyNy4zNiwi
+        dGVtcGVyYXR1cmVNaW5UaW1lIjoxNDgyNDA0NDAwLCJ0ZW1wZXJhdHVyZU1h
+        eCI6NDAuNDgsInRlbXBlcmF0dXJlTWF4VGltZSI6MTQ4MjQ1NDgwMCwiYXBw
+        YXJlbnRUZW1wZXJhdHVyZU1pbiI6MjIuNTksImFwcGFyZW50VGVtcGVyYXR1
+        cmVNaW5UaW1lIjoxNDgyNDAwODAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4
+        IjozNS4yNSwiYXBwYXJlbnRUZW1wZXJhdHVyZU1heFRpbWUiOjE0ODI0NTQ4
+        MDAsImRld1BvaW50IjozMC42NCwiaHVtaWRpdHkiOjAuODQsIndpbmRTcGVl
+        ZCI6NS4wNSwid2luZEJlYXJpbmciOjIxNywiY2xvdWRDb3ZlciI6MC44MSwi
+        cHJlc3N1cmUiOjEwMjMuNjMsIm96b25lIjoyODQuMDR9XX0sImFsZXJ0cyI6
+        W3sidGl0bGUiOiJXaW5kIENoaWxsIEFkdmlzb3J5IGZvciBFc3NleCwgTUEi
+        LCJ0aW1lIjoxNDgxODE1MTQwLCJleHBpcmVzIjoxNDgxODk2ODAwLCJkZXNj
+        cmlwdGlvbiI6Ii4uLldJTkQgQ0hJTEwgQURWSVNPUlkgUkVNQUlOUyBJTiBF
+        RkZFQ1QgRlJPTSBNSUROSUdIVCBUT05JR0hUIFRPXG45IEFNIEVTVCBGUklE
+        QVkuLi5cbiogTE9DQVRJT05TLi4uTk9SVEggQ0VOVFJBTCBBTkQgTk9SVEhF
+        QVNUIENPTk5FQ1RJQ1VULi4uTk9SVEhFUk5cblJIT0RFIElTTEFORC4uLklO
+        VEVSSU9SIFNPVVRIRUFTVCBNQVNTQUNIVVNFVFRTLi4uTUVUUk8gQk9TVE9O
+        XG5BTkQgVEhFIE5PUlRIIFNIT1JFLlxuKiBIQVpBUkQgVFlQRVMuLi5EQU5H
+        RVJPVVNMWSBDT0xEIFdJTkQgQ0hJTExTLlxuKiBXSU5EIENISUxMIFJFQURJ
+        TkdTLi4uQVMgTE9XIEFTIDE3IEJFTE9XLlxuKiBUSU1JTkcuLi5MQVRFIFRP
+        TklHSFQgQU5EIEVBUkxZIEZSSURBWSBNT1JOSU5HLlxuKiBJTVBBQ1RTLi4u
+        RlJPU1RCSVRFIENBTiBPQ0NVUiBJTiBBUyBMSVRUTEUgQVMgMzAgTUlOVVRF
+        UyBJRlxuWU9VIEFSRSBOT1QgUFJPVEVDVEVEIEZST00gVEhFIENPTEQuXG4q
+        IFdJTkRTLi4uTk9SVEhXRVNUIDE1IFRPIDI1IE1QSCBXSVRIIEdVU1RTIEJF
+        VFdFRU4gNTAgQU5EIDYwIE1QSC5cbiIsInVyaSI6Imh0dHBzOi8vYWxlcnRz
+        LndlYXRoZXIuZ292L2NhcC93d2FjYXBnZXQucGhwP3g9TUExMjU2MjYxMTNG
+        MUMuV2luZENoaWxsQWR2aXNvcnkuMTI1NjI2MjA1MkUwTUEuQk9YV1NXQk9Y
+        LjkxYmM3YWYxNjkyMWU0ZWVkY2VkMzJkYmU0YzM3MjRiIn0seyJ0aXRsZSI6
+        IldpbmQgQ2hpbGwgQWR2aXNvcnkgZm9yIE1pZGRsZXNleCwgTUEiLCJ0aW1l
+        IjoxNDgxODE1MTQwLCJleHBpcmVzIjoxNDgxOTA0MDAwLCJkZXNjcmlwdGlv
+        biI6Ii4uLldJTkQgQ0hJTEwgQURWSVNPUlkgUkVNQUlOUyBJTiBFRkZFQ1Qg
+        RlJPTSAxMCBQTSBUSElTIEVWRU5JTkdcblRPIDExIEFNIEVTVCBGUklEQVku
+        Li5cbiogTE9DQVRJT05TLi4uV0VTVEVSTi4uLkNFTlRSQUwgQU5EIElOVEVS
+        SU9SIE5PUlRIRUFTVFxuTUFTU0FDSFVTRVRUUy5cbiogSEFaQVJEIFRZUEVT
+        Li4uREFOR0VST1VTTFkgQ09MRCBXSU5EIENISUxMUy5cbiogV0lORCBDSElM
+        TCBSRUFESU5HUy4uLkFTIExPVyBBUyAyNCBCRUxPVy5cbiogVElNSU5HLi4u
+        TEFURSBUT05JR0hUIElOVE8gRUFSTFkgRlJJREFZIE1PUk5JTkcuXG4qIElN
+        UEFDVFMuLi5GUk9TVEJJVEUgQ0FOIE9DQ1VSIElOIEFTIExJVFRMRSBBUyAz
+        MCBNSU5VVEVTIElGXG5ZT1UgQVJFIE5PVCBQUk9URUNURUQgRlJPTSBUSEUg
+        Q09MRC5cbiogV0lORFMuLi5OT1JUSFdFU1QgMTUgVE8gMjUgTVBIIFdJVEgg
+        R1VTVFMgQkVUV0VFTiA1MCBBTkQgNjAgTVBILlxuIiwidXJpIjoiaHR0cHM6
+        Ly9hbGVydHMud2VhdGhlci5nb3YvY2FwL3d3YWNhcGdldC5waHA/eD1NQTEy
+        NTYyNjExM0YxQy5XaW5kQ2hpbGxBZHZpc29yeS4xMjU2MjYyMEExMDBNQS5C
+        T1hXU1dCT1guNGM0MWI4N2EzNTNlNGU5NTM2ZWIzYzhiYzVmYjdlZjIifSx7
+        InRpdGxlIjoiSGlnaCBXaW5kIFdhcm5pbmcgZm9yIEVzc2V4LCBNQSIsInRp
+        bWUiOjE0ODE4MTQ5MDAsImV4cGlyZXMiOjE0ODE4Nzg4MDAsImRlc2NyaXB0
+        aW9uIjoiLi4uSElHSCBXSU5EIFdBUk5JTkcgUkVNQUlOUyBJTiBFRkZFQ1Qg
+        RlJPTSA1IFBNIFRISVMgQUZURVJOT09OXG5UTyA0IEFNIEVTVCBGUklEQVku
+        Li5cbiogTE9DQVRJT04uLi5DT05ORUNUSUNVVC4uLk1BU1NBQ0hVU0VUVFMg
+        QU5EIFJIT0RFIElTTEFORC5cbiogV0lORFMuLi5XRVNUIDE1IFRPIDI1IE1Q
+        SCBXSVRIIEEgRkVXIEhPVVJTIE9GIEdVU1RTIEJFVFdFRU4gNTBcbkFORCA2
+        MCBNUEguIElTT0xBVEVEIDY1IE1QSCBHVVNUUyBBUkUgUE9TU0lCTEUgQUNS
+        T1NTIFRIRSBISUdIRVJcblRFUlJBSU4uXG4qIFRJTUlORy4uLlNUUk9OR0VT
+        VCBXSU5EUyBBUkUgRVhQRUNURUQgQkVUV0VFTiA4IFBNIFRISVMgRVZFTklO
+        RyBBTkRcbjQgQU0gRlJJREFZLlxuKiBJTVBBQ1RTLi4uV0lORFMgVEhJUyBT
+        VFJPTkcgV0lMTCBSRVNVTFQgSU4gVFJFRSBEQU1BR0UgSU5DTFVESU5HXG5T
+        T01FIFdFQUtFTkVEIFRSRUVTIEJFSU5HIEtOT0NLRUQgRE9XTi4gU0NBVFRF
+        UkVEIFBPV0VSIE9VVEFHRVNcbkFSRSBQT1NTSUJMRSBBTkQgVEhJUyBJUyBQ
+        QVJUSUNVTEFSTFkgQ09OQ0VSTklORyBHSVZFTiBUSEVcbkJJVFRFUkxZIENP
+        TEQgV0lORCBDSElMTFMgRVhQRUNURUQgT1ZFUk5JR0hULiBEUklWSU5HIFdJ
+        TEwgQkVcbkRJRkZJQ1VMVCBJTiBPUEVOIEFSRUFTIEFORCBPTiBCUklER0VT
+        LlxuIiwidXJpIjoiaHR0cHM6Ly9hbGVydHMud2VhdGhlci5nb3YvY2FwL3d3
+        YWNhcGdldC5waHA/eD1NQTEyNTYyNjExM0Q4Qy5IaWdoV2luZFdhcm5pbmcu
+        MTI1NjI2MUY4RjkwTUEuQk9YTlBXQk9YLjFlMzhiYTEyNzljMjE4NzVmN2Mz
+        M2M2ZjEwZmEwZmYxIn1dLCJmbGFncyI6eyJzb3VyY2VzIjpbImRhcmtza3ki
+        LCJsYW1wIiwiZ2ZzIiwiY21jIiwibmFtIiwicmFwIiwicnRtYSIsInNyZWYi
+        LCJmbm1vYyIsImlzZCIsIm53c3BhIiwibWFkaXMiLCJuZWFyZXN0LXByZWNp
+        cCJdLCJkYXJrc2t5LXN0YXRpb25zIjpbIktCT1giXSwibGFtcC1zdGF0aW9u
+        cyI6WyJLQVNIIiwiS0JFRCIsIktCT1MiLCJLQlZZIiwiS0ZJVCIsIktMV00i
+        LCJLTUhUIiwiS01RRSIsIktPV0QiXSwiaXNkLXN0YXRpb25zIjpbIjcyNTA4
+        OC01NDczMyIsIjcyNTA4OC05OTk5OSIsIjcyNTA5MC0xNDczOSIsIjk5NDk3
+        MS05OTk5OSIsIjk5OTk5OS05NDcwMSJdLCJtYWRpcy1zdGF0aW9ucyI6WyJB
+        TjI3OCIsIkFQNTY0IiwiQVIxMDAiLCJBUjU3MiIsIkFWMTU0IiwiQzAyMTAi
+        LCJDOTY4MyIsIkU0MzMxIiwiRTQ5NjAiLCJFNTM1MSIsIkU1NjUwIiwiRTY0
+        ODAiLCJFODUyOCIsIkU5NTc4IiwiRTk5OTEiLCJLQk9TIl0sInVuaXRzIjoi
+        dXMifX0=
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 18:09:32 GMT
+- request:
+    method: get
+    uri: https://api.seatgeek.com/2/events?client_id=NjQyNzE0M3wxNDgxNzUyNjQx&venue.city=Boston
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.seatgeek.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 15 Dec 2016 18:34:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Etag:
+      - '"8d9ce1c8ef819b53764995c941e94945843c863b"'
+      Cache-Control:
+      - max-age=1800
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Varnish:
+      - '873367196'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"per_page":10,"total":1191,"page":1,"took":3,"geolocation":null},"in_hand":{},"events":[{"links":[],"id":3623154,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Coco
+        Jones","announce_date":"2016-11-20T00:00:00","score":0.520313,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T03:30:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":true,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":null,"primary":true,"colors":null,"images":{},"has_upcoming_events":true,"id":36008,"genres":[{"id":452,"slug":"pop","name":"Pop","primary":false},{"id":456,"slug":"rock","name":"Rock","primary":true}],"stats":{"event_count":5},"image_license":null,"score":0.439819,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Coco
+        Jones","home_venue_id":null,"slug":"coco-jones","divisions":null,"name":"Coco
+        Jones","url":"https:\/\/seatgeek.com\/coco-jones-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/coco-jones-tickets\/boston-massachusetts-house-of-blues-boston-2016-12-15-3-30-am\/concert\/3623154","created_at":"2016-11-20T00:00:00","venue":{"city":"Boston","name":"House
+        of Blues Boston","extended_address":"Boston, MA 02215","url":"https:\/\/seatgeek.com\/venues\/house-of-blues-boston\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"house-of-blues-boston","state":"MA","score":0.636447,"postal_code":"02215","location":{"lat":42.2913,"lon":-71.0889},"address":"15
+        Lansdowne St.","timezone":"America\/New_York","id":517},"short_title":"Coco
+        Jones","datetime_utc":"2016-12-15T08:30:00","datetime_tbd":false},{"links":[],"id":3517154,"stats":{"listing_count":1,"average_price":39.0,"lowest_price_good_deals":null,"lowest_price":39.0,"highest_price":39.0},"title":"Street
+        Dogs with Darkbuster","announce_date":"2016-09-13T00:00:00","score":0.411762,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T18:00:00","visible_until_utc":"2016-12-16T03:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/street-dogs-9e4b46\/1707\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/street-dogs-9e4b46\/1707\/huge.jpg"},"has_upcoming_events":true,"id":1707,"genres":[{"id":452,"slug":"pop","name":"Pop","primary":false},{"id":456,"slug":"rock","name":"Rock","primary":true},{"id":461,"slug":"punk","name":"Punk","primary":false}],"stats":{"event_count":4},"image_license":null,"score":0.348906,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Street
+        Dogs","home_venue_id":null,"slug":"street-dogs","divisions":null,"name":"Street
+        Dogs","url":"https:\/\/seatgeek.com\/street-dogs-tickets","image_attribution":null},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":192101,"genres":[{"id":456,"slug":"rock","name":"Rock","primary":false},{"id":457,"slug":"alternative","name":"Alternative","primary":true},{"id":461,"slug":"punk","name":"Punk","primary":false}],"stats":{"event_count":3},"image_license":null,"score":0.48973,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Darkbuster","home_venue_id":null,"slug":"darkbuster","divisions":null,"name":"Darkbuster","url":"https:\/\/seatgeek.com\/darkbuster-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/street-dogs-with-darkbuster-tickets\/boston-massachusetts-brighton-music-hall-2016-12-15-6-pm\/concert\/3517154","created_at":"2016-09-13T00:00:00","venue":{"city":"Boston","name":"Brighton
+        Music Hall","extended_address":"Boston, MA 02134","url":"https:\/\/seatgeek.com\/venues\/brighton-music-hall\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"brighton-music-hall","state":"MA","score":0.481129,"postal_code":"02134","location":{"lat":42.3529,"lon":-71.1326},"address":"158
+        Brighton Avenue","timezone":"America\/New_York","id":1446},"short_title":"Street
+        Dogs with Darkbuster","datetime_utc":"2016-12-15T23:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3375115,"stats":{"listing_count":494,"average_price":102.5,"lowest_price_good_deals":45.0,"lowest_price":45.0,"highest_price":425.0},"title":"Anaheim
+        Ducks at Boston Bruins","announce_date":"2016-06-23T00:00:00","score":0.766178,"date_tbd":false,"type":"nhl","datetime_local":"2016-12-15T19:00:00","visible_until_utc":"2016-12-16T04:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1040000,"name":"hockey"},{"parent_id":1040000,"id":1040100,"name":"nhl"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/boston-bruins-2519e9\/2123\/huge.jpg","primary":true,"colors":{"all":["#000000","#FFC422"],"iconic":"#FFC422","primary":["#000000","#FFC422"]},"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/boston-bruins-2519e9\/2123\/huge.jpg"},"has_upcoming_events":true,"id":2123,"stats":{"event_count":51},"image_license":null,"score":0.77019,"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1040000,"name":"hockey"},{"parent_id":1040000,"id":1040100,"name":"nhl"}],"type":"nhl","short_name":"Bruins","home_venue_id":1544,"slug":"boston-bruins","divisions":[{"display_name":"Eastern
+        Conference","short_name":null,"division_level":1,"display_type":"Conference","taxonomy_id":1040100,"slug":null},{"display_name":"Eastern
+        - Atlantic","short_name":"Atlantic","division_level":2,"display_type":"Division","taxonomy_id":1040100,"slug":"eastern-atlantic"}],"home_team":true,"name":"Boston
+        Bruins","url":"https:\/\/seatgeek.com\/boston-bruins-tickets","image_attribution":"https:\/\/www.flickr.com\/photos\/77297539@N06\/14177423467\/in\/photolist-nAP14D-7jh1hR-nRh6yY-nAQLaH-nTeTdL-9UQ2PU-nT2tZT-nAQJNz-nAQKaB-pRMa9-nAPV48-9UMc8t-pRMaC-nAQART-9UMeJM-9UQ78S-9UMbBZ-9UPPDJ-5w63XD-9UMfvt-9ULZna-9UQ4LL-9UPZwS-4CPWJH-4vhjiR-9UQmw5-9UMuW6-"},{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/anaheim-ducks-4b2988\/2143\/huge.jpg","colors":{"all":["#000000","#91764B","#EF5225"],"iconic":"#91764B","primary":["#000000","#91764B"]},"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/anaheim-ducks-4b2988\/2143\/huge.jpg"},"has_upcoming_events":true,"id":2143,"away_team":true,"stats":{"event_count":52},"image_license":null,"score":0.681326,"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1040000,"name":"hockey"},{"parent_id":1040000,"id":1040100,"name":"nhl"}],"type":"nhl","short_name":"Ducks","home_venue_id":133,"slug":"anaheim-ducks","divisions":[{"display_name":"Western
+        Conference","short_name":null,"division_level":1,"display_type":"Conference","taxonomy_id":1040100,"slug":null},{"display_name":"Western
+        - Pacific","short_name":"Pacific","division_level":2,"display_type":"Division","taxonomy_id":1040100,"slug":"western-pacific"}],"name":"Anaheim
+        Ducks","url":"https:\/\/seatgeek.com\/anaheim-ducks-tickets","image_attribution":"https:\/\/en.wikipedia.org\/wiki\/Honda_Center#\/media\/File:Honda-pano.jpg"}],"url":"https:\/\/seatgeek.com\/ducks-at-bruins-tickets\/12-15-2016-boston-massachusetts-td-garden\/nhl\/3375115","created_at":"2016-06-23T00:00:00","venue":{"city":"Boston","name":"TD
+        Garden","extended_address":"Boston, MA 02114","url":"https:\/\/seatgeek.com\/venues\/td-garden\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"td-garden","state":"MA","score":0.853082,"postal_code":"02114","location":{"lat":42.3653,"lon":-71.0618},"address":"100
+        Legends Way","timezone":"America\/New_York","id":1544},"short_title":"Ducks
+        at Bruins","datetime_utc":"2016-12-16T00:00:00","datetime_tbd":false},{"links":[],"id":3424888,"stats":{"listing_count":62,"average_price":88.0,"lowest_price_good_deals":83.0,"lowest_price":83.0,"highest_price":867.0},"title":"The
+        Nutcracker - Boston","announce_date":"2016-07-16T00:00:00","score":0.560085,"date_tbd":false,"type":"dance_performance_tour","datetime_local":"2016-12-15T19:30:00","visible_until_utc":"2016-12-16T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/the-nutcracker-87d3ec\/7746\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/the-nutcracker-87d3ec\/7746\/huge.jpg"},"has_upcoming_events":true,"id":7746,"stats":{"event_count":844},"image_license":null,"score":0.465655,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"type":"theater_dance_performance_tour","short_name":"The
+        Nutcracker","home_venue_id":null,"slug":"the-nutcracker","divisions":null,"name":"The
+        Nutcracker","url":"https:\/\/seatgeek.com\/the-nutcracker-tickets","image_attribution":null},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":337886,"stats":{"event_count":261},"image_license":null,"score":0.504446,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"type":"theater_family","short_name":"Nutcracker","home_venue_id":null,"slug":"nutcracker-1","divisions":null,"name":"Nutcracker","url":"https:\/\/seatgeek.com\/nutcracker-1-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/the-nutcracker-boston-tickets\/dance\/2016-12-15-7-30-pm\/3424888","created_at":"2016-07-16T00:00:00","venue":{"city":"Boston","name":"Boston
+        Opera House","extended_address":"Boston, MA 02111","url":"https:\/\/seatgeek.com\/venues\/boston-opera-house\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-opera-house","state":"MA","score":0.620406,"postal_code":"02111","location":{"lat":42.3586,"lon":-71.0567},"address":"539
+        Washington Street","timezone":"America\/New_York","id":2501},"short_title":"The
+        Nutcracker - Boston","datetime_utc":"2016-12-16T00:30:00","datetime_tbd":false},{"links":[],"id":3424667,"stats":{"listing_count":24,"average_price":105.0,"lowest_price_good_deals":84.0,"lowest_price":84.0,"highest_price":144.0},"title":"Blue
+        Man Group - Boston","announce_date":"2016-07-16T00:00:00","score":0.499393,"date_tbd":false,"type":"broadway_tickets_national","datetime_local":"2016-12-15T19:30:00","visible_until_utc":"2016-12-16T04:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/blue-man-group-fee240\/5194\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/blue-man-group-fee240\/5194\/huge.jpg"},"has_upcoming_events":true,"id":5194,"stats":{"event_count":835},"image_license":null,"score":0.395813,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"type":"theater_broadway_national_tours","short_name":"Blue
+        Man Group","home_venue_id":null,"slug":"blue-man-group","divisions":null,"name":"Blue
+        Man Group","url":"https:\/\/seatgeek.com\/blue-man-group-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/blue-man-group-boston-tickets\/charles-playhouse-2016-12-15-7-30-pm\/broadway\/3424667","created_at":"2016-07-16T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse","extended_address":"Boston, MA 02116","url":"https:\/\/seatgeek.com\/venues\/charles-playhouse\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse","state":"MA","score":0.424178,"postal_code":"02116","location":{"lat":42.3503,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America\/New_York","id":3188},"short_title":"Blue
+        Man Group - Boston","datetime_utc":"2016-12-16T00:30:00","datetime_tbd":false},{"links":[],"id":3320361,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Nate
+        Bargatze","announce_date":"2016-05-23T00:00:00","score":0.449825,"date_tbd":false,"type":"comedy","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3040000,"name":"comedy"}],"performers":[{"image":null,"primary":true,"colors":null,"images":{},"has_upcoming_events":true,"id":20947,"stats":{"event_count":12},"image_license":null,"score":0.461686,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Nate
+        Bargatze","home_venue_id":null,"slug":"nate-bargatze","divisions":null,"name":"Nate
+        Bargatze","url":"https:\/\/seatgeek.com\/nate-bargatze-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/nate-bargatze-tickets\/comedy\/2016-12-15-8-pm\/3320361","created_at":"2016-05-23T00:00:00","venue":{"city":"Boston","name":"Laugh
+        Boston","extended_address":"Boston, MA 02210","url":"https:\/\/seatgeek.com\/venues\/laugh-boston\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"laugh-boston","state":"MA","score":0.329042,"postal_code":"02210","location":{"lat":42.35,"lon":-71.04},"address":"425
+        Summer St","timezone":"America\/New_York","id":57227},"short_title":"Nate
+        Bargatze","datetime_utc":"2016-12-16T01:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3630493,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Shear
+        Madness - Boston","announce_date":"2016-11-24T00:00:00","score":0.321793,"date_tbd":false,"type":"broadway_tickets_national","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/shear-madness-2612d9\/11748\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/shear-madness-2612d9\/11748\/huge.jpg"},"has_upcoming_events":true,"id":11748,"stats":{"event_count":247},"image_license":null,"score":0.343276,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"type":"theater_broadway_national_tours","short_name":"Shear
+        Madness","home_venue_id":null,"slug":"shear-madness","divisions":null,"name":"Shear
+        Madness","url":"https:\/\/seatgeek.com\/shear-madness-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/shear-madness-boston-tickets\/charles-playhouse-second-stage-2016-12-15-8-pm\/broadway\/3630493","created_at":"2016-11-24T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse Second Stage","extended_address":"Boston, MA 02116","url":"https:\/\/seatgeek.com\/venues\/charles-playhouse-second-stage\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse-second-stage","state":"MA","score":0.0,"postal_code":"02116","location":{"lat":42.35,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America\/New_York","id":51387},"short_title":"Shear
+        Madness - Boston","datetime_utc":"2016-12-16T01:00:00","datetime_tbd":false},{"links":[],"id":3610021,"stats":{"listing_count":0,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Wallace
+        Roney","announce_date":"2016-11-17T00:00:00","score":0.288037,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":null,"primary":true,"colors":null,"images":{},"has_upcoming_events":true,"id":106751,"genres":[{"id":465,"slug":"blues","name":"Blues","primary":false},{"id":468,"slug":"jazz","name":"Jazz","primary":true},{"id":473,"slug":"hard-rock","name":"Hard
+        Rock","primary":false}],"stats":{"event_count":1},"image_license":null,"score":0.0,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Wallace
+        Roney","home_venue_id":null,"slug":"wallace-roney","divisions":null,"name":"Wallace
+        Roney","url":"https:\/\/seatgeek.com\/wallace-roney-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/wallace-roney-tickets\/boston-massachusetts-scullers-jazz-club-1-2016-12-15-8-pm\/concert\/3610021","created_at":"2016-11-17T00:00:00","venue":{"city":"Boston","name":"Scullers
+        Jazz Club","extended_address":"Boston, MA 02134","url":"https:\/\/seatgeek.com\/venues\/scullers-jazz-club-1\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"scullers-jazz-club-1","state":"MA","score":0.356909,"postal_code":"02134","location":{"lat":42.3602,"lon":-71.1181},"address":"400
+        Soldiers Field Road","timezone":"America\/New_York","id":1826},"short_title":"Wallace
+        Roney","datetime_utc":"2016-12-16T01:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3610037,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Barrington
+        Levy with Mighty Mystic (18+)","announce_date":"2016-11-17T00:00:00","score":0.515292,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T20:00:00","visible_until_utc":"2016-12-16T05:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/barrington-levy-b11470\/7649\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/barrington-levy-b11470\/7649\/huge.jpg"},"has_upcoming_events":true,"id":7649,"genres":[{"id":457,"slug":"alternative","name":"Alternative","primary":false},{"id":469,"slug":"reggae","name":"Reggae","primary":true}],"stats":{"event_count":3},"image_license":null,"score":0.537733,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Barrington
+        Levy","home_venue_id":null,"slug":"barrington-levy","divisions":null,"name":"Barrington
+        Levy","url":"https:\/\/seatgeek.com\/barrington-levy-tickets","image_attribution":null},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":28107,"genres":[{"id":469,"slug":"reggae","name":"Reggae","primary":true}],"stats":{"event_count":1},"image_license":null,"score":0.272001,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Mighty
+        Mystic","home_venue_id":null,"slug":"mighty-mystic","divisions":null,"name":"Mighty
+        Mystic","url":"https:\/\/seatgeek.com\/mighty-mystic-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/barrington-levy-with-mighty-mystic-18-tickets\/boston-massachusetts-paradise-rock-club-2016-12-15-8-pm\/concert\/3610037","created_at":"2016-11-17T00:00:00","venue":{"city":"Boston","name":"Paradise
+        Rock Club","extended_address":"Boston, MA 02215","url":"https:\/\/seatgeek.com\/venues\/paradise-rock-club\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"paradise-rock-club","state":"MA","score":0.5253,"postal_code":"02215","location":{"lat":42.352,"lon":-71.1195},"address":"967
+        Commonwealth Avenue","timezone":"America\/New_York","id":540},"short_title":"Barrington
+        Levy with Mighty Mystic (18+)","datetime_utc":"2016-12-16T01:00:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3585811,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Break
+        Science with Exmag","announce_date":"2016-11-01T00:00:00","score":0.498771,"date_tbd":false,"type":"concert","datetime_local":"2016-12-15T21:00:00","visible_until_utc":"2016-12-16T06:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/break-science-95a6d6\/9472\/huge.jpg","primary":true,"colors":null,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/break-science-95a6d6\/9472\/huge.jpg"},"has_upcoming_events":true,"id":9472,"genres":[{"id":452,"slug":"pop","name":"Pop","primary":false},{"id":491,"slug":"hip-hop","name":"Hip-Hop","primary":true},{"id":493,"slug":"rap","name":"Rap","primary":false}],"stats":{"event_count":5},"image_license":null,"score":0.484373,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Break
+        Science","home_venue_id":null,"slug":"break-science","divisions":null,"name":"Break
+        Science","url":"https:\/\/seatgeek.com\/break-science-tickets","image_attribution":"http:\/\/www.okayfuture.com\/wp-content\/uploads\/2013\/09\/magnumpr_BreakScience2013.jpeg"},{"image":null,"colors":null,"images":{},"has_upcoming_events":true,"id":254117,"genres":[{"id":477,"slug":"electronic","name":"Electronic","primary":true},{"id":976,"slug":"techno","name":"Techno","primary":false}],"stats":{"event_count":2},"image_license":null,"score":0.528563,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"type":"band","short_name":"Exmag","home_venue_id":null,"slug":"exmag","divisions":null,"name":"Exmag","url":"https:\/\/seatgeek.com\/exmag-tickets","image_attribution":null}],"url":"https:\/\/seatgeek.com\/break-science-with-exmag-tickets\/boston-massachusetts-royale-1-2016-12-15-9-pm\/concert\/3585811","created_at":"2016-11-01T00:00:00","venue":{"city":"Boston","name":"Royale","extended_address":"Boston,
+        MA 02116","url":"https:\/\/seatgeek.com\/venues\/royale-1\/tickets","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"royale-1","state":"MA","score":0.471746,"postal_code":"02116","location":{"lat":42.3581,"lon":-71.1303},"address":"279
+        Tremont Street","timezone":"America\/New_York","id":75931},"short_title":"Break
+        Science with Exmag","datetime_utc":"2016-12-16T02:00:00","general_admission":true,"datetime_tbd":false}]}'
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 18:34:05 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/topstories/v2/technology.json?api-key=0e40ccfa89a541c6836b8e71dc3f65d5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.nytimes.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - none
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - max-age=60
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Dec 2016 19:18:04 GMT
+      Etag:
+      - '"9b84192565da6273e1f0e8188348b8fb"'
+      Expires:
+      - Thu, 15 Dec 2016 19:19:04 GMT
+      Last-Modified:
+      - Thu, 15 Dec 2016 19:17:31 GMT
+      Server:
+      - AmazonS3
+      Via:
+      - kong/0.9.5
+      X-Amz-Id-2:
+      - d2jb0ahQTmYlhxjP5quzJxUhS4smWWQtTimEAWNFtvKiTnN13sVf03vfVmvetFV6YaFNqKwYwgg=
+      X-Amz-Request-Id:
+      - BAFB3703BFF1F80E
+      X-Kong-Proxy-Latency:
+      - '61'
+      X-Kong-Upstream-Latency:
+      - '136'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Limit-Second:
+      - '5'
+      X-Ratelimit-Remaining-Day:
+      - '989'
+      X-Ratelimit-Remaining-Second:
+      - '4'
+      Content-Length:
+      - '60677'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","copyright":"Copyright (c) 2016 The New York Times Company.
+        All Rights Reserved.","section":"technology","last_updated":"2016-12-15T14:17:30-05:00","num_results":26,"results":[{"section":"Technology","subsection":"","title":"Yahoo
+        Says 1 Billion User Accounts Were Hacked","abstract":"The company says the
+        attack was separate from the breach that led to an earlier disclosure that
+        500 million accounts were hacked.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/yahoo-hack.html","byline":"By
+        VINDU GOEL and NICOLE PERLROTH","item_type":"Article","updated_date":"2016-12-14T20:26:50-05:00","created_date":"2016-12-14T17:24:22-05:00","published_date":"2016-12-14T17:24:22-05:00","material_type_facet":"","kicker":"","des_facet":["Cyberattacks
+        and Hackers","E-Mail"],"org_facet":["Yahoo! Inc"],"per_facet":[],"geo_facet":[],"multimedia":[],"short_url":"http:\/\/nyti.ms\/2hP5afF"},{"section":"Technology","subsection":"","title":"Facebook
+        Mounts Effort to Limit Tide of Fake News","abstract":"Facebook on Thursday
+        said it had begun introducing a series of experiments to limit misinformation
+        and false articles on its site.","url":"http:\/\/www.nytimes.com\/2016\/12\/15\/technology\/facebook-fake-news.html","byline":"By
+        MIKE ISAAC","item_type":"Article","updated_date":"2016-12-15T13:00:27-05:00","created_date":"2016-12-15T13:00:28-05:00","published_date":"2016-12-15T13:00:28-05:00","material_type_facet":"","kicker":"","des_facet":["News
+        and News Media","Computers and the Internet","Social Media"],"org_facet":["Facebook
+        Inc"],"per_facet":["Zuckerberg, Mark E"],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15FACEBOOK2\/15FACEBOOK2-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"The
+        new fake news feature on Facebook, as the site makes an effort to flag articles
+        that are not true.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15FACEBOOK2\/15FACEBOOK2-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"The
+        new fake news feature on Facebook, as the site makes an effort to flag articles
+        that are not true.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15FACEBOOK2\/15FACEBOOK2-articleInline.jpg","format":"Normal","height":107,"width":190,"type":"image","subtype":"photo","caption":"The
+        new fake news feature on Facebook, as the site makes an effort to flag articles
+        that are not true.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15FACEBOOK2\/15FACEBOOK2-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"The
+        new fake news feature on Facebook, as the site makes an effort to flag articles
+        that are not true.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15FACEBOOK2\/15FACEBOOK2-superJumbo.jpg","format":"superJumbo","height":1080,"width":1919,"type":"image","subtype":"photo","caption":"The
+        new fake news feature on Facebook, as the site makes an effort to flag articles
+        that are not true.","copyright":""}],"short_url":"http:\/\/nyti.ms\/2hKDeO2"},{"section":"Technology","subsection":"","title":"Trump\u2019s
+        Meeting With Tech Leaders Turns Into a Charmfest","abstract":"Mr. Trump called
+        the group \u201ctruly amazing\u201d and said the attendees were doing a good
+        job. Many of the executives brought up topics like immigration and education.","url":"http:\/\/www.nytimes.com\/2016\/12\/15\/technology\/trumps-meeting-with-tech-leaders-turns-into-a-charmfest.html","byline":"By
+        PUI-WING TAM","item_type":"Article","updated_date":"2016-12-15T10:16:35-05:00","created_date":"2016-12-15T10:16:36-05:00","published_date":"2016-12-15T10:16:36-05:00","material_type_facet":"","kicker":"","des_facet":["United
+        States Politics and Government"],"org_facet":[],"per_facet":["Cook, Timothy
+        D","Bezos, Jeffrey P","Nadella, Satya","Page, Larry","Sandberg, Sheryl K","Trump,
+        Donald J"],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard-v5.png","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbLarge-v5.png","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleInline-v5.png","format":"Normal","height":126,"width":190,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-mediumThreeByTwo210-v4.png","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-superJumbo-v3.png","format":"superJumbo","height":400,"width":600,"type":"image","subtype":"photo","caption":"","copyright":""}],"short_url":"http:\/\/nyti.ms\/2hJZFTx"},{"section":"Technology","subsection":"","title":"\u2018I\u2019m
+        Here to Help,\u2019 Trump Tells Tech Executives at Meeting","abstract":"The
+        president-elect met with Jeff Bezos of Amazon and Timothy D. Cook of Apple,
+        among other tech leaders, in a surprisingly genial gathering.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/trump-tech-summit.html","byline":"By
+        DAVID STREITFELD","item_type":"Article","updated_date":"2016-12-14T20:40:07-05:00","created_date":"2016-12-14T15:29:10-05:00","published_date":"2016-12-14T15:29:10-05:00","material_type_facet":"","kicker":"","des_facet":["United
+        States Politics and Government","Computers and the Internet"],"org_facet":[],"per_facet":["Trump,
+        Donald J"],"geo_facet":["Silicon Valley (Calif)"],"multimedia":[],"short_url":"http:\/\/nyti.ms\/2hGdq5C"},{"section":"Fashion
+        & Style","subsection":"","title":"How to Have a Dinner Party: Friends Not
+        Required","abstract":"Flummoxed by the old-fashioned pastime of entertaining
+        at home, our reporter tries out online services designed to bring together
+        strangers.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/fashion\/dinner-party-apps.html","byline":"By
+        HANNAH SELIGSON","item_type":"Article","updated_date":"2016-12-15T09:22:31-05:00","created_date":"2016-12-14T14:44:14-05:00","published_date":"2016-12-14T14:44:14-05:00","material_type_facet":"","kicker":"","des_facet":["Parties
+        (Social)","Food","Computers and the Internet","Mobile Applications","Millennial
+        Generation"],"org_facet":["Feastly Inc","10 Chairs NYC","EatWith Media Ltd","OneTable"],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15DINNER\/15DINNER-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Enjoying
+        soup and wine at a dinner in Harlem organized by EatWith, a communal dining
+        service that is now in more than 200 cities around the world.","copyright":"Andrew
+        White for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15DINNER\/15DINNER-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Enjoying
+        soup and wine at a dinner in Harlem organized by EatWith, a communal dining
+        service that is now in more than 200 cities around the world.","copyright":"Andrew
+        White for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15DINNER\/15DINNER-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Enjoying
+        soup and wine at a dinner in Harlem organized by EatWith, a communal dining
+        service that is now in more than 200 cities around the world.","copyright":"Andrew
+        White for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15DINNER\/15DINNER-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Enjoying
+        soup and wine at a dinner in Harlem organized by EatWith, a communal dining
+        service that is now in more than 200 cities around the world.","copyright":"Andrew
+        White for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15DINNER\/15DINNER-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Enjoying
+        soup and wine at a dinner in Harlem organized by EatWith, a communal dining
+        service that is now in more than 200 cities around the world.","copyright":"Andrew
+        White for The New York Times"}],"short_url":"http:\/\/nyti.ms\/2hOunqB"},{"section":"Technology","subsection":"","title":"Daily
+        Report: When Cars and Tech Repeatedly Collide","abstract":"The government
+        proposed rules requiring new cars and small trucks to transmit speed, location
+        and direction data, and Alphabet is spinning off its self-driving project.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/daily-report-when-cars-and-tech-repeatedly-collide.html","byline":"By
+        PUI-WING TAM","item_type":"Article","updated_date":"2016-12-14T13:27:16-05:00","created_date":"2016-12-14T13:27:17-05:00","published_date":"2016-12-14T13:27:17-05:00","material_type_facet":"","kicker":"","des_facet":["Driverless
+        and Semiautonomous Vehicles"],"org_facet":["Alphabet Inc","Uber Technologies
+        Inc","Google Inc"],"per_facet":[],"geo_facet":[],"multimedia":[],"short_url":"http:\/\/nyti.ms\/2hO8WFU"},{"section":"Business
+        Day","subsection":"Entrepreneurship","title":"Veterans Help Make San Diego
+        a Hub for Start-Ups","abstract":"The concentration of military bases, along
+        with business programs for former military personnel, has fueled a growth
+        in entrepreneurship.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/business\/smallbusiness\/veterans-san-diego-start-ups-entrepreneurs.html","byline":"By
+        EILENE ZIMMERMAN","item_type":"Article","updated_date":"2016-12-15T12:30:20-05:00","created_date":"2016-12-14T11:05:09-05:00","published_date":"2016-12-14T11:05:09-05:00","material_type_facet":"","kicker":"","des_facet":["Veterans","Entrepreneurship","Military
+        Bases and Installations","Start-ups","Small Business"],"org_facet":["Navy
+        Seals"],"per_facet":[],"geo_facet":["San Diego (Calif)"],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15EBIZ1\/15EBIZ1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Katie
+        Rast, a founder of Fab Lab, a San Diego nonprofit, with Alan McAfee, a former
+        Navy corpsman who created an entrepreneur-in-residence program there.","copyright":"Adam
+        Fedderly for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15EBIZ1\/15EBIZ1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Katie
+        Rast, a founder of Fab Lab, a San Diego nonprofit, with Alan McAfee, a former
+        Navy corpsman who created an entrepreneur-in-residence program there.","copyright":"Adam
+        Fedderly for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15EBIZ1\/15EBIZ1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Katie
+        Rast, a founder of Fab Lab, a San Diego nonprofit, with Alan McAfee, a former
+        Navy corpsman who created an entrepreneur-in-residence program there.","copyright":"Adam
+        Fedderly for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15EBIZ1\/15EBIZ1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Katie
+        Rast, a founder of Fab Lab, a San Diego nonprofit, with Alan McAfee, a former
+        Navy corpsman who created an entrepreneur-in-residence program there.","copyright":"Adam
+        Fedderly for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15EBIZ1\/15EBIZ1-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Katie
+        Rast, a founder of Fab Lab, a San Diego nonprofit, with Alan McAfee, a former
+        Navy corpsman who created an entrepreneur-in-residence program there.","copyright":"Adam
+        Fedderly for The New York Times"}],"short_url":"http:\/\/nyti.ms\/2hNLyZq"},{"section":"Technology","subsection":"","title":"In
+        Major Step for Drone Delivery, Amazon Flies Package to Customer in England","abstract":"Jeff
+        Bezos announced on Twitter that his company had made its first automated shipment,
+        a two-mile, 13-minute trip to a shopper in Cambridgeshire.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/amazon-drone-england-delivery.html","byline":"By
+        NICK WINGFIELD and MARK SCOTT","item_type":"Article","updated_date":"2016-12-14T09:11:24-05:00","created_date":"2016-12-14T09:11:25-05:00","published_date":"2016-12-14T09:11:25-05:00","material_type_facet":"","kicker":"","des_facet":["Delivery
+        Services","Drones (Pilotless Planes)","E-Commerce"],"org_facet":["Amazon.com
+        Inc"],"per_facet":["Bezos, Jeffrey P"],"geo_facet":["Cambridgeshire (England)"],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15amazondrone-sub\/15amazondrone-sub-thumbStandard-v2.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Amazon
+        made its first commercial drone delivery on Dec. 7 in Cambridgeshire, England.","copyright":"Amazon"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15amazondrone-sub\/15amazondrone-sub-thumbLarge-v2.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Amazon
+        made its first commercial drone delivery on Dec. 7 in Cambridgeshire, England.","copyright":"Amazon"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15amazondrone-sub\/15amazondrone-sub-articleInline.jpg","format":"Normal","height":111,"width":190,"type":"image","subtype":"photo","caption":"Amazon
+        made its first commercial drone delivery on Dec. 7 in Cambridgeshire, England.","copyright":"Amazon"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15amazondrone-sub\/15amazondrone-sub-mediumThreeByTwo210-v2.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Amazon
+        made its first commercial drone delivery on Dec. 7 in Cambridgeshire, England.","copyright":"Amazon"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15amazondrone-sub\/15amazondrone-sub-superJumbo.jpg","format":"superJumbo","height":1167,"width":2000,"type":"image","subtype":"photo","caption":"Amazon
+        made its first commercial drone delivery on Dec. 7 in Cambridgeshire, England.","copyright":"Amazon"}],"short_url":"http:\/\/nyti.ms\/2hNmt0w"},{"section":"Technology","subsection":"","title":"Mario,
+        Nintendo\u2019s Mustachioed Gaming Legend, Arrives on iPhones","abstract":"After
+        ignoring the popularity of smartphones and tablets for years, the Japanese
+        company is finally bringing its heroic plumber to mobile devices.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/mario-nintendos-mustachioed-gaming-legend-arrives-on-iphones.html","byline":"By
+        NICK WINGFIELD and VINDU GOEL","item_type":"Article","updated_date":"2016-12-14T07:21:06-05:00","created_date":"2016-12-14T07:21:07-05:00","published_date":"2016-12-14T07:21:07-05:00","material_type_facet":"","kicker":"","des_facet":["Computer
+        and Video Games","Tablet Computers","Smartphones","Mobile Applications"],"org_facet":["Apple
+        Inc","Nintendo Co Ltd"],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15MARIO1\/15MARIO1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Nintendo&rsquo;s
+        Super Mario Run is being released Thursday. After ignoring the popularity
+        of third-party mobile devices for years, the company is finally bringing its
+        heroic plumber to iPhones and iPads.","copyright":"Nintendo"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15MARIO1\/15MARIO1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Nintendo&rsquo;s
+        Super Mario Run is being released Thursday. After ignoring the popularity
+        of third-party mobile devices for years, the company is finally bringing its
+        heroic plumber to iPhones and iPads.","copyright":"Nintendo"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15MARIO1\/15MARIO1-articleInline.jpg","format":"Normal","height":253,"width":190,"type":"image","subtype":"photo","caption":"Nintendo&rsquo;s
+        Super Mario Run is being released Thursday. After ignoring the popularity
+        of third-party mobile devices for years, the company is finally bringing its
+        heroic plumber to iPhones and iPads.","copyright":"Nintendo"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15MARIO1\/15MARIO1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Nintendo&rsquo;s
+        Super Mario Run is being released Thursday. After ignoring the popularity
+        of third-party mobile devices for years, the company is finally bringing its
+        heroic plumber to iPhones and iPads.","copyright":"Nintendo"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15MARIO1\/15MARIO1-superJumbo.jpg","format":"superJumbo","height":2048,"width":1536,"type":"image","subtype":"photo","caption":"Nintendo&rsquo;s
+        Super Mario Run is being released Thursday. After ignoring the popularity
+        of third-party mobile devices for years, the company is finally bringing its
+        heroic plumber to iPhones and iPads.","copyright":"Nintendo"}],"short_url":"http:\/\/nyti.ms\/2hN0Rl6"},{"section":"Technology","subsection":"","title":"Uber
+        Expands Self-Driving Car Service to San Francisco. D.M.V. Says It\u2019s Illegal.","abstract":"The
+        ride-hailing company debuted self-driving cars in San Francisco, only to have
+        California\u2019s Department of Motor Vehicles say it was illegal.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/uber-self-driving-car-san-francisco.html","byline":"By
+        MIKE ISAAC","item_type":"Article","updated_date":"2016-12-14T20:47:26-05:00","created_date":"2016-12-14T06:00:26-05:00","published_date":"2016-12-14T06:00:26-05:00","material_type_facet":"","kicker":"","des_facet":["Driverless
+        and Semiautonomous Vehicles","Car Services and Livery Cabs"],"org_facet":["Uber
+        Technologies Inc"],"per_facet":[],"geo_facet":["San Francisco (Calif)"],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15UBER1\/15UBER1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"An
+        Uber self-driving car in San Francisco. A company engineer sits behind the
+        wheel in each vehicle and can take over when needed.","copyright":"Uber"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15UBER1\/15UBER1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"An
+        Uber self-driving car in San Francisco. A company engineer sits behind the
+        wheel in each vehicle and can take over when needed.","copyright":"Uber"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15UBER1\/15UBER1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"An
+        Uber self-driving car in San Francisco. A company engineer sits behind the
+        wheel in each vehicle and can take over when needed.","copyright":"Uber"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15UBER1\/15UBER1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"An
+        Uber self-driving car in San Francisco. A company engineer sits behind the
+        wheel in each vehicle and can take over when needed.","copyright":"Uber"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/business\/15UBER1\/15UBER1-superJumbo.jpg","format":"superJumbo","height":1368,"width":2048,"type":"image","subtype":"photo","caption":"An
+        Uber self-driving car in San Francisco. A company engineer sits behind the
+        wheel in each vehicle and can take over when needed.","copyright":"Uber"}],"short_url":"http:\/\/nyti.ms\/2hMISLj"},{"section":"Magazine","subsection":"","title":"Who\u2019s
+        Responsible When Extremists Get a Platform?","abstract":"Social media companies
+        aren\u2019t just an open marketplace for ideas \u2014 they\u2019re also amplifying
+        the most dangerous ones.","url":"http:\/\/www.nytimes.com\/2016\/12\/13\/magazine\/whos-responsible-when-extremists-get-a-platform.html","byline":"By
+        JOHN HERRMAN","item_type":"Article","updated_date":"2016-12-13T05:00:02-05:00","created_date":"2016-12-13T05:00:03-05:00","published_date":"2016-12-13T05:00:03-05:00","material_type_facet":"","kicker":"","des_facet":["Social
+        Media","English Language","News and News Media"],"org_facet":["Facebook Inc","Twitter"],"per_facet":["Zuckerberg,
+        Mark E","Trump, Donald J"],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18firstwords\/18mag-18firstwords-t_CA0-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Javier Ja\u00e9n"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18firstwords\/18mag-18firstwords-t_CA0-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Javier Ja\u00e9n"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18firstwords\/18mag-18firstwords-t_CA0-articleInline.jpg","format":"Normal","height":190,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Javier Ja\u00e9n"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18firstwords\/18firstwords-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Javier Ja\u00e9n"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18firstwords\/18mag-18firstwords-t_CA0-superJumbo.jpg","format":"superJumbo","height":2048,"width":2048,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Javier Ja\u00e9n"}],"short_url":"http:\/\/nyti.ms\/2hI6elB"},{"section":"Magazine","subsection":"","title":"The
+        Great A.I. Awakening","abstract":"How Google used artificial intelligence
+        to transform Google Translate, one of its more popular services \u2014 and
+        how machine learning is poised to reinvent computing itself.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/magazine\/the-great-ai-awakening.html","byline":"By
+        GIDEON LEWIS-KRAUS","item_type":"Article","updated_date":"2016-12-14T05:00:15-05:00","created_date":"2016-12-14T05:00:17-05:00","published_date":"2016-12-14T05:00:17-05:00","material_type_facet":"","kicker":"","des_facet":["Artificial
+        Intelligence","Translation and Interpreters","Voice Recognition Systems","Computers
+        and the Internet"],"org_facet":["Google Inc"],"per_facet":["Pichai, Sundar","Jeff
+        Dean","Geoffrey Hinton"],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18ai-cover2\/18ai-cover2-thumbStandard-v4.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Pablo Delcan"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18ai-cover2\/18ai-cover2-thumbLarge-v4.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Pablo Delcan"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18ai-cover2\/18ai-cover2-articleInline-v3.jpg","format":"Normal","height":253,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Pablo Delcan"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18ai-cover2\/18ai-cover2-mediumThreeByTwo210-v4.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Pablo Delcan"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/18\/magazine\/18ai-cover2\/18ai-cover2-superJumbo-v4.jpg","format":"superJumbo","height":2048,"width":1479,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Pablo Delcan"}],"short_url":"http:\/\/nyti.ms\/2hMtKOn"},{"section":"Fashion
+        & Style","subsection":"","title":"Let It Glow! With Lasers, a Holiday Home
+        Decorating Craze Takes Off","abstract":"An electronic gizmo called Star Shower
+        has disrupted the holiday-decorating industry. Makers of traditional string
+        lights are unconcerned.","url":"http:\/\/www.nytimes.com\/2016\/12\/13\/fashion\/star-shower-laser-motion-christmas-holiday-lights.html","byline":"By
+        STEVEN KURUTZ","item_type":"Article","updated_date":"2016-12-14T15:41:38-05:00","created_date":"2016-12-13T15:35:22-05:00","published_date":"2016-12-13T15:35:22-05:00","material_type_facet":"","kicker":"","des_facet":["Christmas","Laser
+        (Light Amplification by Stimulated Emission of Radiation)","Christmas Trees"],"org_facet":[],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15STARSHOWER-WEB1SUB\/15STARSHOWER-WEB1SUB-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Tammy
+        and Paul York are using the Star Shower laser Christmas lights for a second
+        year, at their home in Colorado Springs. \u201cWe\u2019re getting older, so
+        we didn\u2019t have to worry about injuring ourselves,\u201d she said.","copyright":"Ryan
+        David Brown for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15STARSHOWER-WEB1SUB\/15STARSHOWER-WEB1SUB-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Tammy
+        and Paul York are using the Star Shower laser Christmas lights for a second
+        year, at their home in Colorado Springs. \u201cWe\u2019re getting older, so
+        we didn\u2019t have to worry about injuring ourselves,\u201d she said.","copyright":"Ryan
+        David Brown for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15STARSHOWER-WEB1SUB\/15STARSHOWER-WEB1SUB-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Tammy
+        and Paul York are using the Star Shower laser Christmas lights for a second
+        year, at their home in Colorado Springs. \u201cWe\u2019re getting older, so
+        we didn\u2019t have to worry about injuring ourselves,\u201d she said.","copyright":"Ryan
+        David Brown for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15STARSHOWER-WEB1SUB\/15STARSHOWER-WEB1SUB-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Tammy
+        and Paul York are using the Star Shower laser Christmas lights for a second
+        year, at their home in Colorado Springs. \u201cWe\u2019re getting older, so
+        we didn\u2019t have to worry about injuring ourselves,\u201d she said.","copyright":"Ryan
+        David Brown for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/fashion\/15STARSHOWER-WEB1SUB\/15STARSHOWER-WEB1SUB-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Tammy
+        and Paul York are using the Star Shower laser Christmas lights for a second
+        year, at their home in Colorado Springs. \u201cWe\u2019re getting older, so
+        we didn\u2019t have to worry about injuring ourselves,\u201d she said.","copyright":"Ryan
+        David Brown for The New York Times"}],"short_url":"http:\/\/nyti.ms\/2hKuvqP"},{"section":"Technology","subsection":"","title":"Twitter
+        Has the Right to Suspend Donald Trump. But It Shouldn\u2019t.","abstract":"The
+        president-elect\u2019s tweets are arguably inciting harassment against his
+        critics. But Twitter\u2019s conduct rules are too vague to merit banning Mr.
+        Trump.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/twitter-has-the-right-to-suspend-donald-trump-but-it-shouldnt.html","byline":"By
+        FARHAD MANJOO","item_type":"Article","updated_date":"2016-12-14T05:28:21-05:00","created_date":"2016-12-14T05:28:22-05:00","published_date":"2016-12-14T05:28:22-05:00","material_type_facet":"","kicker":"","des_facet":["Presidential
+        Election of 2016","Censorship","Cyberharassment","Computers and the Internet","Freedom
+        of Speech and Expression"],"org_facet":["Twitter"],"per_facet":["Trump, Donald
+        J","Yiannopoulos, Milo"],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15state-web\/15state-web-thumbStandard.gif","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump\u2019s frequent use of Twitter to express his views has inspired
+        calls from some to have him banned from the platform.","copyright":"Doug Chayka"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15state-web\/15state-web-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump\u2019s frequent use of Twitter to express his views has inspired
+        calls from some to have him banned from the platform.","copyright":"Doug Chayka"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15state-web\/15state-web-articleInline.jpg","format":"Normal","height":111,"width":190,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump\u2019s frequent use of Twitter to express his views has inspired
+        calls from some to have him banned from the platform.","copyright":"Doug Chayka"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15state-web\/15state-web-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump\u2019s frequent use of Twitter to express his views has inspired
+        calls from some to have him banned from the platform.","copyright":"Doug Chayka"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/15\/technology\/15state-web\/15state-web-superJumbo-v3.gif","format":"superJumbo","height":597,"width":1024,"type":"image","subtype":"photo","caption":"Donald
+        J. Trump\u2019s frequent use of Twitter to express his views has inspired
+        calls from some to have him banned from the platform.","copyright":"Doug Chayka"}],"short_url":"http:\/\/nyti.ms\/2hE13qP"},{"section":"Technology","subsection":"","title":"Google
+        Parent Company Spins Off Self-Driving Car Business","abstract":"The decision
+        is a signal that the company thinks its self-driving technology has moved
+        beyond research project status and is ready for commercialization.","url":"http:\/\/www.nytimes.com\/2016\/12\/13\/technology\/google-parent-company-spins-off-waymo-self-driving-car-business.html","byline":"By
+        DAISUKE WAKABAYASHI","item_type":"Article","updated_date":"2016-12-13T13:06:47-05:00","created_date":"2016-12-13T13:06:48-05:00","published_date":"2016-12-13T13:06:48-05:00","material_type_facet":"","kicker":"","des_facet":["Driverless
+        and Semiautonomous Vehicles","Mergers, Acquisitions and Divestitures"],"org_facet":["Waymo","Alphabet
+        Inc","Google Inc"],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14DRIVE\/14DRIVE-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"A
+        Google self-driving car in Mountain View, Calif., in 2014. The vehicles, which
+        will now operate under the Waymo name, have logged 2.3 million driverless
+        miles since 2009.","copyright":"Eric Risberg\/Associated Press"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14DRIVE\/14DRIVE-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"A
+        Google self-driving car in Mountain View, Calif., in 2014. The vehicles, which
+        will now operate under the Waymo name, have logged 2.3 million driverless
+        miles since 2009.","copyright":"Eric Risberg\/Associated Press"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14DRIVE\/14DRIVE-articleInline.jpg","format":"Normal","height":116,"width":190,"type":"image","subtype":"photo","caption":"A
+        Google self-driving car in Mountain View, Calif., in 2014. The vehicles, which
+        will now operate under the Waymo name, have logged 2.3 million driverless
+        miles since 2009.","copyright":"Eric Risberg\/Associated Press"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14DRIVE\/14DRIVE-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"A
+        Google self-driving car in Mountain View, Calif., in 2014. The vehicles, which
+        will now operate under the Waymo name, have logged 2.3 million driverless
+        miles since 2009.","copyright":"Eric Risberg\/Associated Press"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14DRIVE\/14DRIVE-superJumbo.jpg","format":"superJumbo","height":1255,"width":2048,"type":"image","subtype":"photo","caption":"A
+        Google self-driving car in Mountain View, Calif., in 2014. The vehicles, which
+        will now operate under the Waymo name, have logged 2.3 million driverless
+        miles since 2009.","copyright":"Eric Risberg\/Associated Press"}],"short_url":"http:\/\/nyti.ms\/2hK0nw3"},{"section":"Technology","subsection":"","title":"Daily
+        Report: Tech Executives Meeting Trump Are in a Tough Spot","abstract":"On
+        a variety of issues, like jobs and cash stockpiles outside the United States,
+        technology companies are holding a weak hand against the president-elect.","url":"http:\/\/www.nytimes.com\/2016\/12\/13\/technology\/daily-report-tech-executives-meeting-trump-are-in-a-tough-spot.html","byline":"By
+        PUI-WING TAM","item_type":"Article","updated_date":"2016-12-13T11:54:28-05:00","created_date":"2016-12-13T11:54:29-05:00","published_date":"2016-12-13T11:54:29-05:00","material_type_facet":"","kicker":"","des_facet":["Science
+        and Technology"],"org_facet":["Apple Inc","Alphabet Inc"],"per_facet":["Trump,
+        Donald J"],"geo_facet":["Silicon Valley (Calif)"],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard-v5.png","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbLarge-v5.png","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleInline-v5.png","format":"Normal","height":126,"width":190,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-mediumThreeByTwo210-v4.png","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-superJumbo-v3.png","format":"superJumbo","height":400,"width":600,"type":"image","subtype":"photo","caption":"","copyright":""}],"short_url":"http:\/\/nyti.ms\/2hB8teq"},{"section":"Technology","subsection":"","title":"When
+        Trump Meets Tech Leaders, Jobs Will Be on the Agenda","abstract":"The executives
+        meeting with Mr. Trump in Manhattan on Wednesday include Elon Musk of Tesla,
+        Timothy D. Cook of Apple and Jeff Bezos of Amazon.","url":"http:\/\/www.nytimes.com\/2016\/12\/13\/technology\/when-trump-meets-tech-leaders-jobs-will-be-on-the-agenda.html","byline":"By
+        DAVID STREITFELD","item_type":"Article","updated_date":"2016-12-13T05:00:04-05:00","created_date":"2016-12-13T05:00:05-05:00","published_date":"2016-12-13T05:00:05-05:00","material_type_facet":"","kicker":"","des_facet":["United
+        States Politics and Government"],"org_facet":["Airbnb","Alphabet Inc","Amazon.com
+        Inc","Apple Inc","Cisco Systems Inc","Facebook Inc","Google Inc","Intel Corporation","International
+        Business Machines Corporation","Microsoft Corp","Oracle Corporation","SOFTBANK
+        Corporation","Uber Technologies Inc"],"per_facet":["Bezos, Jeffrey P","Chesky,
+        Brian","Cook, Timothy D","Musk, Elon","Krzanich, Brian M","Nadella, Satya","Page,
+        Larry","Rometty, Virginia M","Sandberg, Sheryl K","Schmidt, Eric E","Son,
+        Masayoshi","Thiel, Peter A","Trump, Donald J"],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/world\/14TRUMPTECH-1\/14TRUMPTECH-1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"President-elect
+        Donald J. Trump at a rally in Grand Rapids, Mich., last week. Top technology
+        companies collectively hold hundreds of billions of dollars overseas, and
+        they would like to return the money to the United States at a beneficial tax
+        rate. The topic is likely to come up at a meeting of tech leaders with Mr.
+        Trump on Wednesday.","copyright":"Doug Mills\/The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/world\/14TRUMPTECH-1\/14TRUMPTECH-1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"President-elect
+        Donald J. Trump at a rally in Grand Rapids, Mich., last week. Top technology
+        companies collectively hold hundreds of billions of dollars overseas, and
+        they would like to return the money to the United States at a beneficial tax
+        rate. The topic is likely to come up at a meeting of tech leaders with Mr.
+        Trump on Wednesday.","copyright":"Doug Mills\/The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/world\/14TRUMPTECH-1\/14TRUMPTECH-1-articleInline.jpg","format":"Normal","height":125,"width":190,"type":"image","subtype":"photo","caption":"President-elect
+        Donald J. Trump at a rally in Grand Rapids, Mich., last week. Top technology
+        companies collectively hold hundreds of billions of dollars overseas, and
+        they would like to return the money to the United States at a beneficial tax
+        rate. The topic is likely to come up at a meeting of tech leaders with Mr.
+        Trump on Wednesday.","copyright":"Doug Mills\/The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/world\/14TRUMPTECH-1\/14TRUMPTECH-1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"President-elect
+        Donald J. Trump at a rally in Grand Rapids, Mich., last week. Top technology
+        companies collectively hold hundreds of billions of dollars overseas, and
+        they would like to return the money to the United States at a beneficial tax
+        rate. The topic is likely to come up at a meeting of tech leaders with Mr.
+        Trump on Wednesday.","copyright":"Doug Mills\/The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/world\/14TRUMPTECH-1\/14TRUMPTECH-1-superJumbo.jpg","format":"superJumbo","height":1348,"width":2048,"type":"image","subtype":"photo","caption":"President-elect
+        Donald J. Trump at a rally in Grand Rapids, Mich., last week. Top technology
+        companies collectively hold hundreds of billions of dollars overseas, and
+        they would like to return the money to the United States at a beneficial tax
+        rate. The topic is likely to come up at a meeting of tech leaders with Mr.
+        Trump on Wednesday.","copyright":"Doug Mills\/The New York Times"}],"short_url":"http:\/\/nyti.ms\/2hIgr1m"},{"section":"Technology","subsection":"","title":"Cars
+        Talking to One Another? They Could Under Proposed Safety Rules","abstract":"Under
+        the rules, cars would be able to use wireless technology to detect if another
+        vehicle was moving too fast in their direction and headed for a collision.","url":"http:\/\/www.nytimes.com\/2016\/12\/13\/technology\/cars-talking-to-one-another-they-could-under-proposed-safety-rules.html","byline":"By
+        CECILIA KANG","item_type":"Article","updated_date":"2016-12-13T14:30:48-05:00","created_date":"2016-12-13T14:30:49-05:00","published_date":"2016-12-13T14:30:49-05:00","material_type_facet":"","kicker":"","des_facet":["Traffic
+        Accidents and Safety","Automobile Safety Features and Defects","Driverless
+        and Semiautonomous Vehicles","Automobiles","Wireless Communications","Roads
+        and Traffic"],"org_facet":["National Highway Traffic Safety Administration","Transportation
+        Department (US)"],"per_facet":["Foxx, Anthony R"],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14CARTALK2\/14CARTALK2-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"A
+        driver eats as he exits the Holland Tunnel in New Jersey. Proposed rules would
+        require vehicles to talk to one another and warn of impending collisions,
+        many of which are caused by distracted driving.","copyright":"Christopher
+        Occhicone for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14CARTALK2\/14CARTALK2-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"A
+        driver eats as he exits the Holland Tunnel in New Jersey. Proposed rules would
+        require vehicles to talk to one another and warn of impending collisions,
+        many of which are caused by distracted driving.","copyright":"Christopher
+        Occhicone for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14CARTALK2\/14CARTALK2-articleInline.jpg","format":"Normal","height":108,"width":190,"type":"image","subtype":"photo","caption":"A
+        driver eats as he exits the Holland Tunnel in New Jersey. Proposed rules would
+        require vehicles to talk to one another and warn of impending collisions,
+        many of which are caused by distracted driving.","copyright":"Christopher
+        Occhicone for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14CARTALK2\/14CARTALK2-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"A
+        driver eats as he exits the Holland Tunnel in New Jersey. Proposed rules would
+        require vehicles to talk to one another and warn of impending collisions,
+        many of which are caused by distracted driving.","copyright":"Christopher
+        Occhicone for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/14CARTALK2\/14CARTALK2-superJumbo.jpg","format":"superJumbo","height":1168,"width":2048,"type":"image","subtype":"photo","caption":"A
+        driver eats as he exits the Holland Tunnel in New Jersey. Proposed rules would
+        require vehicles to talk to one another and warn of impending collisions,
+        many of which are caused by distracted driving.","copyright":"Christopher
+        Occhicone for The New York Times"}],"short_url":"http:\/\/nyti.ms\/2hKjtSL"},{"section":"World","subsection":"Asia
+        Pacific","title":"India Hobbles Through a Cash Crisis, and Electronic Payments
+        Boom","abstract":"Millions of Indians are moving toward a cashless economy,
+        fulfilling what Prime Minister Narendra Modi now says was an objective of
+        banning 500- and 1,000-rupee notes.","url":"http:\/\/www.nytimes.com\/2016\/12\/13\/world\/asia\/india-cash-electronic-payments.html","byline":"By
+        GEETA ANAND and HARI KUMAR","item_type":"Article","updated_date":"2016-12-13T00:01:23-05:00","created_date":"2016-12-13T00:01:24-05:00","published_date":"2016-12-13T00:01:24-05:00","material_type_facet":"","kicker":"","des_facet":["Indian
+        Rupee (Currency)","Mobile Commerce and Payments"],"org_facet":[],"per_facet":["Modi,
+        Narendra"],"geo_facet":["India"],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/13\/world\/13INDIAMONEY\/13INDIAMONEY-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"A
+        book seller in Mumbai displayed a sign indicating that he accepts mobile phone
+        payment technology.","copyright":"Divyakant Solanki\/European Pressphoto Agency"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/13\/world\/13INDIAMONEY\/13INDIAMONEY-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"A
+        book seller in Mumbai displayed a sign indicating that he accepts mobile phone
+        payment technology.","copyright":"Divyakant Solanki\/European Pressphoto Agency"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/13\/world\/13INDIAMONEY\/13INDIAMONEY-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"A
+        book seller in Mumbai displayed a sign indicating that he accepts mobile phone
+        payment technology.","copyright":"Divyakant Solanki\/European Pressphoto Agency"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/13\/world\/13INDIAMONEY\/13INDIAMONEY-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"A
+        book seller in Mumbai displayed a sign indicating that he accepts mobile phone
+        payment technology.","copyright":"Divyakant Solanki\/European Pressphoto Agency"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/13\/world\/13INDIAMONEY\/13INDIAMONEY-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"A
+        book seller in Mumbai displayed a sign indicating that he accepts mobile phone
+        payment technology.","copyright":"Divyakant Solanki\/European Pressphoto Agency"}],"short_url":"http:\/\/nyti.ms\/2hHxFM9"},{"section":"Technology","subsection":"","title":"Daily
+        Report: Google\u2019s Largess Reaches Into the Heartland Unevenly","abstract":"The
+        company\u2019s data centers bring tax revenue, jobs and other benefits to
+        their communities, but the wealth doesn\u2019t extend very far beyond their
+        borders.","url":"http:\/\/www.nytimes.com\/2016\/12\/12\/technology\/daily-report-googles-largess-reaches-into-the-heartland-unevenly.html","byline":"By
+        PUI-WING TAM","item_type":"Article","updated_date":"2016-12-12T12:53:29-05:00","created_date":"2016-12-12T12:53:29-05:00","published_date":"2016-12-12T12:53:29-05:00","material_type_facet":"","kicker":"","des_facet":[],"org_facet":["Google
+        Inc"],"per_facet":[],"geo_facet":["Oklahoma"],"multimedia":[],"short_url":"http:\/\/nyti.ms\/2gxx57w"},{"section":"Movies","subsection":"","title":"Why
+        Netflix Lets Movie Lovers Down, and What to Do About It","abstract":"Sure,
+        there\u2019s choice via streaming. But, really, how much?","url":"http:\/\/www.nytimes.com\/2016\/11\/13\/movies\/why-netflix-lets-movie-lovers-down-and-what-to-do-about-it.html","byline":"By
+        GLENN KENNY","item_type":"Article","updated_date":"2016-11-10T10:00:20-05:00","created_date":"2016-11-10T10:00:22-05:00","published_date":"2016-11-10T10:00:22-05:00","material_type_facet":"","kicker":"","des_facet":["Movies","Video
+        Recordings, Downloads and Streaming","Web-Original Programming"],"org_facet":["Netflix
+        Inc"],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/11\/13\/arts\/13STREAMING1\/13STREAMING1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"From
+        left, Caleb McLaughlin, Finn Wolfhard, Millie Bobby Brown and Gaten Matarazzo
+        in \u201cStranger Things.\u201d","copyright":"Netflix"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/11\/13\/arts\/13STREAMING1\/13STREAMING1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"From
+        left, Caleb McLaughlin, Finn Wolfhard, Millie Bobby Brown and Gaten Matarazzo
+        in \u201cStranger Things.\u201d","copyright":"Netflix"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/11\/13\/arts\/13STREAMING1\/13STREAMING1-articleInline.jpg","format":"Normal","height":99,"width":190,"type":"image","subtype":"photo","caption":"From
+        left, Caleb McLaughlin, Finn Wolfhard, Millie Bobby Brown and Gaten Matarazzo
+        in \u201cStranger Things.\u201d","copyright":"Netflix"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/11\/13\/arts\/13STREAMING1\/13STREAMING1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"From
+        left, Caleb McLaughlin, Finn Wolfhard, Millie Bobby Brown and Gaten Matarazzo
+        in \u201cStranger Things.\u201d","copyright":"Netflix"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/11\/13\/arts\/13STREAMING1\/13STREAMING1-superJumbo.jpg","format":"superJumbo","height":1069,"width":2048,"type":"image","subtype":"photo","caption":"From
+        left, Caleb McLaughlin, Finn Wolfhard, Millie Bobby Brown and Gaten Matarazzo
+        in \u201cStranger Things.\u201d","copyright":"Netflix"}],"short_url":"http:\/\/nyti.ms\/2emhiau"},{"section":"Technology","subsection":"Personal
+        Tech","title":"Biggest Tech Failures and Successes of 2016","abstract":"From
+        exploding smartphones and hoverboards to fake news on social media, many tech
+        hardware, software and web products suffered embarrassing setbacks. But it
+        was not all bleak.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/personaltech\/biggest-tech-failures-and-successes-of-2016.html","byline":"By
+        BRIAN X. CHEN","item_type":"Article","updated_date":"2016-12-14T11:30:00-05:00","created_date":"2016-12-14T11:30:01-05:00","published_date":"2016-12-14T11:30:01-05:00","material_type_facet":"","kicker":"","des_facet":["Batteries","News
+        and News Media","Rumors and Misinformation","Wireless Communications","Virtual
+        Reality (Computers)","Computer Security","Video Recordings, Downloads and
+        Streaming"],"org_facet":["Samsung Electronics Co","Facebook Inc","Twitter","Google
+        Inc"],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2014\/02\/03\/business\/BATTERY\/BATTERY-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Boyoun
+        Kim"},{"url":"https:\/\/static01.nyt.com\/images\/2014\/02\/03\/business\/BATTERY\/BATTERY-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Boyoun
+        Kim"},{"url":"https:\/\/static01.nyt.com\/images\/2014\/02\/03\/business\/BATTERY\/BATTERY-articleInline.jpg","format":"Normal","height":177,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Boyoun
+        Kim"},{"url":"https:\/\/static01.nyt.com\/images\/2014\/02\/03\/business\/BATTERY\/BATTERY-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Boyoun
+        Kim"},{"url":"https:\/\/static01.nyt.com\/images\/2014\/02\/03\/business\/BATTERY\/BATTERY-superJumbo.jpg","format":"superJumbo","height":1908,"width":2048,"type":"image","subtype":"photo","caption":"","copyright":"Boyoun
+        Kim"}],"short_url":"http:\/\/nyti.ms\/2hNI8Wm"},{"section":"Technology","subsection":"Personal
+        Tech","title":"2016 in Review: The Year\u2019s Best Apps","abstract":"A news
+        curator based on what friends are reading, an easy-to-access universe of NPR
+        audio, and an upgraded beer-tracking app are among our top picks.","url":"http:\/\/www.nytimes.com\/2016\/12\/14\/technology\/personaltech\/best-apps.html","byline":"By
+        KIT EATON","item_type":"Article","updated_date":"2016-12-14T12:06:37-05:00","created_date":"2016-12-14T12:06:37-05:00","published_date":"2016-12-14T12:06:37-05:00","material_type_facet":"","kicker":"","des_facet":["Mobile
+        Applications","Computer and Video Games","News and News Media","Podcasts","Cameras","Beer"],"org_facet":["National
+        Public Radio"],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15SMART1\/15SMART1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"NPR
+        One is a one-stop shop for radio and audio content.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15SMART1\/15SMART1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"NPR
+        One is a one-stop shop for radio and audio content.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15SMART1\/15SMART1-articleInline.jpg","format":"Normal","height":338,"width":190,"type":"image","subtype":"photo","caption":"NPR
+        One is a one-stop shop for radio and audio content.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15SMART1\/15SMART1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"NPR
+        One is a one-stop shop for radio and audio content.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/14\/business\/15SMART1\/15SMART1-superJumbo.jpg","format":"superJumbo","height":2048,"width":1153,"type":"image","subtype":"photo","caption":"NPR
+        One is a one-stop shop for radio and audio content.","copyright":""}],"short_url":"http:\/\/nyti.ms\/2hFwxNl"},{"section":"Technology","subsection":"Personal
+        Tech","title":"How to Bid Adieu to Yahoo","abstract":"When you decide it\u2019s
+        time to close your account and move on to another mail service, make sure
+        you get all the files you need before you go.","url":"http:\/\/www.nytimes.com\/2016\/10\/13\/technology\/personaltech\/how-to-bid-adieu-to-yahoo.html","byline":"By
+        J. D. BIERSDORFER","item_type":"Article","updated_date":"2016-10-12T12:40:38-04:00","created_date":"2016-10-12T12:40:40-04:00","published_date":"2016-10-12T12:40:40-04:00","material_type_facet":"","kicker":"","des_facet":["E-Mail","Outlook.com"],"org_facet":["Yahoo!
+        Inc","Microsoft Corp"],"per_facet":[],"geo_facet":[],"multimedia":[],"short_url":"http:\/\/nyti.ms\/2dWzkgM"},{"section":"Technology","subsection":"Personal
+        Tech","title":"Vast Group of New Video Games and Hardware Jostle for Holiday
+        Attention","abstract":"Recently introduced game consoles are breaking the
+        usual new-product cycle, while interest grows in virtual reality titles.","url":"http:\/\/www.nytimes.com\/2016\/10\/27\/technology\/personaltech\/vast-group-of-new-video-games-and-hardware-jostle-for-holiday-attention.html","byline":"By
+        LAURA PARKER","item_type":"Article","updated_date":"2016-10-26T13:45:25-04:00","created_date":"2016-10-26T13:45:27-04:00","published_date":"2016-10-26T13:45:27-04:00","material_type_facet":"","kicker":"","des_facet":["Computer
+        and Video Games","Virtual Reality (Computers)","PlayStation 4 (Video Game
+        System)","Xbox One (Video Game System)","Call of Duty (Video Game)","Titanfall
+        (Video Game)","Watch Dogs (Video Game)","Holidays and Special Occasions"],"org_facet":["Electronic
+        Arts Inc","Activision Blizzard Inc","Nintendo Co Ltd"],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/10\/26\/business\/27VIDGAME-1\/27VIDGAME-1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"A
+        customer tries out a first-person shooter game using the new virtual reality
+        system on PlayStation 4.","copyright":"Corinna Kern for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/10\/26\/business\/27VIDGAME-1\/27VIDGAME-1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"A
+        customer tries out a first-person shooter game using the new virtual reality
+        system on PlayStation 4.","copyright":"Corinna Kern for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/10\/26\/business\/27VIDGAME-1\/27VIDGAME-1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"A
+        customer tries out a first-person shooter game using the new virtual reality
+        system on PlayStation 4.","copyright":"Corinna Kern for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/10\/26\/business\/27VIDGAME-1\/27VIDGAME-1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"A
+        customer tries out a first-person shooter game using the new virtual reality
+        system on PlayStation 4.","copyright":"Corinna Kern for The New York Times"},{"url":"https:\/\/static01.nyt.com\/images\/2016\/10\/26\/business\/27VIDGAME-1\/27VIDGAME-1-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"A
+        customer tries out a first-person shooter game using the new virtual reality
+        system on PlayStation 4.","copyright":"Corinna Kern for The New York Times"}],"short_url":"http:\/\/nyti.ms\/2dIYjGV"},{"section":"Technology","subsection":"Personal
+        Tech","title":"How to Back Up Your Social Media Feeds","abstract":"If you
+        don\u2019t want to risk losing your photos and other memories stored online,
+        consider making a copy of your account\u2019s contents for safekeeping.","url":"http:\/\/www.nytimes.com\/2016\/12\/15\/technology\/personaltech\/how-to-back-up-your-social-media-feeds.html","byline":"By
+        J. D. BIERSDORFER","item_type":"Article","updated_date":"2016-12-15T09:36:31-05:00","created_date":"2016-12-15T09:36:31-05:00","published_date":"2016-12-15T09:36:31-05:00","material_type_facet":"","kicker":"","des_facet":["Computers
+        and the Internet","Social Media","Data Storage"],"org_facet":[],"per_facet":[],"geo_facet":[],"multimedia":[{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/16\/technology\/personaltech\/16techtipwebART\/16techtipwebART-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"graphic","caption":"Digi.me
+        has free software for Windows, Mac, Android and iOS systems that automatically
+        backs up and syncs your posts from Instagram, Facebook, Twitter and several
+        other social media networks to your local drive.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/16\/technology\/personaltech\/16techtipwebART\/16techtipwebART-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"graphic","caption":"Digi.me
+        has free software for Windows, Mac, Android and iOS systems that automatically
+        backs up and syncs your posts from Instagram, Facebook, Twitter and several
+        other social media networks to your local drive.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/16\/technology\/personaltech\/16techtipwebART\/16techtipwebART-articleInline.jpg","format":"Normal","height":198,"width":190,"type":"image","subtype":"graphic","caption":"Digi.me
+        has free software for Windows, Mac, Android and iOS systems that automatically
+        backs up and syncs your posts from Instagram, Facebook, Twitter and several
+        other social media networks to your local drive.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/16\/technology\/personaltech\/16techtipwebART\/16techtipwebART-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"graphic","caption":"Digi.me
+        has free software for Windows, Mac, Android and iOS systems that automatically
+        backs up and syncs your posts from Instagram, Facebook, Twitter and several
+        other social media networks to your local drive.","copyright":""},{"url":"https:\/\/static01.nyt.com\/images\/2016\/12\/16\/technology\/personaltech\/16techtipwebART\/16techtipwebART-superJumbo.jpg","format":"superJumbo","height":1588,"width":1436,"type":"image","subtype":"graphic","caption":"Digi.me
+        has free software for Windows, Mac, Android and iOS systems that automatically
+        backs up and syncs your posts from Instagram, Facebook, Twitter and several
+        other social media networks to your local drive.","copyright":""}],"short_url":"http:\/\/nyti.ms\/2hJGARs"}]}'
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 19:18:04 GMT
+recorded_with: VCR 2.5.0

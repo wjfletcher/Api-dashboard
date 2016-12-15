@@ -1,0 +1,39 @@
+<div class="small-6 small-offset-3 columns">
+  <!-- <div class="callout primary">
+    <h3>IP</h3>
+    <p>"<%= @ip %>"</p>
+  </div> -->
+
+  <div class="callout primary">
+    <h3>Location</h3>
+    <p>
+      <%= @geolocation.city %>,
+      <%= @geolocation.state %>,
+      <%= @geolocation.country %>
+    </p>
+  </div>
+
+  <div class="callout primary">
+    <h3>Weather</h3>
+    <p>
+      The current temperature is:
+      <%= @weather.temperature %> °F</br>
+      The current weather conditions are:
+      <%= @weather.summary %>
+    </p>
+  </div>
+
+  <div class="callout primary">
+    <h3>Local Events</h3>
+    <p>
+      <%= @events.events %>
+    </p>
+  </div>
+
+  <div class="callout primary">
+    <h3>Top Tech Stories</h3>
+    <p>
+      <%= @news.news %>
+    </p>
+  </div>
+</div>
